@@ -1,0 +1,6 @@
+title: 2ad.com
+slug: Back from the dead
+date: 2020-04-18
+modified: 2020-04-18
+
+Thanks to [Samer Kanjo](https://samer.kanjo.net) for getting me all excited about static page generation and [Pelican](https://blog.getpelican.com/).   I resurrected the 2ad site for fun.   It was super easy.
