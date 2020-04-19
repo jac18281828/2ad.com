@@ -1,5 +1,7 @@
 title: 2ad.com
 slug: Back from the dead
+tags: pelican
+category: update
 date: 2020-04-18
 modified: 2020-04-18
 

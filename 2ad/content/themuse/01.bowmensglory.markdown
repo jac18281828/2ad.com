@@ -1,0 +1,9 @@
+title: The English Bowman's Glory
+slug: The Muse At Arms 01
+tags: poetry, museatarms, warfare
+category: themuse
+status: draft
+date: 2020-04-19
+modified: 2020-04-19
+
+Agincourt, Agincourt
