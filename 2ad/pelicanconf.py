@@ -18,6 +18,7 @@ CATEGORY_FEED_ATOM = None
 TRANSLATION_FEED_ATOM = None
 AUTHOR_FEED_ATOM = None
 AUTHOR_FEED_RSS = None
+WITH_FUTURE_DATES = False
 
 # Blogroll
 LINKS = (('Java Disruptor BlockingQueue', 'https://github.com/conversant/disruptor/'),
