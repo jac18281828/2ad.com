@@ -6,6 +6,8 @@ AUTHOR = u'John Cairns'
 SITENAME = u'2ad.com'
 SITEURL = ''
 
+STATIC_PATHS = ('static',)
+
 PATH = 'content'
 
 TIMEZONE = 'America/Chicago'
@@ -31,7 +33,7 @@ LINKS = (('Java Disruptor BlockingQueue', 'https://github.com/conversant/disrupt
 
 # Social widget
 SOCIAL = (('LinkedIn', 'https://www.linkedin.com/in/johnacairns'),
-          ('Instagram', 'https://www.instagram.com/isrealjmath/'),
+          ('Instagram', 'https://www.instagram.com/israeljmath/'),
           ('LibriVox', 'https://librivox.org/reader/12659'),
 )
 
