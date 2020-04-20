@@ -3,8 +3,8 @@
 from __future__ import unicode_literals
 
 AUTHOR = u'John Cairns'
-SITENAME = u'2ad.com'
-SITEURL = ''
+SITENAME = u'John Cairns'
+SITEURL = 'https://2ad.com'
 
 STATIC_PATHS = ('static',)
 
