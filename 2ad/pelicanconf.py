@@ -14,13 +14,14 @@ TIMEZONE = 'America/Chicago'
 
 DEFAULT_LANG = u'en'
 
+WITH_FUTURE_DATES = False
+
 # Feed generation is usually not desired when developing
 FEED_ALL_ATOM = None
 CATEGORY_FEED_ATOM = None
 TRANSLATION_FEED_ATOM = None
 AUTHOR_FEED_ATOM = None
 AUTHOR_FEED_RSS = None
-WITH_FUTURE_DATES = False
 
 # Blogroll
 LINKS = (('Java Disruptor BlockingQueue', 'https://github.com/conversant/disruptor/'),

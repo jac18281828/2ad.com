@@ -4,13 +4,16 @@ from __future__ import unicode_literals
 
 AUTHOR = u'John Cairns'
 SITENAME = u'Documenting the Decline'
-SITEURL = 'https://documentingthedecline.com'
+#SITEURL = 'https://documentingthedecline.com'
+SITEURL = ''
 
 PATH = 'content'
 
 TIMEZONE = 'America/Chicago'
 
 DEFAULT_LANG = u'en'
+
+WITH_FUTURE_DATES = False
 
 # Feed generation is usually not desired when developing
 FEED_ALL_ATOM = None
