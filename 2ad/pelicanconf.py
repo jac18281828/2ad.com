@@ -26,9 +26,10 @@ WITH_FUTURE_DATES = False
 LINKS = (('Java Disruptor BlockingQueue', 'https://github.com/conversant/disruptor/'),
          ('R-Tree', 'https://github.com/conversant/rtree'),
          ('GitHub', 'https://github.com/jac18281828'),
+         ('Documenting The Decline', 'https://documentingthedecline.com'),
          ('Emmy', 'http://amaliecairns.com/'),
-         ('Mina', 'http://minacairns.com'),
-         ('Archie', 'http://archiecairns.com'),
+         #('Mina', 'http://minacairns.com'),
+         #('Archie', 'http://archiecairns.com'),
 )
 
 # Social widget
