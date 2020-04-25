@@ -51,9 +51,10 @@ LINKS = (('Java Disruptor BlockingQueue', 'https://github.com/conversant/disrupt
          ('R-Tree', 'https://github.com/conversant/rtree'),
          ('GitHub', 'https://github.com/jac18281828'),
          ('Documenting The Decline', 'https://documentingthedecline.com'),
-         ('Emmy', 'http://amaliecairns.com/'),
-         #('Mina', 'http://minacairns.com'),
-         #('Archie', 'http://archiecairns.com'),
+         ('Jeanette Cairns', 'https://jeanettecairns.com/'),
+         ('Emmy', 'https://emmycairns.com/'),
+         #('Mina', 'https://minacairns.com'),
+         #('Archie', 'https://archiecairns.com'),
 )
 
 # Social widget
