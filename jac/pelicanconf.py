@@ -23,10 +23,11 @@ AUTHOR_FEED_RSS = None
 
 # Blogroll
 LINKS = (('2ad.com', 'https://2ad.com'),
-         ('documentingthedecline.com', 'https://documentingthedecline.com'),)
+         ('documentingthedecline.com', 'https://documentingthedecline.com'),
+)
 
 # Social widget
-SOCIAL = (,)
+SOCIAL = ()
 
 DEFAULT_PAGINATION = 5
 
