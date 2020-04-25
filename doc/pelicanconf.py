@@ -23,7 +23,7 @@ AUTHOR_FEED_ATOM = None
 AUTHOR_FEED_RSS = None
 
 # Blogroll
-LINKS = (('John Cairns', 'https://2ad.com/'),
+LINKS = (('DTD by John Cairns', 'https://2ad.com/'),
          )
 
 # Social widget

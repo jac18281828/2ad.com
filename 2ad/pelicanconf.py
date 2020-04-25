@@ -6,7 +6,30 @@ AUTHOR = u'John Cairns'
 SITENAME = u'John Cairns'
 SITEURL = u''
 
-STATIC_PATHS = ('static',)
+STATIC_PATHS = ('static',
+                'images',
+                'static/robots.txt',
+                'static/favicon.ico',
+                'static/site.webmanifest',
+                'static/android-chrome-192x192.png',
+                'static/android-chrome-512x512.png',
+                'static/apple-touch-icon.png',
+                'static/favicon-16x16.png',
+                'static/favicon-32x32.png',
+                'static/favicon.ico',
+)
+
+EXTRA_PATH_METADATA = {
+    'static/robots.txt': {'path': 'robots.txt'},
+    'static/favicon.ico': {'path': 'favicon.ico'},
+    'static/site.webmanifest': {'path': 'site.webmanifest'},
+    'static/android-chrome-192x192.png': {'path': 'android-chrome-192x192.png'},
+    'static/android-chrome-512x512.png': {'path': 'android-chrome-512x512.png'},
+    'static/apple-touch-icon.png': {'path': 'apple-touch-icon.png'},
+    'static/favicon-16x16.png': {'path': 'favicon-16x16.png'},
+    'static/favicon-32x32.png': {'path': 'favicon-32x32.png'},
+    'static/favicon-ico': {'path': 'favicon.ico'},    
+}
 
 PATH = 'content'
 
