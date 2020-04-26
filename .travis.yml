@@ -27,3 +27,4 @@ script:
 -  make -C doc html rsync_upload
 -  make -C emmycairns html rsync_upload
 -  make -C kellycairns html rsync_upload
+-  make -C jac html rsync_upload
