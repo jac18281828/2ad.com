@@ -7,14 +7,20 @@ branches:
 language: python
 
 before_install:
-- openssl aes-256-cbc -K $encrypted_4a5b09341fbf_key -iv $encrypted_4a5b09341fbf_iv -in www-key.enc -out www-key -d
+- openssl aes-256-cbc -K $encrypted_4a5b09341fbf_key -iv $encrypted_4a5b09341fbf_iv -in www-key.enc -out ~/.ssh/www-key -d
 - chmod 400 ~/.ssh/www-key
+- echo 'Host *' >> ~/.ssh/config
+- echo '  IdentitiesOnly=yes' >> ~/.ssh/config
 - echo "Host 2ad.com" >> ~/.ssh/config
-- echo "  IdentityFile ~/.ssh/ww-key" >> ~/.ssh/config
-# replace git@github.com:humrochagf/humrochagf.github.io.git
-# for the ssh access of your repository
+- echo "  IdentityFile ~/.ssh/www-key" >> ~/.ssh/config
+- echo "Host github.com" >> ~/.ssh/config
+- echo "  IdentityFile ~/.ssh/www-key" >> ~/.ssh/config
 - git remote set-url origin git@github.com:jac18281828/2ad.com.git
 - git fetch origin -f master:master
 
+install:
+- pip install --upgrade pip
+- pip install -r requirements.txt
+
 script:
-- (cd 2ad && make html ssh_upload)
+-  make -C 2ad html rsync_upload
