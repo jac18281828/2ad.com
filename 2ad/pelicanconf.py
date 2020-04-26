@@ -51,7 +51,7 @@ LINKS = (('Java Disruptor BlockingQueue', 'https://github.com/conversant/disrupt
          ('R-Tree', 'https://github.com/conversant/rtree'),
          ('GitHub', 'https://github.com/jac18281828'),
          ('Documenting The Decline', 'https://documentingthedecline.com'),
-         ('Mike Riley'), ('http://mikeriley.com'),
+         ('Mike Riley'), ('https://mikeriley.com'),
          ('Johns Basement'), ('https://www.youtube.com/channel/UCik0xMsb7kSpPUvT2JoJQ1w'),
          ('Samer Kanjo'), ('https://samer.kanjo.net'),
          ('Jeanette Cairns', 'https://jeanettecairns.com/'),
