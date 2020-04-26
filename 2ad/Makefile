@@ -88,8 +88,7 @@ ssh_upload: publish
 	scp $(SSH_EXTRA) -P $(SSH_PORT) -r $(OUTPUTDIR)/* $(SSH_USER)@$(SSH_HOST):$(SSH_TARGET_DIR)
 
 rsync_upload: publish
-	echo ${RSYNC_EXCLUDE} > /tmp/rsync_exclude
-	rsync -e "ssh $(SSH_EXTRA) -p $(SSH_PORT)" -P -rvzc --exclude-from /tmp/rsync_exclude --cvs-exclude --delete $(OUTPUTDIR)/ $(SSH_USER)@$(SSH_HOST):$(SSH_TARGET_DIR)
+	rsync -e "ssh $(SSH_EXTRA) -p $(SSH_PORT)" -P -rvzc --exclude-from rsync_exclude --cvs-exclude --delete $(OUTPUTDIR)/ $(SSH_USER)@$(SSH_HOST):$(SSH_TARGET_DIR)
 
 
 .PHONY: html help clean regenerate serve serve-global devserver publish ssh_upload rsync_upload
