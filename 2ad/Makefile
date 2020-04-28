@@ -1,3 +1,4 @@
+# generated
 PY?=python
 PELICAN?=pelican
 PELICANOPTS=
