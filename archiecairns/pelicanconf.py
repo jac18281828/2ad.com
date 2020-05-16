@@ -3,8 +3,8 @@
 from __future__ import unicode_literals
 
 AUTHOR = u'John Cairns'
-SITENAME = u'Flower Art 2'
-SITEURL = u''
+SITENAME = u'Go Archibald'
+SITEURL = ''
 
 PATH = 'content'
 
@@ -21,13 +21,10 @@ TRANSLATION_FEED_ATOM = None
 AUTHOR_FEED_ATOM = None
 AUTHOR_FEED_RSS = None
 
-LINKS = (('John Cairns', 'https://2ad.com'),
+# Blogroll
+LINKS = (('John Cairns', 'https://2ad.com'),)
 
-# Social widget
-SOCIAL = (('Instagram', 'https://www.instagram.com/flowerart2/'),
-)
-
-DEFAULT_PAGINATION = 10
+DEFAULT_PAGINATION = 5
 
 # Uncomment following line if you want document-relative URLs when developing
 #RELATIVE_URLS = True
