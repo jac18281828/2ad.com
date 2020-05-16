@@ -21,7 +21,7 @@ TRANSLATION_FEED_ATOM = None
 AUTHOR_FEED_ATOM = None
 AUTHOR_FEED_RSS = None
 
-LINKS = (('John Cairns', 'https://2ad.com'),
+LINKS = (('John Cairns', 'https://2ad.com'),)
 
 # Social widget
 SOCIAL = (('Instagram', 'https://www.instagram.com/flowerart2/'),
