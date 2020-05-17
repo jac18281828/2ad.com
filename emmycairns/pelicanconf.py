@@ -24,7 +24,7 @@ AUTHOR_FEED_RSS = None
 LINKS = (('John Cairns', 'https://2ad.com'),)
 
 # Social widget
-SOCIAL = (('Instagram', 'https://www.instagram.com/flowerart2/'),
+SOCIAL = (('Instagram', 'https://www.instagram.com/art_anime22/'),
 )
 
 DEFAULT_PAGINATION = 10
