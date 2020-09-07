@@ -11,7 +11,7 @@ do
 done
 
 
-cat < CONFIG > ${HOME}/.ssh/config
+cat << CONFIG > ${HOME}/.ssh/config
 Host *
   IdentitiesOnly=yes
 Host 2ad.com
