@@ -34,7 +34,6 @@ jobs:
     - name: Deploy with make
       run: |
         make -C 2ad html rsync_upload
-        make -C doc html rsync_upload
         make -C emmycairns html rsync_upload
         make -C archiecairns html rsync_upload
         make -C minacairns html rsync_upload
