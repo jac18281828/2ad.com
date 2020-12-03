@@ -6,6 +6,8 @@ AUTHOR = u'John Cairns'
 SITENAME = u'John Cairns'
 SITEURL = u''
 
+THEME = 'themes/Flex'
+
 PLUGIN_PATHS = ['../pelican-plugins' ]
 
 PLUGINS = ['sitemap', 'post_stats', 'feed_summary']
