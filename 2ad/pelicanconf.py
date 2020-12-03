@@ -6,6 +6,10 @@ AUTHOR = u'John Cairns'
 SITENAME = u'John Cairns'
 SITEURL = u''
 
+PLUGIN_PATHS = ['../pelican-plugins' ]
+
+PLUGINS = ['sitemap', 'post_stats', 'feed_summary']
+
 STATIC_PATHS = ('static',
                 'images',
                 'static/robots.txt',
