@@ -3,10 +3,12 @@
 from __future__ import unicode_literals
 
 AUTHOR = u'John Cairns'
-SITENAME = u'John Cairns'
-SITEURL = u''
+SITENAME = u'Manzikert 2021'
+SITEURL = u'https://2ad.com'
 
 THEME = 'themes/Flex'
+
+SITELOGO = 'sitelogo.jpg'
 
 PLUGIN_PATHS = ['../pelican-plugins' ]
 
