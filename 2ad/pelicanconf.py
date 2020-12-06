@@ -6,7 +6,7 @@ AUTHOR = u'John Cairns'
 SITENAME = u'Manzikert 2021'
 SITEURL = u'https://2ad.com'
 
-THEME = 'themes/Flex'
+THEME = 'themes/Flex-2.4.0'
 
 SITELOGO = 'sitelogo.jpg'
 
