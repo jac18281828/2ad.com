@@ -3,17 +3,19 @@
 from __future__ import unicode_literals
 
 AUTHOR = u'John Cairns'
-SITENAME = u'Manzikert 2021'
+SITENAME = u'John Cairns\''
 SITEURL = u'https://2ad.com'
 
 THEME = 'themes/Flex-2.4.0'
 
 
 # flex
-SITELOGO = 'content/static/sitelogo.jpg'
+FAVICON = '/static/favicon.ico'
+SITELOGO = '/static/sitelogo.jpg'
 SITETITLE = u'Manzikert 2021'
 HOME_HIDE_TAGS = False
 MAIN_MENU = True
+FEED_USE_SUMMARY = True
 
 PLUGIN_PATHS = ['../pelican-plugins' ]
 
@@ -67,29 +69,41 @@ DEFAULT_LANG = u'en'
 WITH_FUTURE_DATES = False
 
 # Feed generation is usually not desired when developing
-FEED_ALL_ATOM = None
-CATEGORY_FEED_ATOM = None
+FEED_ALL_ATOM = 'feeds/all.atom.xml'
+SLUG_FEED_ATOM = 'feeds/%s.atom.xml'
 TRANSLATION_FEED_ATOM = None
 AUTHOR_FEED_ATOM = None
 AUTHOR_FEED_RSS = None
 
 # Blogroll
-LINKS = (('Java Disruptor BlockingQueue', 'https://github.com/conversant/disruptor/'),
-         ('R-Tree', 'https://github.com/conversant/rtree'),
-         ('GitHub', 'https://github.com/jac18281828'),
-         ('Mike Riley', 'http://mikeriley.com'),
-         ('John\'s Basement', 'https://www.youtube.com/channel/UCik0xMsb7kSpPUvT2JoJQ1w'),
-         ('Samer Kanjo', 'https://samer.kanjo.net'),
-         ('Jeanette Cairns', 'https://jeanettecairns.com/'),
-         ('Emmy', 'https://emmycairns.com/'),
-         #('Mina', 'https://minacairns.com'),
-         #('Archie', 'https://archiecairns.com'),
+LINKS = (
+    ('News', '/category/news.html'),
+    ('Tech', '/category/tech.html'),
+    ('Publication', '/category/books.html'),        
+    ('diceware', 'https://github.com/jac18281828/diceware'),
+    ('Binance Trading', 'https://github.com/jac18281828/binance_power_toys'),
+    ('Bitstamp Trading', 'https://github.com/jac18281828/bitstamp_power_toys'),
+    ('Kraken Trading', 'https://github.com/jac18281828/kraken_power_toys'),
+    ('Bitfinex Trading', 'https://github.com/jac18281828/bitfinex_power_toys'),
+    ('Java BlockingQueue', 'https://github.com/conversant/disruptor/'),
+    ('R-Tree', 'https://github.com/conversant/rtree'),
+    ('RPN', 'https://github.com/jac18281828/rpn'),
+    ('gzkfast', 'https://github.com/jac18281828/gzkfast'),        
+    ('Mike Riley', 'http://mikeriley.com'),
+    ('John\'s Basement', 'https://www.youtube.com/channel/UCik0xMsb7kSpPUvT2JoJQ1w'),
+    ('Samer Kanjo', 'https://samer.kanjo.net'),
+    #('Jeanette Cairns', 'https://jeanettecairns.com/'),
+    #('Emmy', 'https://emmycairns.com/'),
+    #('Mina', 'https://minacairns.com'),
+    #('Archie', 'https://archiecairns.com'),
 )
 
 # Social widget
-SOCIAL = (('LinkedIn', 'https://www.linkedin.com/in/johnacairns'),
-          ('Instagram', 'https://www.instagram.com/israeljmath/'),
-          ('LibriVox', 'https://librivox.org/reader/12659'),
+SOCIAL = (
+    ('GitHub', 'https://github.com/jac18281828'),
+    ('Instagram', 'https://www.instagram.com/israeljmath/'),
+    ('LinkedIn', 'https://www.linkedin.com/in/johnacairns'),
+    ('LibriVox', 'https://librivox.org/reader/12659'),
 )
 
 DEFAULT_PAGINATION = 5
