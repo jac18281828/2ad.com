@@ -77,9 +77,10 @@ AUTHOR_FEED_RSS = None
 
 # Blogroll
 LINKS = (
-    ('News', '/category/news.html'),
-    ('Tech', '/category/tech.html'),
-    ('Publication', '/category/books.html'),        
+    ('news', '/category/news.html'),
+    ('tech', '/category/tech.html'),
+    ('pub', '/category/books.html'),
+    ('food', '/category/food.html'),            
     ('diceware', 'https://github.com/jac18281828/diceware'),
     ('Binance Trading', 'https://github.com/jac18281828/binance_power_toys'),
     ('Bitstamp Trading', 'https://github.com/jac18281828/bitstamp_power_toys'),
