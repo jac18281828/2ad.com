@@ -8,7 +8,12 @@ SITEURL = u'https://2ad.com'
 
 THEME = 'themes/Flex-2.4.0'
 
-SITELOGO = 'sitelogo.jpg'
+
+# flex
+SITELOGO = 'content/static/sitelogo.jpg'
+SITETITLE = u'Manzikert 2021'
+HOME_HIDE_TAGS = False
+MAIN_MENU = True
 
 PLUGIN_PATHS = ['../pelican-plugins' ]
 
