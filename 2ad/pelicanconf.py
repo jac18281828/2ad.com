@@ -82,7 +82,7 @@ LINKS = (
     ('books', '/category/books.html'),
     ('history', '/category/history.html'),
     ('food', '/category/food.html'),
-    ('crypto', '/category/news.html'),
+    ('crypto', '/category/crypto.html'),
     ('Author Page', 'https://www.amazon.com/John-Cairns/e/B004Y7NDY0/ref=dp_byline_cont_pop_book_3'),
     ('Pen and Sword Books', 'https://www.pen-and-sword.co.uk/John-Cairns/a/7'),
     ('diceware', 'https://github.com/jac18281828/diceware'),
