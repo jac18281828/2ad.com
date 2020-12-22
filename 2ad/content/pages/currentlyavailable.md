@@ -1,8 +1,4 @@
-title: Available from Pen and Sword Military
-tags: history, cartography, warfare
-category: books
-date:  2020-12-22
-modified: 2020-12-19
+title: From Pen and Sword Military
 
 [Pen and Sword Military](https://www.pen-and-sword.co.uk/John-Cairns/a/7) at Pen and Sword Military.
 
