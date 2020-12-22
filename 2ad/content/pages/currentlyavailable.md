@@ -1,6 +1,6 @@
 title: From Pen and Sword Military
 
-[Pen and Sword Military](https://www.pen-and-sword.co.uk/John-Cairns/a/7) at Pen and Sword Military.
+[Pen and Sword Military](https://www.pen-and-sword.co.uk/John-Cairns/a/7)
 
 Available 2021:
 
