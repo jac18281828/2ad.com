@@ -1,7 +1,7 @@
-title: Currently available at Pen and Sword Books
+title: Currently available from Pen and Sword Military
 tags: history, cartography, warfare
 category: books
-date:  2020-12-23
+date:  2020-12-22
 modified: 2020-12-19
 
 
