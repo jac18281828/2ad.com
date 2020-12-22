@@ -84,19 +84,9 @@ LINKS = (
     ('food', '/category/food.html'),
     ('crypto', '/category/crypto.html'),
     ('Author Page', 'https://www.amazon.com/John-Cairns/e/B004Y7NDY0/ref=dp_byline_cont_pop_book_3'),
-    ('Pen and Sword Books', 'https://www.pen-and-sword.co.uk/John-Cairns/a/7'),
-    ('diceware', 'https://github.com/jac18281828/diceware'),
-    ('BlockingQueue', 'https://github.com/conversant/disruptor/'),
-    ('R-Tree', 'https://github.com/conversant/rtree'),
-    ('RPN', 'https://github.com/jac18281828/rpn'),
-    ('gzkfast', 'https://github.com/jac18281828/gzkfast'),        
     ('Mike Riley', 'http://mikeriley.com'),
     ('John\'s Basement', 'https://www.youtube.com/channel/UCik0xMsb7kSpPUvT2JoJQ1w'),
     ('Samer Kanjo', 'https://samer.kanjo.net'),
-    #('Jeanette Cairns', 'https://jeanettecairns.com/'),
-    #('Emmy', 'https://emmycairns.com/'),
-    #('Mina', 'https://minacairns.com'),
-    #('Archie', 'https://archiecairns.com'),
 )
 
 # Social widget
