@@ -8,10 +8,10 @@ modified: 2020-12-19
 
 Available 2021:
 
-![Coming Soon]({static}/images/ComingSoon.png{: height=25% style="float:center; padding:16px"})
+![Coming Soon]({static}/images/ComingSoon.png){: height=25% style="float:center; padding:16px"}
 
 Currently in publication (all formats):
 
-![Currently Available]({static}/images/PenAndSword.png{: height=25% style="float:center; padding:16px"})
+![Currently Available]({static}/images/PenAndSword.png){: height=25% style="float:center; padding:16px"}
 
 
