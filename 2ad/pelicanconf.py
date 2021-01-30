@@ -17,6 +17,9 @@ HOME_HIDE_TAGS = False
 MAIN_MENU = True
 FEED_USE_SUMMARY = True
 
+# load script for clarity
+MICROSOFT_CLARITY = True
+
 PLUGIN_PATHS = ['../pelican-plugins' ]
 
 PLUGINS = ['sitemap', 'feed_summary']
@@ -33,6 +36,12 @@ SITEMAP = {
         'indexes': 'daily',
         'pages': 'monthly'
     }
+}
+
+CC_LICENSE = {
+    "name": "Creative Commons Attribution-ShareAlike",
+    "version": "4.0",
+    "slug": "by-sa",
 }
 
 STATIC_PATHS = ('static',
