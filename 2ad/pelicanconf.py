@@ -8,6 +8,8 @@ SITEURL = u'https://2ad.com'
 
 THEME = 'themes/Flex-2.4.0'
 
+JINJA_EXTENSIONS = ''
+
 
 # flex
 FAVICON = '/static/favicon.ico'
