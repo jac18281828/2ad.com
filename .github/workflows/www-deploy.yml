@@ -16,10 +16,10 @@ jobs:
 
     steps:
     - uses: actions/checkout@v2
-    - name: Set up Python 3.6
+    - name: Set up Python 
       uses: actions/setup-python@v2
-      with:
-        python-version: 3.6
+#      with:
+#        python-version: 3.8
 
     - name: Setup rsync
       run:  ./.github/scripts/decrypt_ssh.sh
@@ -38,4 +38,3 @@ jobs:
         make -C archiecairns html rsync_upload
         make -C minacairns html rsync_upload
         make -C kellycairns html rsync_upload
-        make -C jac html rsync_upload
