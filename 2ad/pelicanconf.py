@@ -6,10 +6,7 @@ AUTHOR = u'John Cairns'
 SITENAME = u'John Cairns'
 SITEURL = u'https://2ad.com'
 
-THEME = 'themes/Flex-2.4.0'
-
-JINJA_EXTENSIONS = ''
-
+THEME = 'themes/Flex'
 
 # flex
 FAVICON = '/static/favicon.ico'
@@ -20,7 +17,7 @@ MAIN_MENU = True
 FEED_USE_SUMMARY = True
 
 # load script for clarity
-MICROSOFT_CLARITY = True
+MICROSOFT_CLARITY = "57gfdnsu7m"
 
 PLUGIN_PATHS = ['../pelican-plugins' ]
 
