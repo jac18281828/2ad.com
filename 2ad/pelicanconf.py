@@ -16,9 +16,6 @@ HOME_HIDE_TAGS = False
 MAIN_MENU = True
 FEED_USE_SUMMARY = True
 
-JINJA_EXTENSIONS = {}
-JINJA_ENVIRONMENT.extensions = {}
-
 # load script for clarity
 MICROSOFT_CLARITY = "57gfdnsu7m"
 
