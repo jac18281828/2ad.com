@@ -1,5 +1,6 @@
 {% if JINJA_EXTENSIONS is None: %}
 {%    JINJA_EXTENSIONS = {} %}
+{% endif %}
 {% if 'jinja2.ext.i18n' not in JINJA_ENVIRONMENT.extensions and 'jinja2.ext.i18n' not in JINJA_EXTENSIONS %}
   {%- macro _(msg) -%}
     {{ msg % kwargs }}
