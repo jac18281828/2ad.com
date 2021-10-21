@@ -91,9 +91,9 @@ LINKS = (
     ('history', '/category/history.html'),
     ('food', '/category/food.html'),
     ('crypto', '/category/crypto.html'),
-    ('Author Page', 'https://www.amazon.com/John-Cairns/e/B004Y7NDY0/ref=dp_byline_cont_pop_book_3'),
+    ('My Author Page', 'https://www.amazon.com/author/johncairns'),
     ('Mike Riley', 'http://mikeriley.com'),
-    ('John\'s Basement', 'https://www.youtube.com/channel/UCik0xMsb7kSpPUvT2JoJQ1w'),
+    ('John Winan\'s Basement', 'https://www.youtube.com/channel/UCik0xMsb7kSpPUvT2JoJQ1w'),
     ('Samer Kanjo', 'https://samer.kanjo.net'),
 )
 
