@@ -16,6 +16,8 @@ jobs:
     - uses: actions/checkout@v2
     - name: Set up Python 
       uses: actions/setup-python@v2
+      with:
+        python-version: '3.9.2'
     - name: Setup rsync
       run:  ./.github/scripts/decrypt_ssh.sh
       env:
@@ -23,8 +25,8 @@ jobs:
         
     - name: Install dependencies
       run: |
-        python -m pip install --upgrade pip
-        if [ -f requirements.txt ]; then pip install -r requirements.txt; fi
+        python3 -m pip install --upgrade pip
+        if [ -f requirements.txt ]; then pythone -m pip install -r requirements.txt; fi
         
     - name: Deploy with make
       run: |
