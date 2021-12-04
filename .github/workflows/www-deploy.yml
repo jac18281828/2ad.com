@@ -44,10 +44,10 @@ jobs:
         make -C archiecairns html
         make -C minacairns html
         make -C kellycairns html
-#    - name: Deploy with make
-#      run: |
-#        make -C 2ad html rsync_upload
-#        make -C emmycairns html rsync_upload
-#        make -C archiecairns html rsync_upload
-#        make -C minacairns html rsync_upload
-#        make -C kellycairns html rsync_upload
+    - name: Deploy with make
+      run: |
+        make -C 2ad rsync_upload
+        make -C emmycairns rsync_upload
+        make -C archiecairns rsync_upload
+        make -C minacairns rsync_upload
+        make -C kellycairns rsync_upload
