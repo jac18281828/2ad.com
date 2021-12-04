@@ -1,13 +1,22 @@
 #!/usr/bin/env bash
 
-mkdir -m 700 -p ~/.ssh
+TARGET_SSH=${HOME}/.ssh
+
+mkdir -m 700 -p ${TARGET_SSH}
 
 for keyfile in www-key www-key.pub
 do
     echo "Decrypt ${keyfile}"
-    gpg --quiet --batch --yes --decrypt --passphrase="${WWW_RSYNC}" --output ${HOME}/.ssh/${keyfile} .github/distribution/${keyfile}.gpg
-    chmod 400 ${HOME}/.ssh/${keyfile}
-    sha256sum ${HOME}/distribution/${keyfile}
+    gpg \
+        --quiet \
+        --batch \
+        --yes \
+        --decrypt \
+        --passphrase="${WWW_RSYNC}" \
+        --output ${TARGET_SSH}/${keyfile} \
+        .github/distribution/${keyfile}.gpg
+    chmod 400 ${TARGET_SSH}/${keyfile}
+    sha256sum ${TARGET_SSH}/${keyfile}
 done
 
 

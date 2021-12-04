@@ -5,33 +5,49 @@ name: Python application
 
 on:
   push:
-    branches: [ master ]
+    branches:
+      - master
   schedule:
     - cron: '17 4 * * 1'
-
+      
 jobs:
   build:
     runs-on: ubuntu-latest
     steps:
     - uses: actions/checkout@v2
-    - name: Set up Python 
-      uses: actions/setup-python@v2
+    - name: Checkout Flex Theme
+      uses: actions/checkout@v2
       with:
-        python-version: '3.9.2'
+        repository: alexandrevicenzi/Flex
+        path: themes/Flex
+        ref: v2.4.0
+    - name: Make Flex Available
+      run: |
+        ln -sf ${GITHUB_WORKSPACE}/themes 2ad/themes
+        ln -sf ${GITHUB_WORKSPACE}/themes kellycairns/themes
     - name: Setup rsync
       run:  ./.github/scripts/decrypt_ssh.sh
       env:
         WWW_RSYNC:  ${{ secrets.WWW_RSYNC }}
-        
+    - name: Set up Python 
+      uses: actions/setup-python@v2
+      with:
+        python-version: '3.9.6'
     - name: Install dependencies
       run: |
         python3 -m pip install --upgrade pip
         if [ -f requirements.txt ]; then python3 -m pip install -r requirements.txt; fi
-        
-    - name: Deploy with make
+    - name: Test html
       run: |
-        make -C 2ad html rsync_upload
-        make -C emmycairns html rsync_upload
-        make -C archiecairns html rsync_upload
-        make -C minacairns html rsync_upload
-        make -C kellycairns html rsync_upload
+        make -C 2ad html
+        make -C emmycairns html
+        make -C archiecairns html
+        make -C minacairns html
+        make -C kellycairns html
+#    - name: Deploy with make
+#      run: |
+#        make -C 2ad html rsync_upload
+#        make -C emmycairns html rsync_upload
+#        make -C archiecairns html rsync_upload
+#        make -C minacairns html rsync_upload
+#        make -C kellycairns html rsync_upload
