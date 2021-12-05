@@ -102,12 +102,12 @@ LINKS = (
     ('food', '/category/food.html'),
     ('crypto', '/category/crypto.html'),
     ('My Author Page', 'https://www.amazon.com/author/johncairns'),
-    ('Mike Riley', 'http://mikeriley.com'),
-    ('John Winan\'s Basement', 'https://www.youtube.com/channel/UCik0xMsb7kSpPUvT2JoJQ1w'),
-    ('Samer Kanjo', 'https://samer.kanjo.net'),
     ('GitHub', 'https://github.com/jac18281828'),
     ('LinkedIn', 'https://www.linkedin.com/in/johnacairns'),
     ('LibriVox', 'https://librivox.org/reader/12659'),
+    ('Mike Riley', 'http://mikeriley.com'),
+    ('John Winan\'s Basement', 'https://www.youtube.com/channel/UCik0xMsb7kSpPUvT2JoJQ1w'),
+    ('Samer Kanjo', 'https://samer.kanjo.net')
 )
 
 # Social widget
