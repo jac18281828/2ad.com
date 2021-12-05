@@ -93,7 +93,7 @@ AUTHOR_FEED_RSS = None
 
 # Blogroll
 LINKS = (
-    ('bio', '/category/bio.html'),
+    ('about', '/category/bio.html'),
     ('news', '/category/news.html'),
     ('Thrive Pet Healthcare', 'https://www.thrivepetcare.com'),
     ('LinkedIn', 'https://linkedin.com/in/kelly-cairns-68425060'),
