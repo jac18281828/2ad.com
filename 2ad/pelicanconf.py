@@ -12,16 +12,18 @@ THEME = 'themes/Flex'
 FAVICON = 'favicon.ico'
 SITELOGO = '/static/sitelogo.jpg'
 SITETITLE = u'Manzikert 2021'
+SITEDESCRIPTION = u'%s\'s Manzikert 2021 - Writing, Code, Tech, Recipes and more' % AUTHOR
 HOME_HIDE_TAGS = False
 MAIN_MENU = True
 FEED_USE_SUMMARY = True
+BROWSER_COLOR = '#333'
 
 # load script for clarity
 MICROSOFT_CLARITY = "57gfdnsu7m"
 
 PLUGIN_PATHS = ['../pelican-plugins' ]
 
-PLUGINS = ['sitemap', 'feed_summary', 'social']
+PLUGINS = ['sitemap', 'feed_summary']
 
 SITEMAP = {
     'format': 'xml',

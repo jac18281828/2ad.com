@@ -9,12 +9,14 @@ SITEURL = ''
 THEME = 'themes/Flex'
 
 # flex
-FAVICON = '/static/favicon.ico'
+FAVICON = 'favicon.ico'
 SITELOGO = '/static/kellycairns.jpg'
 SITETITLE = u'Dr. Kelly Cairns'
 HOME_HIDE_TAGS = False
 MAIN_MENU = True
 FEED_USE_SUMMARY = True
+BROWSER_COLOR = '#333'
+SITEDESCRIPTION = u'%s\'Veterinary Specialist, Public Speaker and Leader' % AUTHOR
 
 # load script for clarity
 MICROSOFT_CLARITY = "57gfdnsu7m"
