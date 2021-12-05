@@ -18,6 +18,13 @@ FEED_USE_SUMMARY = True
 BROWSER_COLOR = '#333'
 SITEDESCRIPTION = u'%s\'Veterinary Specialist, Public Speaker and Leader' % AUTHOR
 
+THEME_COLOR = 'dark'
+THEME_COLOR_AUTO_DETECT_BROWSER_PREFERENCE = True
+THEME_COLOR_ENABLE_USER_OVERRIDE = True
+
+PYGMENTS_STYLE = 'emacs'
+PYGMENTS_STYLE_DARK = 'monokai'
+
 # load script for clarity
 MICROSOFT_CLARITY = "57gfdnsu7m"
 
