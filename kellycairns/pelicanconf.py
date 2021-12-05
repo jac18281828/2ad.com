@@ -10,7 +10,7 @@ THEME = 'themes/Flex'
 
 # flex
 FAVICON = 'favicon.ico'
-SITELOGO = '/static/kellycairns.jpg'
+SITELOGO = '/static/KellyHeadshot.jpg'
 SITETITLE = u'Dr. Kelly Cairns'
 HOME_HIDE_TAGS = False
 MAIN_MENU = True
