@@ -9,7 +9,7 @@ SITEURL = u'https://2ad.com'
 THEME = 'themes/Flex'
 
 # flex
-FAVICON = '/static/favicon.ico'
+FAVICON = 'favicon.ico'
 SITELOGO = '/static/sitelogo.jpg'
 SITETITLE = u'Manzikert 2021'
 HOME_HIDE_TAGS = False
