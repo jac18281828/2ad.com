@@ -21,7 +21,7 @@ MICROSOFT_CLARITY = "57gfdnsu7m"
 
 PLUGIN_PATHS = ['../pelican-plugins' ]
 
-PLUGINS = ['sitemap', 'feed_summary']
+PLUGINS = ['sitemap', 'feed_summary', 'social']
 
 SITEMAP = {
     'format': 'xml',
