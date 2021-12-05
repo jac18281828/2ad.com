@@ -1,4 +1,4 @@
-title: From Pen and Sword Military
+title: Pen and Sword Military
 
 [Pen and Sword Military](https://www.pen-and-sword.co.uk/John-Cairns/a/7)
 
