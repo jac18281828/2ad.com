@@ -11,7 +11,7 @@ THEME = 'themes/Flex'
 # flex
 FAVICON = '/static/favicon.ico'
 SITELOGO = '/static/kellycairns.jpg'
-SITETITLE = u'Manzikert 2021'
+SITETITLE = u'Dr. Kelly Cairns DVM MS DACVIM'
 HOME_HIDE_TAGS = False
 MAIN_MENU = True
 FEED_USE_SUMMARY = True
@@ -83,7 +83,10 @@ AUTHOR_FEED_ATOM = None
 AUTHOR_FEED_RSS = None
 
 # Blogroll
-LINKS = (('Pathway Vet Alliance', 'https://pathwayvets.com/'),)
+LINKS = (
+    ('bio', '/category/bio.html'),
+    ('news', '/category/news.html'),
+    ('Thrive Pet Healthcare', 'https://www.thrivepetcare.com'),)
 
 # Social widget
 SOCIAL = (('LinkedIn', 'https://linkedin.com/in/kelly-cairns-68425060'),
