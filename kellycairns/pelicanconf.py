@@ -95,14 +95,18 @@ AUTHOR_FEED_RSS = None
 LINKS = (
     ('bio', '/category/bio.html'),
     ('news', '/category/news.html'),
-    ('Thrive Pet Healthcare', 'https://www.thrivepetcare.com'),)
-
-# Social widget
-SOCIAL = (
+    ('Thrive Pet Healthcare', 'https://www.thrivepetcare.com'),
     ('LinkedIn', 'https://linkedin.com/in/kelly-cairns-68425060'),
     ('Instagram', 'https://www.instagram.com/cairns_kelly/'),
     ('Thrive Instagram', 'https://www.instagram.com/thrive_petcare/'),    
-)
+
+
+# Social widget
+#SOCIAL = (
+#    ('LinkedIn', 'https://linkedin.com/in/kelly-cairns-68425060'),
+#    ('Instagram', 'https://www.instagram.com/cairns_kelly/'),
+#    ('Thrive Instagram', 'https://www.instagram.com/thrive_petcare/'),    
+#)
 
 DEFAULT_PAGINATION = False
 
