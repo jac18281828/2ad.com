@@ -91,6 +91,8 @@ LINKS = (
 # Social widget
 SOCIAL = (
     ('LinkedIn', 'https://linkedin.com/in/kelly-cairns-68425060'),
+    ('Instagram', 'https://www.instagram.com/cairns_kelly/'),
+    ('Thrive Instagram', 'https://www.instagram.com/thrive_petcare/'),    
 )
 
 DEFAULT_PAGINATION = False

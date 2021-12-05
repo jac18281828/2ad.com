@@ -100,7 +100,6 @@ LINKS = (
 # Social widget
 SOCIAL = (
     ('GitHub', 'https://github.com/jac18281828'),
-    ('Instagram', 'https://www.instagram.com/israeljmath/'),
     ('LinkedIn', 'https://www.linkedin.com/in/johnacairns'),
     ('LibriVox', 'https://librivox.org/reader/12659'),
 )
