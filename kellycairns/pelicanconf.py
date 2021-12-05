@@ -10,7 +10,7 @@ THEME = 'themes/Flex'
 
 # flex
 FAVICON = '/static/favicon.ico'
-SITELOGO = '/static/sitelogo.jpg'
+SITELOGO = '/static/kellycairns.jpg'
 SITETITLE = u'Manzikert 2021'
 HOME_HIDE_TAGS = False
 MAIN_MENU = True
