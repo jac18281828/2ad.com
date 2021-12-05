@@ -11,7 +11,7 @@ THEME = 'themes/Flex'
 # flex
 FAVICON = '/static/favicon.ico'
 SITELOGO = '/static/kellycairns.jpg'
-SITETITLE = u'Dr. Kelly Cairns DVM MS DACVIM'
+SITETITLE = u'Dr. Kelly Cairns'
 HOME_HIDE_TAGS = False
 MAIN_MENU = True
 FEED_USE_SUMMARY = True
@@ -89,8 +89,9 @@ LINKS = (
     ('Thrive Pet Healthcare', 'https://www.thrivepetcare.com'),)
 
 # Social widget
-SOCIAL = (('LinkedIn', 'https://linkedin.com/in/kelly-cairns-68425060'),
-          )
+SOCIAL = (
+    ('LinkedIn', 'https://linkedin.com/in/kelly-cairns-68425060'),
+)
 
 DEFAULT_PAGINATION = False
 
