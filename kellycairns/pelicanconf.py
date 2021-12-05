@@ -98,7 +98,7 @@ LINKS = (
     ('Thrive Pet Healthcare', 'https://www.thrivepetcare.com'),
     ('LinkedIn', 'https://linkedin.com/in/kelly-cairns-68425060'),
     ('Instagram', 'https://www.instagram.com/cairns_kelly/'),
-    ('Thrive Instagram', 'https://www.instagram.com/thrive_petcare/')
+    ('Thrive Instagram', 'https://www.instagram.com/thrive__petcare/')
 )
 
 # Social widget
