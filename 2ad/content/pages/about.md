@@ -1,4 +1,4 @@
-Title: John Cairns:
+Title: about
 
 John Cairns is a father, software engineer, vegetarian fitness activist, home baker, photographer and published illustrator.  John appreciates the inherent balance of art, science and a disciplined approach in all things.
 

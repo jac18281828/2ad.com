@@ -1,13 +1,14 @@
 title: Pen and Sword Military
 
-[Pen and Sword Military](https://www.pen-and-sword.co.uk/John-Cairns/a/7)
-
 Available 2021:
 
 ![Coming Soon]({static}/images/universe/ComingSoon.png){: height=25% style="float:center; padding:16px"}
 
-Currently in publication (all formats):
+Available from Pen and Sword Military (all formats):
 
-![Currently Available]({static}/images/universe/PenAndSword.png){: height=25% style="float:center; padding:16px"}
+[Pen and Sword](https://penandswordbooks.com/catalogsearch/result/?q=John+Cairns)
+
+[Pen and Sword (UK)](https://www.pen-and-sword.co.uk/John-Cairns/a/7)
+
 
 
