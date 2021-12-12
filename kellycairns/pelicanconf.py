@@ -35,7 +35,11 @@ GUAGES = '61b567468a27ac1647883f64'
 
 PLUGIN_PATHS = ['../pelican-plugins' ]
 
-PLUGINS = ['sitemap', 'feed_summary']
+PLUGINS = [
+    'sitemap',
+    'summary',
+    'feed_summary'
+]
 
 SITEMAP = {
     'format': 'xml',
