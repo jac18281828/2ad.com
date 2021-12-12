@@ -59,6 +59,7 @@ CC_LICENSE = {
 
 STATIC_PATHS = ('static',
                 'images',
+                'media',
                 'static/robots.txt',
                 'static/favicon.ico',
                 'static/site.webmanifest',
