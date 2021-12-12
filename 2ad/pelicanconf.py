@@ -98,6 +98,7 @@ AUTHOR_FEED_RSS = None
 
 # Blogroll
 LINKS = (
+    ('GitHub', 'https://github.com/jac18281828'),
     ('news', '/category/news.html'),
     ('tech', '/category/tech.html'),
     ('books', '/category/books.html'),
@@ -105,7 +106,6 @@ LINKS = (
     ('food', '/category/food.html'),
     ('crypto', '/category/crypto.html'),
     ('My Author Page', 'https://www.amazon.com/author/johncairns'),
-    ('GitHub', 'https://github.com/jac18281828'),
     ('LinkedIn', 'https://www.linkedin.com/in/johnacairns'),
     ('LibriVox', 'https://librivox.org/reader/12659'),
     ('Mike Riley', 'http://mikeriley.com'),
