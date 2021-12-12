@@ -16,7 +16,6 @@ SITEDESCRIPTION = u'%s\'s Manzikert 2021 - Writing, Code, Tech, Recipes and more
 HOME_HIDE_TAGS = False
 MAIN_MENU = True
 FEED_USE_SUMMARY = True
-#BROWSER_COLOR = '#333'
 BROWSER_COLOR = '#4D0D00'
 
 THEME_COLOR = 'dark'
@@ -26,8 +25,12 @@ THEME_COLOR_ENABLE_USER_OVERRIDE = True
 PYGMENTS_STYLE = 'emacs'
 PYGMENTS_STYLE_DARK = 'monokai'
 
-# load script for clarity
-MICROSOFT_CLARITY = "57gfdnsu7m"
+# plugin for clarity.microsoft.com
+MICROSOFT_CLARITY = '57gfdnsu7m'
+
+# https://secure.gaug.es
+# plugin for gauges
+GUAGES = '61b566b78a27ac1446883f64'
 
 PLUGIN_PATHS = ['../pelican-plugins' ]
 

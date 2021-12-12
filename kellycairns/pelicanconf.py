@@ -25,8 +25,13 @@ THEME_COLOR_ENABLE_USER_OVERRIDE = True
 PYGMENTS_STYLE = 'emacs'
 PYGMENTS_STYLE_DARK = 'monokai'
 
-# load script for clarity
+# plugin for clarity.microsoft.com
 MICROSOFT_CLARITY = "9lturow2fn"
+
+# https://secure.gaug.es
+# plugin for gauges
+GUAGES = '61b567468a27ac1647883f64'
+
 
 PLUGIN_PATHS = ['../pelican-plugins' ]
 

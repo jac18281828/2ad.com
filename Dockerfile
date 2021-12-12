@@ -24,11 +24,12 @@ ADD . /htmltmp
 
 WORKDIR /htmltmp
 
-RUN for dir in 2ad emmycairns archiecairns minacairns kellycairns; do (cd $dir && ln -sf ${WORKPATH}/themes themes); done
+RUN for dir in 2ad emmycairns archiecairns minacairns kellycairns; do ln -sf ${WORKPATH}/themes $dir/themes; done
 
-CMD make -C 2ad html &&\
+RUN make -C 2ad html &&\
         make -C emmycairns html &&\
         make -C archiecairns html &&\
         make -C minacairns html &&\
         make -C kellycairns html 
 
+CMD /bin/bash

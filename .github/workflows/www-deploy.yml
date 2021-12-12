@@ -20,7 +20,6 @@ jobs:
       with:
         repository: alexandrevicenzi/Flex
         path: themes/Flex
-        ref: v2.4.0
     - name: Make Flex Available
       run: |
         ln -sf ${GITHUB_WORKSPACE}/themes 2ad/themes
@@ -37,17 +36,10 @@ jobs:
       run: |
         python3 -m pip install --upgrade pip
         if [ -f requirements.txt ]; then python3 -m pip install -r requirements.txt; fi
-    - name: Test html
+    - name: Build and deploy with make
       run: |
-        make -C 2ad html
-        make -C emmycairns html
-        make -C archiecairns html
-        make -C minacairns html
-        make -C kellycairns html
-    - name: Deploy with make
-      run: |
-        make -C 2ad rsync_upload
-        make -C emmycairns rsync_upload
-        make -C archiecairns rsync_upload
-        make -C minacairns rsync_upload
-        make -C kellycairns rsync_upload
+        make -C 2ad html rsync_upload
+        make -C emmycairns html rsync_upload
+        make -C archiecairns html rsync_upload
+        make -C minacairns html rsync_upload
+        make -C kellycairns html rsync_upload
