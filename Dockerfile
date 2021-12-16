@@ -1,6 +1,6 @@
 ARG VERSION=stable-slim
 
-FROM debian:${VERSION} 
+FROM debian:${VERSION} as builder
 
 RUN export DEBIAN_FRONTEND=noninteractive && \
         apt update && \
@@ -30,6 +30,19 @@ RUN make -C 2ad html &&\
         make -C emmycairns html &&\
         make -C archiecairns html &&\
         make -C minacairns html &&\
-        make -C kellycairns html 
+        make -C kellycairns html
 
-CMD /bin/bash
+FROM nginx
+
+COPY --from=builder /htmltmp/2ad/output /usr/share/nginx/html
+COPY --from=builder /htmltmp/emmycairns/output /usr/share/nginx/emmycairns
+COPY --from=builder /htmltmp/archiecairns/output /usr/share/nginx/archiecairns
+COPY --from=builder /htmltmp/minacairns/output /usr/share/nginx/minacairns
+COPY --from=builder /htmltmp/kellycairns/output /usr/share/nginx/kellycairns
+
+COPY sites/2ad.com /etc/nginx/sites-available/
+COPY sites/emmycairns.com /etc/nginx/sites-available/
+COPY sites/minacairns.com /etc/nginx/sites-available/
+COPY sites/archiecairns.com /etc/nginx/sites-available/
+COPY sites/kellycairns.com /etc/nginx/sites-available/
+
