@@ -1,4 +1,3 @@
 # 2ad.com
 
-2ad website
-Emmy, Archie and Kelly website
+public code for (2ad website)[https://www.2ad.com]
