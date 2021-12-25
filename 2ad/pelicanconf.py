@@ -28,10 +28,6 @@ PYGMENTS_STYLE_DARK = 'monokai'
 # plugin for clarity.microsoft.com
 MICROSOFT_CLARITY = '57gfdnsu7m'
 
-# https://secure.gaug.es
-# plugin for gauges
-GUAGES = '61b566b78a27ac1446883f64'
-
 PLUGIN_PATHS = ['../pelican-plugins' ]
 
 PLUGINS = [
