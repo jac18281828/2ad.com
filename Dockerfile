@@ -1,5 +1,4 @@
 ARG VERSION=stable-slim
-
 FROM debian:${VERSION} as builder
 
 RUN export DEBIAN_FRONTEND=noninteractive && \
@@ -7,7 +6,9 @@ RUN export DEBIAN_FRONTEND=noninteractive && \
         apt install -y -q --no-install-recommends \
         build-essential python3 python3-pip git
 
+RUN apt clean
 RUN rm -rf /var/lib/apt/lists/*
+
 
 WORKDIR /tools
 ENV WORKPATH=/tools
