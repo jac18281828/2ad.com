@@ -98,7 +98,6 @@ AUTHOR_FEED_RSS = None
 
 # Blogroll
 LINKS = (
-    ('GitHub', 'https://github.com/jac18281828'),
     ('news', '/category/news.html'),
     ('tech', '/category/tech.html'),
     ('books', '/category/books.html'),
@@ -106,6 +105,7 @@ LINKS = (
     ('food', '/category/food.html'),
     ('crypto', '/category/crypto.html'),
     ('My Author Page', 'https://www.amazon.com/author/johncairns'),
+    ('GitHub', 'https://github.com/jac18281828'),
     ('LinkedIn', 'https://www.linkedin.com/in/johnacairns'),
     ('LibriVox', 'https://librivox.org/reader/12659'),
     ('Mike Riley', 'http://mikeriley.com'),
@@ -114,13 +114,9 @@ LINKS = (
 )
 
 # Social widget
-#SOCIAL = (
-#    ('GitHub', 'https://github.com/jac18281828'),
-#    ('LinkedIn', 'https://www.linkedin.com/in/johnacairns'),
-#    ('LibriVox', 'https://librivox.org/reader/12659'),
-#)
+#SOCIAL = ()
 
-DEFAULT_PAGINATION = 4
+DEFAULT_PAGINATION = 3
 
 # Uncomment following line if you want document-relative URLs when developing
 #RELATIVE_URLS = True
