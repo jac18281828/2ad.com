@@ -9,6 +9,11 @@ on:
       - main
   schedule:
     - cron: '17 4 * * 1'
+
+# at most one deploy at a time      
+concurrency:
+  group: "www-deploy"
+  cancel-in-progress: true
       
 jobs:
   build:
