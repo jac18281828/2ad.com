@@ -106,15 +106,15 @@ LINKS = (
     ('about', '/category/bio.html'),
     ('news', '/category/news.html'),
     ('coaching', '/category/coaching.html'),
-    ('Thrive Pet Healthcare', 'https://www.thrivepetcare.com')
+    ('Thrive Pet Healthcare', 'https://www.thrivepetcare.com'),
+    ('LinkedIn', 'https://linkedin.com/in/kelly-cairns-68425060'),
+    ('Instagram', 'https://www.instagram.com/cairns_kelly/'),
+    ('Thrive Instagram', 'https://www.instagram.com/thrive__petcare/'),
 )
 
 # Social widget
-SOCIAL = (
-    ('LinkedIn', 'https://linkedin.com/in/kelly-cairns-68425060'),
-    ('Instagram', 'https://www.instagram.com/cairns_kelly/'),
-    ('Thrive Instagram', 'https://www.instagram.com/thrive__petcare/')
-)
+# not used in current theme
+# SOCIAL = ()
 
 DEFAULT_PAGINATION = False
 
