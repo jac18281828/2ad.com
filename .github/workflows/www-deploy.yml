@@ -35,8 +35,6 @@ jobs:
         WWW_RSYNC:  ${{ secrets.WWW_RSYNC }}
     - name: Set up Python 
       uses: actions/setup-python@v2
-      with:
-        python-version: '3.9.6'
     - name: Install dependencies
       run: |
         python3 -m pip install --upgrade pip
