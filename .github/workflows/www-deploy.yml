@@ -17,14 +17,6 @@ jobs:
   build:
     runs-on: ubuntu-latest
     steps:
-    - name: setup rsync (ssh)
-      run: |
-        mkdir -m 700 -p ${HOME}/.ssh
-        ln -f .github/scripts/config ${HOME}/.ssh/config
-        echo "${WWW_ED25519}" > ${HOME}/.ssh/twoadcom_ed25519
-        chmod 400 ${HOME}/.ssh/twoadcom_ed25519
-      env:
-        WWW_ED25519: ${{ secrets.WWW_ED25519 }}
     - uses: actions/checkout@v2
     - name: Checkout Flex Theme
       uses: actions/checkout@v2
@@ -35,8 +27,16 @@ jobs:
       run: |
         ln -sf ${GITHUB_WORKSPACE}/themes 2ad/themes
         ln -sf ${GITHUB_WORKSPACE}/themes kellycairns/themes
-    - name: Set up Python 
-      uses: actions/setup-python@v2
+    - name: setup rsync (ssh)
+      run: |
+        mkdir -m 700 -p ${HOME}/.ssh
+        ln -f .github/scripts/config ${HOME}/.ssh/config
+        echo "${WWW_ED25519}" > ${HOME}/.ssh/twoadcom_ed25519
+        chmod 400 ${HOME}/.ssh/twoadcom_ed25519
+      env:
+        WWW_ED25519: ${{ secrets.WWW_ED25519 }}
+    - name: Setup Python 
+      uses: actions/setup-python@v4
     - name: Install dependencies
       run: |
         python3 -m pip install --upgrade pip
