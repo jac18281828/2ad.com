@@ -20,7 +20,7 @@ jobs:
     - name: setup rsync (ssh)
       run: |
         mkdir -m 700 -p ${HOME}/.ssh
-        ln -f ./.github/scripts/config ${HOME}/.ssh/config
+        ln -f .github/scripts/config ${HOME}/.ssh/config
         echo "${WWW_ED25519}" > ${HOME}/.ssh/twoadcom_ed25519
         chmod 400 ${HOME}/.ssh/twoadcom_ed25519
       env:
