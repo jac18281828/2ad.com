@@ -28,10 +28,8 @@ PYGMENTS_STYLE_DARK = 'monokai'
 # plugin for clarity.microsoft.com
 MICROSOFT_CLARITY = "9lturow2fn"
 
-# https://secure.gaug.es
-# plugin for gauges
-GUAGES = '61b567468a27ac1647883f64'
-
+# instruct flex theme to introduce the canonical link
+REL_CANONICAL=True
 
 PLUGIN_PATHS = ['../pelican-plugins' ]
 
