@@ -4,7 +4,7 @@ FROM debian:${VERSION} as builder
 RUN export DEBIAN_FRONTEND=noninteractive && \
         apt update && \
         apt install -y -q --no-install-recommends \
-        build-essential python3 python3-pip git
+        python3 python3-pip git
 
 RUN apt clean
 RUN rm -rf /var/lib/apt/lists/*

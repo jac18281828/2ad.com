@@ -1,7 +1,4 @@
-# This workflow will install Python dependencies, run tests and lint with a single version of Python
-# For more information see: https://help.github.com/actions/language-and-framework-guides/using-python-with-github-actions
-
-name: Python application
+name: Deploy 2ad.com
 
 on:
   workflow_dispatch:  
@@ -20,6 +17,14 @@ jobs:
   build:
     runs-on: ubuntu-latest
     steps:
+    - name: setup rsync (ssh)
+      run: |
+        mkdir -m 700 -p ${HOME}/.ssh
+        ln -f ./.github/scripts/config ${HOME}/.ssh/config
+        echo "${WWW_ED25519}" > ${HOME}/.ssh/twoadcom_ed25519
+        chmod 400 ${HOME}/.ssh/twoadcom_ed25519
+      env:
+        WWW_ED25519: ${{ secrets.WWW_ED25519 }}
     - uses: actions/checkout@v2
     - name: Checkout Flex Theme
       uses: actions/checkout@v2
@@ -30,10 +35,6 @@ jobs:
       run: |
         ln -sf ${GITHUB_WORKSPACE}/themes 2ad/themes
         ln -sf ${GITHUB_WORKSPACE}/themes kellycairns/themes
-    - name: Setup rsync
-      run:  ./.github/scripts/decrypt_ssh.sh
-      env:
-        WWW_RSYNC:  ${{ secrets.WWW_RSYNC }}
     - name: Set up Python 
       uses: actions/setup-python@v2
     - name: Install dependencies
