@@ -1,2 +1,6 @@
 User-Agent: *
-Disallow: 
+Disallow: archiecairns/
+Disallow: minacairns/
+Disallow: emmycairns/
+Disallow: kellycairns/
+Sitemap: https://2ad.com/sitemap.xml
