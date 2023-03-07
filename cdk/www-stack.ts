@@ -3,24 +3,31 @@ import * as ec2 from '@aws-cdk/aws-ec2';
 import * as cdk from '@aws-cdk/core';
 
 export class WwwStack extends cdk.Stack {
-
-  constructor(scope: cdk.Construct, id: string, network: network, props?: cdk.StackProps) {
-    const vpc = new ec2.Vpc(this, "2ad-Vpc", {
-      maxAzs: 3 // Default is all AZs in region
+  constructor(scope: cdk.Construct, id: string, props?: cdk.StackProps) {
+    super(scope, id, props);
+    const vpc = new ec2.Vpc(this, 'Vpc2ad', {
+      maxAzs: 3, // Default is all AZs in region
     });
 
-    const cluster = new ecs.Cluster(this, "2ad-Cluster", {
-      vpc: vpc
+    const cluster = new ecs.Cluster(this, 'Cluster2ad', {
+      vpc: vpc,
     });
 
-    // Create a load-balanced Fargate service and make it public
-    new ecs_patterns.ApplicationLoadBalancedFargateService(this, "2ad-Service", {
-      cluster: cluster, // Required
-      cpu: 256, 
-      desiredCount: 2, 
-      taskImageOptions: { image: ecs.ContainerImage.fromRegistry("ghcr.io/jac18281828/2ad.com:latest") },
-      memoryLimitMiB: 1024, 
-      publicLoadBalancer: true 
+    const wwwTaskDefintion = new ecs.TaskDefinition(this, 'Task2ad', {
+      compatibility: ecs.Compatibility.FARGATE,
+      cpu: '512',
+      memoryMiB: '1024',
+    });
+
+    wwwTaskDefintion.addContainer('Container2ad', {
+      image: ecs.ContainerImage.fromRegistry('ghcr.io/jac18281828/2ad.com:latest'),
+    });
+
+    new ecs.FargateService(this, 'Service2ad', {
+      cluster: cluster,
+      taskDefinition: wwwTaskDefintion,
+      assignPublicIp: true,
+      desiredCount: 1,
     });
   }
 }
