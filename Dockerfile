@@ -1,5 +1,4 @@
-ARG VERSION=stable-slim
-FROM debian:${VERSION} as builder
+FROM debian:stable-slim as builder
 
 RUN export DEBIAN_FRONTEND=noninteractive && \
         apt update && \
@@ -34,6 +33,7 @@ RUN make -C 2ad html &&\
         make -C kellycairns html
 
 FROM nginx
+ARG VERSION
 
 COPY --from=builder /htmltmp/2ad/output /usr/share/nginx/html
 COPY --from=builder /htmltmp/emmycairns/output /usr/share/nginx/emmycairns
@@ -47,3 +47,12 @@ COPY sites/minacairns.com /etc/nginx/sites-available/
 COPY sites/archiecairns.com /etc/nginx/sites-available/
 COPY sites/kellycairns.com /etc/nginx/sites-available/
 
+LABEL org.label-schema.build-date=$BUILD_DATE \
+    org.label-schema.name="bedrock" \
+    org.label-schema.description="2ad.com website" \
+    org.label-schema.url="https://github.com/jac18281828/bedrock" \
+    org.label-schema.vcs-ref=$VCS_REF \
+    org.label-schema.vcs-url="git@github.com:jac18281828/bedrock.git" \
+    org.label-schema.vendor="John Cairns" \
+    org.label-schema.version=$VERSION \
+    org.label-schema.schema-version="1.0"
