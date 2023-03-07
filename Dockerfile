@@ -48,11 +48,11 @@ COPY sites/archiecairns.com /etc/nginx/sites-available/
 COPY sites/kellycairns.com /etc/nginx/sites-available/
 
 LABEL org.label-schema.build-date=$BUILD_DATE \
-    org.label-schema.name="bedrock" \
+    org.label-schema.name="2ad.com" \
     org.label-schema.description="2ad.com website" \
-    org.label-schema.url="https://github.com/jac18281828/bedrock" \
+    org.label-schema.url="https://github.com/jac18281828/2ad.com" \
     org.label-schema.vcs-ref=$VCS_REF \
-    org.label-schema.vcs-url="git@github.com:jac18281828/bedrock.git" \
+    org.label-schema.vcs-url="git@github.com:jac18281828/2ad.com.git" \
     org.label-schema.vendor="John Cairns" \
     org.label-schema.version=$VERSION \
     org.label-schema.schema-version="1.0"
