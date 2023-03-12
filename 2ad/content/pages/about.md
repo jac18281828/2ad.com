@@ -6,9 +6,11 @@ John Cairns is a father, software engineer, vegetarian fitness warrior, home bak
 
 Current projects:
 
+* [Collective Governance](https://github.com/collectivexyz/collective-governance-v1)
+* [Foundry-rs Docker](https://github.com/collectivexyz/foundry)
+* [ETOPO 22 Bedrock and Ice Surface Docker](https://github.com/jac18281828/bedrock)
+* [Fast Fibonacci Primes](https://github.com/jac18281828/gofib)
 * [Diceware](https://github.com/jac18281828/diceware)
 * [A Java Blocking Queue](https://github.com/conversant/disruptor)
-* [ND Java RTree](https://github.com/conversant/rtree)
-* [RPN](https://github.com/jac18281828/rpn)
-* [gzkfast](https://github.com/jac18281828/gzkfast)
+* [Warfare in the Age of Crusades](https://www.penandswordbooks.com/author/john-cairns/)
 
