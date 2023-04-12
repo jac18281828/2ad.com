@@ -33,7 +33,7 @@ export class WwwStack extends cdk.Stack {
     const service = new ecs.FargateService(this, 'Service2ad', {
       cluster: cluster,
       taskDefinition: wwwTaskDefintion,
-      assignPublicIp: false,
+      assignPublicIp: true,
       desiredCount: 2,
     });
 
