@@ -17,8 +17,8 @@ export class WwwStack extends cdk.Stack {
 
     const wwwTaskDefintion = new ecs.TaskDefinition(this, 'Task2ad', {
       compatibility: ecs.Compatibility.FARGATE,
-      cpu: '512',
-      memoryMiB: '1024',
+      cpu: '256',
+      memoryMiB: '512',
     });
 
     const container = wwwTaskDefintion.addContainer('Container2ad', {
@@ -34,7 +34,7 @@ export class WwwStack extends cdk.Stack {
       cluster: cluster,
       taskDefinition: wwwTaskDefintion,
       assignPublicIp: false,
-      desiredCount: 1,
+      desiredCount: 2,
     });
 
     const lb = new elbv2.ApplicationLoadBalancer(this, 'Alb2ad', {
