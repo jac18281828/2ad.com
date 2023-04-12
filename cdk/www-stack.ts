@@ -11,11 +11,14 @@ export class WwwStack extends cdk.Stack {
       taskImageOptions: {
         image: ecs.ContainerImage.fromRegistry('ghcr.io/jac18281828/2ad.com:latest'),
       },
-      publicLoadBalancer: true
-    })
-    
+      publicLoadBalancer: true,
+      desiredCount: 2,
+      cpu: 256,
+      memoryLimitMiB: 512,
+    });
+
     new CfnOutput(this, 'LoadBalancerDNS', {
-      value: fargate.loadBalancer.loadBalancerDnsName
+      value: fargate.loadBalancer.loadBalancerDnsName,
     });
   }
 }
