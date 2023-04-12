@@ -26,6 +26,7 @@ jobs:
         uses: docker/build-push-action@v3
         with:
           context: .
+          file: Dockerfile.cdk
           platforms: linux/amd64
           push: false
           build-args: |

@@ -18,8 +18,7 @@ COPY . .
 RUN chown -R jac.jac .
 USER jac
 
-#RUN yarn prettier:check
-#RUN yarn lint
-#RUN yarn build
-#RUN yarn test
-
+RUN yarn prettier:check
+RUN yarn lint
+RUN yarn build
+RUN yarn test
