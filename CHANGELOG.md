@@ -1,3 +1,8 @@
+# 1.0.5 (2023-04-12)
+
+* nginx config
+* container config including ssl
+
 # 1.0.4 (2023-04-12)
 
 * revert headshot

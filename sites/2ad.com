@@ -1,8 +1,0 @@
-server {
-    listen 80;
-    server_name 2ad.com www.2ad.com;
-    root /usr/share/nginx/html
-
-#    access_log /var/log/nginx/2ad-access.log;
-#    error_log /var/log/nginx/2ad-error.log
-}

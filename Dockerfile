@@ -40,11 +40,7 @@ COPY --from=builder /htmltmp/archiecairns/output /usr/share/nginx/archiecairns
 COPY --from=builder /htmltmp/minacairns/output /usr/share/nginx/minacairns
 COPY --from=builder /htmltmp/kellycairns/output /usr/share/nginx/kellycairns
 
-COPY sites/2ad.com /etc/nginx/sites-available/
-COPY sites/emmycairns.com /etc/nginx/sites-available/
-COPY sites/minacairns.com /etc/nginx/sites-available/
-COPY sites/archiecairns.com /etc/nginx/sites-available/
-COPY sites/kellycairns.com /etc/nginx/sites-available/
+COPY sites/ /etc/nginx/conf.d/
 
 LABEL org.label-schema.build-date=$BUILD_DATE \
     org.label-schema.name="2ad.com" \
