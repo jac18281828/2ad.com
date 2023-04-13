@@ -5,7 +5,6 @@ import * as cert from '@aws-cdk/aws-certificatemanager';
 import * as ga from '@aws-cdk/aws-globalaccelerator';
 import * as ga_endpoints from '@aws-cdk/aws-globalaccelerator-endpoints';
 import { CfnOutput } from '@aws-cdk/core';
-import { IpAddressType } from '@aws-cdk/aws-elasticloadbalancingv2';
 
 export class WwwStack extends cdk.Stack {
   constructor(scope: cdk.Construct, id: string, props?: cdk.StackProps) {
