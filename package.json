@@ -35,8 +35,7 @@
     "@aws-cdk/aws-ecs": "1.198.1",
     "@aws-cdk/core": "1.198.1",
     "@aws-cdk/aws-ecs-patterns": "1.198.1",
-    "cdk": "2.33.0",
-    "cdk-cli": "1.1.0",
+    "aws-cdk": "2.73.0",
     "typescript": "5.0.4"
   }
 }

@@ -1,3 +1,7 @@
+# 1.0.9 (2023-04-13)
+
+- update cdk version to aws-cdk
+
 # 1.0.8 (2023-04-13)
 
 - update package version - latest cdk
