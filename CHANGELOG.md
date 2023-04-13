@@ -1,3 +1,7 @@
+# 1.0.6 (2023-04-13)
+
+* add aws global accelerator
+
 # 1.0.5 (2023-04-12)
 
 * nginx config
