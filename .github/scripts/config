@@ -1,6 +1,0 @@
-Host *
-  IdentitiesOnly=yes
-Host 2ad.com
-  IdentityFile ~/.ssh/twoadcom_ed25519
-Host github.com
-  IdentityFile ~/.ssh/twoadcom_ed25519
