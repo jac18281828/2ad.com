@@ -5,15 +5,11 @@ import * as cert from '@aws-cdk/aws-certificatemanager';
 import * as ga from '@aws-cdk/aws-globalaccelerator';
 import * as ga_endpoints from '@aws-cdk/aws-globalaccelerator-endpoints';
 import { CfnOutput } from '@aws-cdk/core';
+import { IpAddressType } from '@aws-cdk/aws-elasticloadbalancingv2';
 
 export class WwwStack extends cdk.Stack {
   constructor(scope: cdk.Construct, id: string, props?: cdk.StackProps) {
     super(scope, id, props);
-
-    new ga.CfnAccelerator(this, 'CfnAccelerator', {
-      name: 'Www2adAccelerator',
-      ipAddressType: 'DUAL_STACK',
-    });
 
     const accl = new ga.Accelerator(this, 'Www2adAccelerator', { acceleratorName: 'Www2adAccelerator' });
 
@@ -37,9 +33,10 @@ export class WwwStack extends cdk.Stack {
     });
 
     const lb = fargate.loadBalancer;
+    const endpoint = new ga_endpoints.ApplicationLoadBalancerEndpoint(lb, { weight: 128, preserveClientIp: true });
 
     listener.addEndpointGroup('Group1', {
-      endpoints: [new ga_endpoints.ApplicationLoadBalancerEndpoint(lb, { weight: 128, preserveClientIp: true })],
+      endpoints: [endpoint],
     });
 
     new CfnOutput(this, 'LoadBalancerDNS', {
