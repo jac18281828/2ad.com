@@ -11,7 +11,7 @@ export class WwwStack extends cdk.Stack {
     const certArn = 'arn:aws:acm:us-east-2:504242000181:certificate/ebd3baac-67d8-4f32-a07d-20985efce38c';
     const certificate = cert.Certificate.fromCertificateArn(this, 'SiteCertificate', certArn);
 
-    const fargate = new ecsp.ApplicationLoadBalancedFargateService(this, 'WWW2adFargateService', {
+    const fargate = new ecsp.ApplicationLoadBalancedFargateService(this, 'Www2adFargateService', {
       taskImageOptions: {
         image: ecs.ContainerImage.fromRegistry('ghcr.io/jac18281828/2ad.com:latest'),
       },
