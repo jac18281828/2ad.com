@@ -26,12 +26,7 @@ export class WwwStack extends cdk.Stack {
       maxAzs: 2,
       subnetConfiguration: [
         {
-          name: 'public-subnet-1',
-          subnetType: SubnetType.PUBLIC,
-          cidrMask: 28,
-        },
-        {
-          name: 'public-subnet-2',
+          name: 'public-subnet',
           subnetType: SubnetType.PUBLIC,
           cidrMask: 28,
         },
