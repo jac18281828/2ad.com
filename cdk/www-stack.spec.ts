@@ -9,5 +9,6 @@ describe('WwwStack', () => {
     const template = Template.fromStack(stack);
     template.resourceCountIs('AWS::EC2::VPC', 1);
     template.resourceCountIs('AWS::ECS::Service', 1);
+    template.resourceCountIs('AWS::ECS::TaskDefinition', 1);
   });
 });
