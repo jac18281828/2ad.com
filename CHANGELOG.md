@@ -1,3 +1,8 @@
+# 1.0.10 (2023-04-13)
+
+- add log retention
+- remove nat gateway
+
 # 1.0.9 (2023-04-13)
 
 - update cdk version to aws-cdk
