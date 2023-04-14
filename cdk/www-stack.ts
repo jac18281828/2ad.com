@@ -19,16 +19,16 @@ export class WwwStack extends cdk.Stack {
       portRanges: [{ fromPort: 80 }, { fromPort: 443 }],
     });
 
-    const VPC_CIDR = '10.3.10.0/26';
     const vpc = new ec2.Vpc(this, 'www-vpc', {
-      cidr: VPC_CIDR,
       natGateways: 0,
       maxAzs: 2,
+      enableDnsHostnames: true,
+      enableDnsSupport: true,
       subnetConfiguration: [
         {
           name: 'public-subnet',
           subnetType: SubnetType.PUBLIC,
-          cidrMask: 28,
+          cidrMask: 24,
         },
       ],
     });
@@ -57,6 +57,7 @@ export class WwwStack extends cdk.Stack {
           logRetention: LOG_RETENTION,
         }),
       },
+      assignPublicIp: true,
       publicLoadBalancer: true,
       desiredCount: 2,
       cpu: 256,
