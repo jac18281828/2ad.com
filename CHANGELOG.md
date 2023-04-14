@@ -1,4 +1,9 @@
-# 1.0.10 (2023-04-13)
+# 1.0.11 (2023-04-14)
+
+- add log retention
+- remove nat gateway
+
+# 1.0.10 (2023-04-14)
 
 - add log retention
 - remove nat gateway
