@@ -1,3 +1,10 @@
+# 1.0.12 (2023-04-14)
+
+This version is a complete working instance with server task on Fargate
+running with ApplicationGateway and Global Accellerator
+
+- reduce to 1 instance to cut cpu costs
+
 # 1.0.11 (2023-04-14)
 
 - add log retention

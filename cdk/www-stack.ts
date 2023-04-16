@@ -59,7 +59,7 @@ export class WwwStack extends cdk.Stack {
       },
       assignPublicIp: true,
       publicLoadBalancer: true,
-      desiredCount: 2,
+      desiredCount: 1,
       cpu: 256,
       memoryLimitMiB: 512,
       redirectHTTP: true,
