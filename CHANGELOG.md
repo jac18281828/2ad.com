@@ -1,3 +1,8 @@
+# 1.0.15 (2023-04-17)
+
+- prettier fixes
+- add cname, text and mx records
+
 # 1.0.14 (2023-04-17)
 
 - add record to route 53

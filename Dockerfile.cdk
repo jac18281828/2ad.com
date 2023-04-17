@@ -22,4 +22,5 @@ RUN yarn prettier:check
 RUN yarn lint
 RUN yarn build
 RUN yarn test
-RUN yarn cdk synth
+
+CMD yarn cdk synth
