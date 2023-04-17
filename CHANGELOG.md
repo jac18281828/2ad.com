@@ -1,3 +1,7 @@
+# 1.0.14 (2023-04-17)
+
+- add record to route 53
+
 # 1.0.13 (2023-04-17)
 
 Remove the global accellerator to save costs
