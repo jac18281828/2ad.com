@@ -1,3 +1,10 @@
+# 1.0.13 (2023-04-17)
+
+Remove the global accellerator to save costs
+
+- desired count back to 2 ask this has no impact on instance size
+- global accellerator is removed
+
 # 1.0.12 (2023-04-14)
 
 This version is a complete working instance with server task on Fargate
