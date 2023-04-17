@@ -28,7 +28,7 @@ const loadBalancerTarget = new r53t.LoadBalancerTarget(lb);
 
 new r53.ARecord(lbStack, 'WwwDefaultRecord', {
   zone: zone,
-  recordName: '@',
+  recordName: '2ad.com',
   target: r53.RecordTarget.fromAlias(loadBalancerTarget),
 });
 

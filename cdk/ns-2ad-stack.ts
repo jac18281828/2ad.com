@@ -39,18 +39,17 @@ export class Ns2adStack extends cdk.Stack {
       domainName: 'verify.bing.com',
     });
 
-    new r53.TxtRecord(this, 'googleVerfText', {
+    new r53.TxtRecord(this, 'Domain2adText', {
       zone: zone,
-      recordName: '@',
-      values: ['google-site-verification=ZPTI24LMLAsPrKOwLCv2ElL2O_lVyCZsmp2Z5MRc6vw v=spf1 +a +mx +ip4:69.89.31.242 ?all'],
+      recordName: '2ad.com',
+      values: [
+        'google-site-verification=ZPTI24LMLAsPrKOwLCv2ElL2O_lVyCZsmp2Z5MRc6vw v=spf1 +a +mx +ip4:69.89.31.242 ?all',
+        'v=spf1 ip4:162.241.226.16 +a +mx include:bluehost.com redirect=icloud.com -all',
+      ],
     });
 
     // mail setup
-    new r53.TxtRecord(this, 'spfText', {
-      zone: zone,
-      recordName: '@',
-      values: ['v=spf1 ip4:162.241.226.16 +a +mx include:bluehost.com redirect=icloud.com -all'],
-    });
+    // spf set above
 
     new r53.TxtRecord(this, 'dmarcText', {
       zone: zone,
