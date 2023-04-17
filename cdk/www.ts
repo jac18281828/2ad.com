@@ -26,7 +26,7 @@ const zone2ad = r53.HostedZone.fromLookup(lbStack, 'Zone2ad', {
   domainName: '2ad.com',
 });
 
-new r53.ARecord(lbStack, 'WwwDefaultRecord', {
+new r53.ARecord(lbStack, 'Www2adDefaultRecord', {
   zone: zone2ad,
   recordName: '2ad.com',
   target: r53.RecordTarget.fromAlias(loadBalancerTarget),
@@ -36,7 +36,7 @@ const zoneKc = r53.HostedZone.fromLookup(lbStack, 'ZoneKc', {
   domainName: 'kellycairns.com',
 });
 
-new r53.ARecord(lbStack, 'WwwDefaultRecord', {
+new r53.ARecord(lbStack, 'WwwKcDefaultRecord', {
   zone: zoneKc,
   recordName: 'kellycairns.com',
   target: r53.RecordTarget.fromAlias(loadBalancerTarget),
