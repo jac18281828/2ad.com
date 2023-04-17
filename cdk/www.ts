@@ -18,17 +18,27 @@ new Ns2adStack(app, 'StackNs2ad', {
   env: { account: ACCOUNT, region: REGION },
 });
 
-// update dns for load balancer
-const zone = r53.HostedZone.fromLookup(lbStack, 'Zone2ad', {
-  domainName: '2ad.com',
-});
-
+// fix dns for all hosted zones address record
 const lb = lbStack.loadBalancer;
 const loadBalancerTarget = new r53t.LoadBalancerTarget(lb);
 
+const zone2ad = r53.HostedZone.fromLookup(lbStack, 'Zone2ad', {
+  domainName: '2ad.com',
+});
+
 new r53.ARecord(lbStack, 'WwwDefaultRecord', {
-  zone: zone,
+  zone: zone2ad,
   recordName: '2ad.com',
+  target: r53.RecordTarget.fromAlias(loadBalancerTarget),
+});
+
+const zoneKc = r53.HostedZone.fromLookup(lbStack, 'ZoneKc', {
+  domainName: 'kellycairns.com',
+});
+
+new r53.ARecord(lbStack, 'WwwDefaultRecord', {
+  zone: zoneKc,
+  recordName: 'kellycairns.com',
   target: r53.RecordTarget.fromAlias(loadBalancerTarget),
 });
 
