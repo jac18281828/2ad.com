@@ -16,11 +16,11 @@ export class NsKellyCairnsStack extends cdk.Stack {
     });
 
     new r53.CnameRecord(this, 'awsVerfCname', {
-        zone: zone,
-        recordName: '_7dc4ec0aef35cc1aef85031ce076a9e1',
-        domainName: '_3ca3e8d155328d0a8c56400857c2bacf.yygwskclfy.acm-validations.aws',
-      });
-  
+      zone: zone,
+      recordName: '_7dc4ec0aef35cc1aef85031ce076a9e1',
+      domainName: '_3ca3e8d155328d0a8c56400857c2bacf.yygwskclfy.acm-validations.aws',
+    });
+
     new r53.TxtRecord(this, 'DomainKellyCairnsText', {
       zone: zone,
       recordName: 'kellycairns.com',
@@ -34,11 +34,10 @@ export class NsKellyCairnsStack extends cdk.Stack {
     // mail setup
 
     new r53.CnameRecord(this, 'AppleDomainKeyCname', {
-        zone: zone,
-        recordName: 'sig1._domainkey',
-        domainName: 'sig1.dkim.kellycairns.com.at.icloudmailadmin.com.',
-      });
-  
+      zone: zone,
+      recordName: 'sig1._domainkey',
+      domainName: 'sig1.dkim.kellycairns.com.at.icloudmailadmin.com.',
+    });
 
     new r53.TxtRecord(this, 'dmarcText', {
       zone: zone,
@@ -47,20 +46,18 @@ export class NsKellyCairnsStack extends cdk.Stack {
     });
 
     new r53.MxRecord(this, 'MxKellyCairns', {
-        zone: zone,
-        recordName: 'kellycairns.com',
-        values: [
-          {
-            priority: 10,
-            hostName: 'mx01.mail.icloud.com',
-          },
-          {
-            priority: 10,
-            hostName: 'mx02.mail.icloud.com',
-          },
-        ],
-      });
-    }
-  
+      zone: zone,
+      recordName: 'kellycairns.com',
+      values: [
+        {
+          priority: 10,
+          hostName: 'mx01.mail.icloud.com',
+        },
+        {
+          priority: 10,
+          hostName: 'mx02.mail.icloud.com',
+        },
+      ],
+    });
   }
 }

@@ -2,6 +2,8 @@
 import * as cdk from '@aws-cdk/core';
 import { WwwStack } from './www-stack';
 import { Ns2adStack } from './ns-2ad-stack';
+import { NsKellyCairnsStack } from './ns-kellycairns-stack';
+import { DnsStack } from './dns-stack';
 
 import * as r53 from '@aws-cdk/aws-route53';
 import * as r53t from '@aws-cdk/aws-route53-targets';
@@ -15,6 +17,22 @@ const lbStack = new WwwStack(app, 'Stack2ad', {
 });
 
 new Ns2adStack(app, 'StackNs2ad', {
+  env: { account: ACCOUNT, region: REGION },
+});
+
+new NsKellyCairnsStack(app, 'StackNsKc', {
+  env: { account: ACCOUNT, region: REGION },
+});
+
+new DnsStack(app, 'StackNsAc', 'emmycairns.com', {
+  env: { account: ACCOUNT, region: REGION },
+});
+
+new DnsStack(app, 'StackNsMc', 'minacairns.com', {
+  env: { account: ACCOUNT, region: REGION },
+});
+
+new DnsStack(app, 'StackNsCc', 'archiecairns.com', {
   env: { account: ACCOUNT, region: REGION },
 });
 
@@ -39,6 +57,36 @@ const zoneKc = r53.HostedZone.fromLookup(lbStack, 'ZoneKc', {
 new r53.ARecord(lbStack, 'WwwKcDefaultRecord', {
   zone: zoneKc,
   recordName: 'kellycairns.com',
+  target: r53.RecordTarget.fromAlias(loadBalancerTarget),
+});
+
+const zoneAc = r53.HostedZone.fromLookup(lbStack, 'ZoneAc', {
+  domainName: 'archiecairns.com',
+});
+
+new r53.ARecord(lbStack, 'WwwAcDefaultRecord', {
+  zone: zoneAc,
+  recordName: 'archiecairns.com',
+  target: r53.RecordTarget.fromAlias(loadBalancerTarget),
+});
+
+const zoneMc = r53.HostedZone.fromLookup(lbStack, 'ZoneMc', {
+  domainName: 'minacairns.com',
+});
+
+new r53.ARecord(lbStack, 'WwwMcDefaultRecord', {
+  zone: zoneMc,
+  recordName: 'minacairns.com',
+  target: r53.RecordTarget.fromAlias(loadBalancerTarget),
+});
+
+const zoneEc = r53.HostedZone.fromLookup(lbStack, 'ZoneEc', {
+  domainName: 'emmycairns.com',
+});
+
+new r53.ARecord(lbStack, 'WwwEcDefaultRecord', {
+  zone: zoneEc,
+  recordName: 'emmycairns.com',
   target: r53.RecordTarget.fromAlias(loadBalancerTarget),
 });
 

@@ -1,3 +1,8 @@
+# 1.0.20 (2023-04-17)
+
+- all records hosted route53
+
+# 1.0.19 (2023-04-17)
 # 1.0.18 (2023-04-17)
 
 - add kellycairns.com dns records

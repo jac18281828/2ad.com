@@ -22,17 +22,17 @@ export class Ns2adStack extends cdk.Stack {
     });
 
     new r53.CnameRecord(this, 'wwwCname', {
-        zone: zone,
-        recordName: 'www',
-        domainName: '2ad.com',
-      });
-  
-      new r53.CnameRecord(this, 'awsVerfCname', {
-        zone: zone,
-        recordName: '_1625a3cb561f546dbaa1424e88225aad',
-        domainName: '_6f153893b703d8b5ee2a15a60b781bb9.yygwskclfy.acm-validations.aws',
-      });
-  
+      zone: zone,
+      recordName: 'www',
+      domainName: '2ad.com',
+    });
+
+    new r53.CnameRecord(this, 'awsVerfCname', {
+      zone: zone,
+      recordName: '_1625a3cb561f546dbaa1424e88225aad',
+      domainName: '_6f153893b703d8b5ee2a15a60b781bb9.yygwskclfy.acm-validations.aws',
+    });
+
     new r53.CnameRecord(this, 'bingVerfCname', {
       zone: zone,
       recordName: '9d9f901ff72b4ed1ee6f00793de4b23c',
@@ -40,23 +40,23 @@ export class Ns2adStack extends cdk.Stack {
     });
 
     new r53.TxtRecord(this, 'Domain2adText', {
-        zone: zone,
-        recordName: '2ad.com',
-        values: [
-          'google-site-verification=ZPTI24LMLAsPrKOwLCv2ElL2O_lVyCZsmp2Z5MRc6vw v=spf1 +a +mx +ip4:69.89.31.242 ?all',
-          'v=spf1 ip4:162.241.226.16 +a +mx include:bluehost.com redirect=icloud.com -all',
-        ],
-      });
-  
+      zone: zone,
+      recordName: '2ad.com',
+      values: [
+        'google-site-verification=ZPTI24LMLAsPrKOwLCv2ElL2O_lVyCZsmp2Z5MRc6vw v=spf1 +a +mx +ip4:69.89.31.242 ?all',
+        'v=spf1 ip4:162.241.226.16 +a +mx include:bluehost.com redirect=icloud.com -all',
+      ],
+    });
+
     // mail setup
     // spf set above
 
     new r53.TxtRecord(this, 'dmarcText', {
-        zone: zone,
-        recordName: '_dmarc',
-        values: ['v=DMARC1; p=reject; rua=mailto:info@2ad.com; ruf=mailto:info@2ad.com; fo=1;'],
-      });
-  
+      zone: zone,
+      recordName: '_dmarc',
+      values: ['v=DMARC1; p=reject; rua=mailto:info@2ad.com; ruf=mailto:info@2ad.com; fo=1;'],
+    });
+
     new r53.TxtRecord(this, 'domainkeyText', {
       zone: zone,
       recordName: '_domainkey',
@@ -74,22 +74,22 @@ export class Ns2adStack extends cdk.Stack {
     });
 
     new r53.MxRecord(this, 'Mx2ad', {
-        zone: zone,
-        recordName: '2ad.com',
-        values: [
-          {
-            priority: 10,
-            hostName: 'mx.spamexperts.com',
-          },
-          {
-            priority: 20,
-            hostName: 'fallbackmx.spamexperts.eu',
-          },
-          {
-            priority: 30,
-            hostName: 'fallbackmx.spamexperts.eu',
-          },
-        ],
-      });
-    }
+      zone: zone,
+      recordName: '2ad.com',
+      values: [
+        {
+          priority: 10,
+          hostName: 'mx.spamexperts.com',
+        },
+        {
+          priority: 20,
+          hostName: 'fallbackmx.spamexperts.eu',
+        },
+        {
+          priority: 30,
+          hostName: 'fallbackmx.spamexperts.eu',
+        },
+      ],
+    });
   }
+}
