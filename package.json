@@ -29,8 +29,6 @@
     "@aws-cdk/assertions": "1.198.1"
   },
   "dependencies": {
-    "@aws-cdk/aws-globalaccelerator": "1.198.1",
-    "@aws-cdk/aws-globalaccelerator-endpoints": "1.198.1",
     "@aws-cdk/aws-certificatemanager": "1.198.1",
     "@aws-cdk/aws-ec2": "1.198.1",
     "@aws-cdk/aws-ecs": "1.198.1",

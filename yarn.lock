@@ -411,17 +411,6 @@
     "@aws-cdk/core" "1.198.1"
     constructs "^3.3.69"
 
-"@aws-cdk/aws-globalaccelerator-endpoints@1.198.1":
-  version "1.198.1"
-  resolved "https://registry.yarnpkg.com/@aws-cdk/aws-globalaccelerator-endpoints/-/aws-globalaccelerator-endpoints-1.198.1.tgz#80a32558ac1e8dc90803c3d8c6f244e926349462"
-  integrity sha512-KekCUjpu/RlFbHAsWN9VV2juDU/WAZfmGezUbb4cAWxJRST+6Pr9Lj+0TxVEsj0Rx0PRSxTcjW3NgcCBWmoaoQ==
-  dependencies:
-    "@aws-cdk/aws-ec2" "1.198.1"
-    "@aws-cdk/aws-elasticloadbalancingv2" "1.198.1"
-    "@aws-cdk/aws-globalaccelerator" "1.198.1"
-    "@aws-cdk/core" "1.198.1"
-    constructs "^3.3.69"
-
 "@aws-cdk/aws-globalaccelerator@1.198.1":
   version "1.198.1"
   resolved "https://registry.yarnpkg.com/@aws-cdk/aws-globalaccelerator/-/aws-globalaccelerator-1.198.1.tgz#1afd72a542b31fc0a8829e68d5564f465cafe6be"
