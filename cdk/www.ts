@@ -24,7 +24,7 @@ new NsKellyCairnsStack(app, 'StackNsKc', {
   env: { account: ACCOUNT, region: REGION },
 });
 
-new DnsStack(app, 'StackNsAc', 'emmycairns.com', {
+new DnsStack(app, 'StackNsEc', 'emmycairns.com', {
   env: { account: ACCOUNT, region: REGION },
 });
 
@@ -32,7 +32,7 @@ new DnsStack(app, 'StackNsMc', 'minacairns.com', {
   env: { account: ACCOUNT, region: REGION },
 });
 
-new DnsStack(app, 'StackNsCc', 'archiecairns.com', {
+new DnsStack(app, 'StackNsAc', 'archiecairns.com', {
   env: { account: ACCOUNT, region: REGION },
 });
 
