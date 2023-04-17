@@ -52,12 +52,6 @@ export class Ns2adStack extends cdk.Stack {
       values: ['v=spf1 ip4:162.241.226.16 +a +mx include:bluehost.com redirect=icloud.com -all'],
     });
 
-    new r53.TxtRecord(this, 'spf2adText', {
-      zone: zone,
-      recordName: '2ad.com',
-      values: ['v=spf1 ip4:162.241.226.16 +a +mx include:bluehost.com redirect=icloud.com -all'],
-    });
-
     new r53.TxtRecord(this, 'dmarcText', {
       zone: zone,
       recordName: '_dmarc',

@@ -3,6 +3,9 @@ import * as ecs from '@aws-cdk/aws-ecs';
 import * as cdk from '@aws-cdk/core';
 import * as ecsp from '@aws-cdk/aws-ecs-patterns';
 import * as cert from '@aws-cdk/aws-certificatemanager';
+import * as r53 from '@aws-cdk/aws-route53';
+import * as elbt from '@aws-cdk/aws-elasticloadbalancingv2-targets';
+import * as r53t from '@aws-cdk/aws-route53-targets';
 
 import { SubnetType } from '@aws-cdk/aws-ec2';
 import { CfnOutput } from '@aws-cdk/core';
@@ -56,6 +59,21 @@ export class WwwStack extends cdk.Stack {
       memoryLimitMiB: 512,
       redirectHTTP: true,
       certificate: certificate,
+    });
+
+    // update dns
+    const zone = r53.HostedZone.fromLookup(this, 'Zone2ad', {
+      domainName: '2ad.com',
+    });
+
+    const lb = fargate.loadBalancer;
+
+    const loadBalancerTarget = new r53t.LoadBalancerTarget(lb);
+
+    new r53.ARecord(this, 'WwwDefaultRecord', {
+      zone: zone,
+      recordName: '@',
+      target: r53.RecordTarget.fromAlias(loadBalancerTarget),
     });
 
     new CfnOutput(this, 'LoadBalancerDNS', {
