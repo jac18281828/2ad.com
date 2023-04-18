@@ -1,3 +1,7 @@
+# 1.0.22 (2023-04-17)
+
+- collective governance 0.9.8
+
 # 1.0.21 (2023-04-17)
 
 - loadbalancer stack
