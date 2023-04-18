@@ -1,3 +1,7 @@
+# 1.0.29 (2023-04-18)
+
+* second attempt deployment, previous build failed due to timeout, now is a lesser peak time
+
 # 1.0.28 (2023-04-18)
 
 * upgrade certificate for all sites
