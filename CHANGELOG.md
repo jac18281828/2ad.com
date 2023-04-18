@@ -1,3 +1,7 @@
+# 1.0.26 (2023-04-18)
+
+- add DNS validation for certificate
+
 # 1.0.25 (2023-04-18)
 
 # 1.0.24 (2023-04-18)
@@ -70,7 +74,7 @@ running with ApplicationGateway and Global Accellerator
 
 # 1.0.8 (2023-04-13)
 
-- update package version - latest cdk
+- update package version with latest cdk
 
 # 1.0.7 (2023-04-13)
 
