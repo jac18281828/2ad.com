@@ -6,5 +6,25 @@
   ],
   "acknowledged-issue-numbers": [
     19836
-  ]
+  ],
+  "hosted-zone:account=504242000181:domainName=2ad.com:region=us-east-2": {
+    "Id": "/hostedzone/Z09862671HYH6ZFKNPGNL",
+    "Name": "2ad.com."
+  },
+  "hosted-zone:account=504242000181:domainName=kellycairns.com:region=us-east-2": {
+    "Id": "/hostedzone/Z10085952J607YL0C085Z",
+    "Name": "kellycairns.com."
+  },
+  "hosted-zone:account=504242000181:domainName=archiecairns.com:region=us-east-2": {
+    "Id": "/hostedzone/Z10102221CSLHU1KC90BY",
+    "Name": "archiecairns.com."
+  },
+  "hosted-zone:account=504242000181:domainName=minacairns.com:region=us-east-2": {
+    "Id": "/hostedzone/Z10102161OH0V46UUANCP",
+    "Name": "minacairns.com."
+  },
+  "hosted-zone:account=504242000181:domainName=emmycairns.com:region=us-east-2": {
+    "Id": "/hostedzone/Z0892853S30T7EU6Q7TP",
+    "Name": "emmycairns.com."
+  }
 }
