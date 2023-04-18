@@ -21,9 +21,15 @@ jobs:
           aws-access-key-id: ${{ secrets.AWS_ACCESS_KEY_ID }}
           aws-secret-access-key: ${{ secrets.AWS_SECRET_KEY_ID }}
           aws-region: 'us-east-2'
+      - name: Generate repository name
+        run: |
+          echo "REPOSITORY_PATH=$( echo ${GITHUB_REPOSITORY} | tr '[:upper:]' '[:lower:]' )" >> ${GITHUB_ENV}
+          echo "REPOSITORY_SHA=$( echo ${GITHUB_SHA} | cut -c 1-8 )" >> ${GITHUB_ENV}
       - name: Install dependencies
         run: yarn install
       - name: Synth stack
         run: yarn cdk synth
       - name: Deploy stack
-        run: yarn cdk deploy --all --require-approval never
+        run: |
+        echo "Deploying from ghcr.io/${{ env.REPOSITORY_PATH }}:${{ env.REPOSITORY_SHA }}"
+        yarn cdk deploy --all --require-approval never --parameters repository=ghcr.io/${{ env.REPOSITORY_PATH }} --parameters version=${{ env.REPOSITORY_SHA }}

@@ -14,6 +14,16 @@ export class WwwStack extends cdk.Stack {
   constructor(scope: cdk.Construct, id: string, props?: cdk.StackProps) {
     super(scope, id, props);
 
+    const imageRepository = new cdk.CfnParameter(this, 'repository', {
+      type: 'String',
+      description: 'The location of the repository path for the image',
+    });
+
+    const imageVersion = new cdk.CfnParameter(this, 'version', {
+      type: 'String',
+      description: 'The version for the repository to deploy',
+    });
+
     const vpc = new ec2.Vpc(this, 'www-vpc', {
       natGateways: 0,
       maxAzs: 2,
@@ -36,7 +46,8 @@ export class WwwStack extends cdk.Stack {
 
     const certArn = 'arn:aws:acm:us-east-2:504242000181:certificate/ebd3baac-67d8-4f32-a07d-20985efce38c';
     const certificate = cert.Certificate.fromCertificateArn(this, 'SiteCertificate', certArn);
-    const image = ecs.ContainerImage.fromRegistry('ghcr.io/jac18281828/2ad.com:latest');
+    const registryPath = imageRepository.valueAsString + ':' + imageVersion.valueAsString;
+    const image = ecs.ContainerImage.fromRegistry(registryPath);
     const LOG_RETENTION = 7;
 
     const fargate = new ecsp.ApplicationLoadBalancedFargateService(this, 'Www2adFargateService', {

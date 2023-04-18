@@ -1,3 +1,8 @@
+# 1.0.23 (2023-04-18)
+
+- deploy a specific version of the image not just latest, this will
+  enable ECR to know which version it should be running
+
 # 1.0.22 (2023-04-17)
 
 - collective governance 0.9.8
@@ -11,11 +16,13 @@
 - all records hosted route53
 
 # 1.0.19 (2023-04-17)
+
 # 1.0.18 (2023-04-17)
 
 - add kellycairns.com dns records
 
 # 1.0.17 (2023-04-17)
+
 # 1.0.16 (2023-04-17)
 
 - bug fixes records duplicated
