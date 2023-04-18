@@ -31,5 +31,5 @@ jobs:
         run: yarn cdk synth
       - name: Deploy stack
         run: |
-        echo "Deploying from ghcr.io/${{ env.REPOSITORY_PATH }}:${{ env.REPOSITORY_SHA }}"
-        yarn cdk deploy --all --require-approval never --parameters repository=ghcr.io/${{ env.REPOSITORY_PATH }} --parameters version=${{ env.REPOSITORY_SHA }}
+          echo "Deploying from ghcr.io/${{ env.REPOSITORY_PATH }}:${{ env.REPOSITORY_SHA }}"
+          yarn cdk deploy --all --require-approval never --parameters repository=ghcr.io/${{ env.REPOSITORY_PATH }} --parameters version=${{ env.REPOSITORY_SHA }}
