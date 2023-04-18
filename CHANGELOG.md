@@ -1,3 +1,7 @@
+# 1.0.25 (2023-04-18)
+
+# 1.0.24 (2023-04-18)
+
 # 1.0.23 (2023-04-18)
 
 - deploy a specific version of the image not just latest, this will

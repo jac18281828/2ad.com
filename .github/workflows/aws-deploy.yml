@@ -32,4 +32,4 @@ jobs:
       - name: Deploy stack
         run: |
           echo "Deploying from ghcr.io/${{ env.REPOSITORY_PATH }}:${{ env.REPOSITORY_SHA }}"
-          yarn cdk deploy --all --require-approval never --parameters repository=ghcr.io/${{ env.REPOSITORY_PATH }} --parameters version=${{ env.REPOSITORY_SHA }}
+          yarn cdk deploy --all --require-approval never --parameters Stack2ad:repository=ghcr.io/${{ env.REPOSITORY_PATH }} --parameters Stack2ad:version=${{ env.REPOSITORY_SHA }}
