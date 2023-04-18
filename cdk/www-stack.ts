@@ -44,7 +44,7 @@ export class WwwStack extends cdk.Stack {
       vpc: vpc,
     });
 
-    const certArn = 'arn:aws:acm:us-east-2:504242000181:certificate/ebd3baac-67d8-4f32-a07d-20985efce38c';
+    const certArn = 'arn:aws:acm:us-east-2:504242000181:certificate/fd9145a8-38a6-431a-ab21-b0b77a3e2c17';
     const certificate = cert.Certificate.fromCertificateArn(this, 'SiteCertificate', certArn);
     const registryPath = imageRepository.valueAsString + ':' + imageVersion.valueAsString;
     const image = ecs.ContainerImage.fromRegistry(registryPath);
