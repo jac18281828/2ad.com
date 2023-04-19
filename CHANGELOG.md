@@ -1,3 +1,7 @@
+# 1.0.30 (2023-04-18)
+
+* update kelly bio
+
 # 1.0.29 (2023-04-18)
 
 * second attempt deployment, previous build failed due to timeout, now is a lesser peak time
