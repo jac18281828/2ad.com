@@ -1,4 +1,7 @@
-Title: about
+title: About John
+category: bio
+date: 2020-12-22
+modified: 2023-04-19
 
 John Cairns is a father, software engineer, vegetarian fitness warrior, home baker, photographer and published illustrator.  John appreciates the inherent balance of art, science and a considered approach in all things.
 
