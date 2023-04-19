@@ -1,3 +1,7 @@
+# 1.0.32 (2023-04-18)
+
+* reduce size of certain images
+
 # 1.0.31 (2023-04-18)
 
 * update about and bio
