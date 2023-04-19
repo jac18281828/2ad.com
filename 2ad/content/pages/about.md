@@ -5,7 +5,7 @@ modified: 2023-04-19
 
 John Cairns is a father, software engineer, vegetarian fitness warrior, home baker, photographer and published illustrator.  John appreciates the inherent balance of art, science and a considered approach in all things.
 
-![John Cairns]({static}/images/universe/Feb22Portrait.jpg){: width=25% style="float:right; padding:16px"}
+![John Cairns]({static}/images/2022/sep2222_sm.jpg){: width=25% style="float:right; padding:16px"}
 
 Current projects:
 
