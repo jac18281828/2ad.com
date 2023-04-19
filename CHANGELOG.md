@@ -1,3 +1,7 @@
+# 1.0.31 (2023-04-18)
+
+* update about and bio
+
 # 1.0.30 (2023-04-18)
 
 * update kelly bio
