@@ -106,7 +106,6 @@ LINKS = (
     ('books', '/category/books.html'),
     ('history', '/category/history.html'),
     ('food', '/category/food.html'),
-    ('web3', '/category/web3.html'),
     ('', ''),
     ('My Author Page', 'https://www.amazon.com/author/johncairns'),
     ('GitHub', 'https://github.com/jac18281828'),
@@ -114,8 +113,7 @@ LINKS = (
     ('LibriVox', 'https://librivox.org/reader/12659'),
     ('', ''),
     ('Mike Riley', 'http://mikeriley.com'),
-    ('John Winan\'s Basement', 'https://www.youtube.com/channel/UCik0xMsb7kSpPUvT2JoJQ1w'),
-    ('Samer Kanjo', 'https://samer.kanjo.net')
+    ('John Winan\'s Basement', 'https://www.youtube.com/channel/UCik0xMsb7kSpPUvT2JoJQ1w')
 )
 
 # Social widget
