@@ -52,9 +52,6 @@ export class WwwStack extends cdk.Stack {
 
     const fargate = new ecsp.ApplicationLoadBalancedFargateService(this, 'Www2adFargateService', {
       cluster: cluster,
-      circuitBreaker: {
-        rollback: true,
-      },
       taskImageOptions: {
         containerPort: 80,
         image: image,
