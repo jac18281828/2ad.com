@@ -1,3 +1,8 @@
+# 1.0.40 (2023-04-21)
+
+* deployment failed
+* revert circuit breaker
+
 # 1.0.39 (2023-04-21)
 
 * fix/replace proofs of knowledge video
