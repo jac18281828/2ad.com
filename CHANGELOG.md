@@ -1,3 +1,7 @@
+# 1.0.39 (2023-04-21)
+
+* fix/replace proofs of knowledge video
+
 # 1.0.38 (2023-04-21)
 
 * one at a time deployment concurrency
