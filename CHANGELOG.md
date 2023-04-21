@@ -1,3 +1,7 @@
+# 1.0.36 (2023-04-21)
+
+* cleanup titles
+
 # 1.0.35 (2023-04-21)
 
 * remove circuit breaker due to chronic failures
