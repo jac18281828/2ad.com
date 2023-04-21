@@ -1,3 +1,7 @@
+# 1.0.38 (2023-04-21)
+
+* one at a time deployment concurrency
+
 # 1.0.37 (2023-04-21)
 
 * fix slugs

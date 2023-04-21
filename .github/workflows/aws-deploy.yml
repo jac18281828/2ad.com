@@ -6,6 +6,10 @@ on:
     types:
       - completed
 
+concurrency:
+  group: "aws-deploy"
+  cancel-in-progress: false
+
 jobs:
   aws_cdk:
     runs-on: ubuntu-latest
