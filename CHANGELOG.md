@@ -1,3 +1,7 @@
+# 1.0.45 (2023-04-27)
+
+* log retention 1
+
 # 1.0.44 (2023-04-27)
 
 * fixing grammar
