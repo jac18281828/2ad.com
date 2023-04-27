@@ -48,7 +48,8 @@ export class WwwStack extends cdk.Stack {
     const certificate = cert.Certificate.fromCertificateArn(this, 'SiteCertificate', certArn);
     const registryPath = imageRepository.valueAsString + ':' + imageVersion.valueAsString;
     const image = ecs.ContainerImage.fromRegistry(registryPath);
-    const LOG_RETENTION = 7;
+    
+    const LOG_RETENTION = 1;
 
     const fargate = new ecsp.ApplicationLoadBalancedFargateService(this, 'Www2adFargateService', {
       cluster: cluster,
