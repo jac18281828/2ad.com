@@ -1,3 +1,7 @@
+# 1.0.47 (2023-05-03)
+
+- turn off access log to reduce aws monitor usage
+
 # 1.0.46 (2023-04-27)
 
 - 2ad mx now icloud
