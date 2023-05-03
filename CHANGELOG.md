@@ -1,3 +1,4 @@
+# 1.0.48 (2023-05-03)
 # 1.0.47 (2023-05-03)
 
 - turn off access log to reduce aws monitor usage
