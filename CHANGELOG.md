@@ -1,3 +1,7 @@
+# 1.0.51 (2023-05-0)
+
+* sleep for 2 minutes prior to deploy
+
 # 1.0.50 (2023-05-05)
 
 * nineteen cats and counting

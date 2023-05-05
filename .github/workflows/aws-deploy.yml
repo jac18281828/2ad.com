@@ -33,6 +33,8 @@ jobs:
         run: yarn install
       - name: Synth stack
         run: yarn cdk synth
+      - name: Sleep for 60s
+        run: sleep 60
       - name: Deploy stack
         run: |
           echo "Deploying from ghcr.io/${{ env.REPOSITORY_PATH }}:${{ env.REPOSITORY_SHA }}"
