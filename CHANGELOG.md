@@ -1,4 +1,8 @@
-# 1.0.51 (2023-05-0)
+# 1.0.52 (2023-05-06)
+
+* destroy stack prior to deployment
+
+# 1.0.51 (2023-05-05)
 
 * sleep for 2 minutes prior to deploy
 

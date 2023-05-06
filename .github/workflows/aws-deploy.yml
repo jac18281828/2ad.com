@@ -33,9 +33,9 @@ jobs:
         run: yarn install
       - name: Synth stack
         run: yarn cdk synth
-      - name: Sleep for 60s
-        run: sleep 60
       - name: Deploy stack
         run: |
+          echo "Destroy Stack2ad"
+          yarn cdk destroy --require-approval never Stack2ad
           echo "Deploying from ghcr.io/${{ env.REPOSITORY_PATH }}:${{ env.REPOSITORY_SHA }}"
           yarn cdk deploy --all --require-approval never --parameters Stack2ad:repository=ghcr.io/${{ env.REPOSITORY_PATH }} --parameters Stack2ad:version=${{ env.REPOSITORY_SHA }}
