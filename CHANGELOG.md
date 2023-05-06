@@ -1,3 +1,7 @@
+# 1.0.53 (2023-05-06)
+
+* yes
+
 # 1.0.52 (2023-05-06)
 
 * destroy stack prior to deployment
