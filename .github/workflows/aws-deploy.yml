@@ -34,6 +34,7 @@ jobs:
       - name: Synth stack
         run: yarn cdk synth
       - name: Deploy stack
+        if: ${{ github.event.workflow_run.conclusion == 'success' }}
         run: |
           echo "Deploying from ghcr.io/${{ env.REPOSITORY_PATH }}:${{ env.REPOSITORY_SHA }}"
           yarn cdk deploy --all --require-approval never --parameters Stack2ad:repository=ghcr.io/${{ env.REPOSITORY_PATH }} --parameters Stack2ad:version=${{ env.REPOSITORY_SHA }}

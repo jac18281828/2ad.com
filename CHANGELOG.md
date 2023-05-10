@@ -1,3 +1,7 @@
+# 1.0.58 (2023-05-10)
+
+* only deploy if docker build status success
+
 # 1.0.57 (2023-05-10)
 
 * git required
