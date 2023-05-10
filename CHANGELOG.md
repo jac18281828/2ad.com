@@ -1,3 +1,8 @@
+# 1.0.55 (2023-05-10)
+
+* cleanup build
+* remove destroy sequence
+
 # 1.0.54 (2023-05-10)
 
 * disable monitor metrics
