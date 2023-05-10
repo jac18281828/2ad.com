@@ -35,7 +35,5 @@ jobs:
         run: yarn cdk synth
       - name: Deploy stack
         run: |
-          echo "Destroy Stack2ad"
-          yarn cdk destroy --force Stack2ad
           echo "Deploying from ghcr.io/${{ env.REPOSITORY_PATH }}:${{ env.REPOSITORY_SHA }}"
           yarn cdk deploy --all --require-approval never --parameters Stack2ad:repository=ghcr.io/${{ env.REPOSITORY_PATH }} --parameters Stack2ad:version=${{ env.REPOSITORY_SHA }}
