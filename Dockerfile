@@ -1,10 +1,10 @@
 FROM debian:stable-slim as builder
 
 RUN export DEBIAN_FRONTEND=noninteractive && \
-        apt update && \
-        apt install -y -q --no-install-recommends \
+    apt update && \
+    apt install -y -q --no-install-recommends \
     build-essential \
-    python3 python3-pip git && \
+    python3 python3-pip && \
     apt clean && \
     rm -rf /var/lib/apt/lists/*
 

@@ -1,3 +1,7 @@
+# 1.0.56 (2023-05-10)
+
+* fix typo in yaml
+
 # 1.0.55 (2023-05-10)
 
 * cleanup build

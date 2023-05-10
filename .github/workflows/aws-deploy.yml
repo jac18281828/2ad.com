@@ -1,4 +1,4 @@
-docname: Aws Deploy
+name: Aws Deploy
 
 on:
   workflow_run:
