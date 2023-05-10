@@ -59,6 +59,9 @@ export class WwwStack extends cdk.Stack {
       taskImageOptions: {
         containerPort: 80,
         image: image,
+        environment: {
+          ECS_DISABLE_METRICS: 'true'
+        },
         logDriver: ecs.LogDrivers.awsLogs({
           streamPrefix: id,
           logRetention: LOG_RETENTION,
