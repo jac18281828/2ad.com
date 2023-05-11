@@ -12,9 +12,6 @@ const ACCOUNT = '504242000181';
 const REGION = 'us-east-2';
 
 const app = new cdk.App();
-const wwwLbStack = new WwwStack(app, 'Stack2ad', {
-  env: { account: ACCOUNT, region: REGION },
-});
 
 new Ns2adStack(app, 'StackNs2ad', {
   env: { account: ACCOUNT, region: REGION },
@@ -52,6 +49,10 @@ new r53.CnameRecord(archieDns, 'archieAwsVerfCname', {
   zone: archieDns.zone,
   recordName: '_501692bba148720fea0783e27fe29282.archiecairns.com',
   domainName: '_6f0078d3750a26a9f734fcaed2517a7c.fgsdscwdjl.acm-validations.aws',
+});
+
+const wwwLbStack = new WwwStack(app, 'Stack2ad', {
+  env: { account: ACCOUNT, region: REGION },
 });
 
 // fix dns for all hosted zones address record
