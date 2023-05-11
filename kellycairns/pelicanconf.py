@@ -103,6 +103,7 @@ AUTHOR_FEED_RSS = None
 LINKS = (
     ('about', '/category/bio.html'),
     ('news', '/category/news.html'),
+    ('podcast', '/tag/podcast.html'),
     ('coaching', '/category/coaching.html'),
     ('Thrive Pet Healthcare', 'https://www.thrivepetcare.com'),
     ('LinkedIn', 'https://linkedin.com/in/kelly-cairns-68425060'),
@@ -114,7 +115,7 @@ LINKS = (
 # not used in current theme
 # SOCIAL = ()
 
-DEFAULT_PAGINATION = 2
+DEFAULT_PAGINATION = 8
 
 # Uncomment following line if you want document-relative URLs when developing
 #RELATIVE_URLS = True
