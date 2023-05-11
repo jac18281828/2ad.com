@@ -1,3 +1,7 @@
+# 1.0.63 (2023-05-11)
+
+* ns stack only
+
 # 1.0.62 (2023-05-11)
 
 * restore name servers first
