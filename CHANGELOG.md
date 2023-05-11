@@ -1,3 +1,7 @@
+# 1.0.60 (2023-05-11)
+
+* remove bluehost
+
 # 1.0.59 (2023-05-11)
 
 * 19 cats parasite prevention
