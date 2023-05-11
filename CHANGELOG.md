@@ -1,3 +1,7 @@
+# 1.0.59 (2023-05-11)
+
+* 19 cats parasite prevention
+
 # 1.0.58 (2023-05-10)
 
 * only deploy if docker build status success
