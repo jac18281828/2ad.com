@@ -1,3 +1,7 @@
+# 1.0.62 (2023-05-11)
+
+* restore name servers first
+
 # 1.0.61 (2023-05-11)
 
 * reorder stacks
