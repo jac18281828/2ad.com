@@ -51,6 +51,7 @@ new r53.CnameRecord(archieDns, 'archieAwsVerfCname', {
   domainName: '_6f0078d3750a26a9f734fcaed2517a7c.fgsdscwdjl.acm-validations.aws',
 });
 
+/*
 const wwwLbStack = new WwwStack(app, 'Stack2ad', {
   env: { account: ACCOUNT, region: REGION },
 });
@@ -61,5 +62,5 @@ const lb = wwwLbStack.loadBalancer;
 new NsLbStack(app, 'StackNsLb', lb, {
   env: { account: ACCOUNT, region: REGION },
 });
-
+*/
 app.synth();
