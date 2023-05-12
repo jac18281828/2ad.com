@@ -1,3 +1,7 @@
+# 1.0.64 (2023-05-11)
+
+* add back 2ad stack
+
 # 1.0.63 (2023-05-11)
 
 * ns stack only
