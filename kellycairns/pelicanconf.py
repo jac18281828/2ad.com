@@ -101,7 +101,6 @@ AUTHOR_FEED_RSS = None
 
 # Blogroll
 LINKS = (
-    ('about', '/category/bio.html'),
     ('news', '/category/news.html'),
     ('podcast', '/tag/podcast.html'),
     ('coaching', '/category/coaching.html'),
