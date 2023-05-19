@@ -1,3 +1,7 @@
+# 1.0.67 (2023-05-19)
+
+* destroy stack is its own job
+
 # 1.0.66 (2023-05-19)
 
 * protien brownie
