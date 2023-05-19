@@ -33,10 +33,12 @@ jobs:
         run: yarn install
       - name: Synth stack
         run: yarn cdk synth
+      - name: Destroy stack
+        run: |
+          yarn cdk destroy Stack2ad --force
+          sleep 300s
       - name: Deploy stack
         if: ${{ github.event.workflow_run.conclusion == 'success' }}
         run: |
-          echo "Destroy Stack2ad"
-          yarn cdk destroy Stack2ad --force
           echo "Deploying from ghcr.io/${{ env.REPOSITORY_PATH }}:${{ env.REPOSITORY_SHA }}"
           yarn cdk deploy --all --require-approval never --parameters Stack2ad:repository=ghcr.io/${{ env.REPOSITORY_PATH }} --parameters Stack2ad:version=${{ env.REPOSITORY_SHA }}
