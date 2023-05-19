@@ -1,3 +1,7 @@
+# 1.0.66 (2023-05-19)
+
+* protien brownie
+
 # 1.0.65 (2023-05-14)
 
 * fix broken on kelly site
