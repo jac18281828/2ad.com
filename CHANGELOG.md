@@ -1,3 +1,7 @@
+# 1.0.70 (2023-05-24)
+
+* fix the embed
+
 # 1.0.69 (2023-05-24)
 
 * icloud custom domain
