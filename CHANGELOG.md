@@ -1,3 +1,9 @@
+# 1.0.68 (2023-05-24)
+
+* add scardy cats news item
+* reconfigure posts by year
+* fix slugs on kc
+
 # 1.0.67 (2023-05-19)
 
 * destroy stack is its own job
