@@ -1,3 +1,7 @@
+# 1.0.69 (2023-05-24)
+
+* icloud custom domain
+
 # 1.0.68 (2023-05-24)
 
 * add scardy cats news item
