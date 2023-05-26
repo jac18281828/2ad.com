@@ -1,3 +1,8 @@
+# 1.0.71 (2023-05-26)
+
+* emacs power tips
+* forge libraries
+
 # 1.0.70 (2023-05-24)
 
 * fix the embed
