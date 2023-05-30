@@ -1,3 +1,8 @@
+# 1.0.72 (2023-05-30)
+
+* fix dates
+* remove bugged information
+
 # 1.0.71 (2023-05-26)
 
 * emacs power tips
