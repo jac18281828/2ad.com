@@ -50,4 +50,5 @@ LABEL org.label-schema.build-date=$BUILD_DATE \
     org.label-schema.vcs-url="git@github.com:jac18281828/2ad.com.git" \
     org.label-schema.vendor="John Cairns" \
     org.label-schema.version=$VERSION \
-    org.label-schema.schema-version="1.0"
+    org.label-schema.schema-version="1.0" \
+    org.opencontainers.image.description="2ad.com nginx server image"
