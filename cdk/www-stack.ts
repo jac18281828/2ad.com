@@ -87,7 +87,6 @@ export class WwwStack extends cdk.Stack {
 
     this.loadBalancer.setAttribute('idle_timeout.timeout_seconds', '30');
     this.loadBalancer.setAttribute('routing.http.drop_invalid_header_fields.enabled', 'true');
-    this.loadBalancer.setAttribute('disable_monitoring', 'true');
 
     new CfnOutput(this, 'LoadBalancerDNS', {
       value: fargate.loadBalancer.loadBalancerDnsName,
