@@ -1,3 +1,8 @@
+# 1.0.77 (2023-06-08)
+
+* disable monitoring for loadbalancer
+* add default page for healthcheck
+
 # 1.0.76 (2023-06-08)
 
 * remove error log
