@@ -74,18 +74,18 @@ export class WwwStack extends cdk.Stack {
       memoryLimitMiB: 512,
       redirectHTTP: true,
       certificate: certificate,
-      healthCheckGracePeriod: cdk.Duration.seconds(30),
+      healthCheckGracePeriod: cdk.Duration.seconds(60),
     });
 
     fargate.targetGroup.configureHealthCheck({
       path: '/health',
-      interval: cdk.Duration.seconds(15),
+      interval: cdk.Duration.seconds(30),
       unhealthyThresholdCount: 3,
     });
 
     this.loadBalancer = fargate.loadBalancer;
 
-    this.loadBalancer.setAttribute('idle_timeout.timeout_seconds', '30');
+    this.loadBalancer.setAttribute('idle_timeout.timeout_seconds', '60');
     this.loadBalancer.setAttribute('routing.http.drop_invalid_header_fields.enabled', 'true');
 
     new CfnOutput(this, 'LoadBalancerDNS', {
