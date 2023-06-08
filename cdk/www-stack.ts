@@ -3,6 +3,7 @@ import * as ecs from '@aws-cdk/aws-ecs';
 import * as cdk from '@aws-cdk/core';
 import * as ecsp from '@aws-cdk/aws-ecs-patterns';
 import * as cert from '@aws-cdk/aws-certificatemanager';
+import { RetentionDays } from '@aws-cdk/aws-logs';
 
 import { ApplicationLoadBalancer } from '@aws-cdk/aws-elasticloadbalancingv2';
 import { SubnetType } from '@aws-cdk/aws-ec2';
@@ -49,8 +50,6 @@ export class WwwStack extends cdk.Stack {
     const registryPath = imageRepository.valueAsString + ':' + imageVersion.valueAsString;
     const image = ecs.ContainerImage.fromRegistry(registryPath);
 
-    const LOG_RETENTION = 1;
-
     const fargate = new ecsp.ApplicationLoadBalancedFargateService(this, 'Www2adFargateService', {
       cluster: cluster,
       circuitBreaker: {
@@ -62,9 +61,10 @@ export class WwwStack extends cdk.Stack {
         environment: {
           ECS_DISABLE_METRICS: 'true',
         },
+        enableLogging: true,
         logDriver: ecs.LogDrivers.awsLogs({
           streamPrefix: id,
-          logRetention: LOG_RETENTION,
+          logRetention: RetentionDays.ONE_WEEK,
         }),
       },
       assignPublicIp: true,
@@ -74,9 +74,18 @@ export class WwwStack extends cdk.Stack {
       memoryLimitMiB: 512,
       redirectHTTP: true,
       certificate: certificate,
+      healthCheckGracePeriod: cdk.Duration.seconds(30),
+    });
+
+    fargate.targetGroup.configureHealthCheck({
+      path: '/health',
+      interval: cdk.Duration.seconds(15),
+      unhealthyThresholdCount: 3,
     });
 
     this.loadBalancer = fargate.loadBalancer;
+
+    this.loadBalancer.setAttribute('idle_timeout.timeout_seconds', '30');
 
     new CfnOutput(this, 'LoadBalancerDNS', {
       value: fargate.loadBalancer.loadBalancerDnsName,
