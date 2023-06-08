@@ -1,3 +1,9 @@
+# 1.0.76 (2023-06-08)
+
+* remove error log
+* cleanup healthcheck
+* hex string
+
 # 1.0.75 (2023-06-03)
 
 * fix f1 link
