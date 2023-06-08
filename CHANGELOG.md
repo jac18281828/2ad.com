@@ -1,3 +1,7 @@
+# 1.0.79 (2023-06-08)
+
+* force destroy web stack on deploy
+
 # 1.0.78 (2023-06-08)
 
 * disable monitoring is not a valid attribute
