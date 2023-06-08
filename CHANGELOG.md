@@ -1,3 +1,7 @@
+# 1.0.78 (2023-06-08)
+
+* disable monitoring is not a valid attribute
+
 # 1.0.77 (2023-06-08)
 
 * disable monitoring for loadbalancer
