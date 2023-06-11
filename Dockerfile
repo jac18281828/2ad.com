@@ -13,8 +13,13 @@ ENV WORKPATH=/tools
 
 COPY requirements.txt .
 
-RUN python3 -m pip install --break-system-packages --upgrade pip && \
-    if [ -f requirements.txt ]; then python3 -m pip install -r requirements.txt --break-system-packages; fi 
+
+RUN python3 -m venv .venv && \
+    . .venv/bin/activate && \
+    python3 -m pip install --upgrade pip && \
+    if [ -f requirements.txt ]; then \
+      python3 -m pip install -r requirements.txt; \
+    fi 
 
 RUN mkdir -p themes
 RUN (cd themes && git clone https://github.com/alexandrevicenzi/Flex.git)
@@ -25,7 +30,8 @@ WORKDIR /htmltmp
 
 RUN for dir in 2ad emmycairns archiecairns minacairns kellycairns; do ln -sf ${WORKPATH}/themes $dir/themes; done
 
-RUN make -C 2ad html && \
+RUN . /tools/.venv/bin/activate && \
+    make -C 2ad html && \
     make -C emmycairns html && \
     make -C archiecairns html && \
     make -C minacairns html && \
