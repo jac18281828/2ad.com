@@ -2,3 +2,4 @@ pelican
 jinja2==3.0
 markdown
 beautifulsoup4
+

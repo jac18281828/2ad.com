@@ -1,3 +1,8 @@
+# 1.0.80 (2023-06-11)
+
+* remove pelican plugins, now a submodule
+* update for Python 3.11
+
 # 1.0.79 (2023-06-08)
 
 * force destroy web stack on deploy

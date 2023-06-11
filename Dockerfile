@@ -4,7 +4,7 @@ RUN export DEBIAN_FRONTEND=noninteractive && \
     apt update && \
     apt install -y -q --no-install-recommends \
     build-essential git \
-    python3 python3-pip && \
+    python3 python3-pip python3-venv && \
     apt clean && \
     rm -rf /var/lib/apt/lists/*
 
@@ -13,8 +13,8 @@ ENV WORKPATH=/tools
 
 COPY requirements.txt .
 
-RUN python3 -m pip install --upgrade pip
-RUN if [ -f requirements.txt ]; then python3 -m pip install -r requirements.txt; fi
+RUN python3 -m pip install --break-system-packages --upgrade pip && \
+    if [ -f requirements.txt ]; then python3 -m pip install -r requirements.txt --break-system-packages; fi 
 
 RUN mkdir -p themes
 RUN (cd themes && git clone https://github.com/alexandrevicenzi/Flex.git)
@@ -25,11 +25,11 @@ WORKDIR /htmltmp
 
 RUN for dir in 2ad emmycairns archiecairns minacairns kellycairns; do ln -sf ${WORKPATH}/themes $dir/themes; done
 
-RUN make -C 2ad html &&\
-        make -C emmycairns html &&\
-        make -C archiecairns html &&\
-        make -C minacairns html &&\
-        make -C kellycairns html
+RUN make -C 2ad html && \
+    make -C emmycairns html && \
+    make -C archiecairns html && \
+    make -C minacairns html && \
+    make -C kellycairns html
 
 FROM nginx
 ARG VERSION

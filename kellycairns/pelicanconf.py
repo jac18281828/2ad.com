@@ -35,8 +35,7 @@ PLUGIN_PATHS = ['../pelican-plugins' ]
 
 PLUGINS = [
     'sitemap',
-    'summary',
-    'feed_summary'
+    'summary'
 ]
 
 SITEMAP = {
