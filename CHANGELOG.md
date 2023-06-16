@@ -1,3 +1,7 @@
+# 1.0.81 (2023-06-16)
+
+* 500ml iced tea
+
 # 1.0.80 (2023-06-11)
 
 * remove pelican plugins, now a submodule
