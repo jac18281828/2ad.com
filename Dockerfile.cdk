@@ -1,4 +1,4 @@
-FROM jac18281828/tsdev:latest
+FROM ghcr.io/jac18281828/tsdev:latest
 
 # need python for pelican
 RUN export DEBIAN_FRONTEND=noninteractive && \
