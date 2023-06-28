@@ -35,10 +35,6 @@ jobs:
         run: yarn install
       - name: Synth stack
         run: yarn cdk synth
-      - name: Destroy existing web stack
-        if: ${{ github.event.workflow_run.conclusion == 'success' }}
-        run: |
-          yarn cdk destroy Stack2ad --force
       - name: Deploy stack
         if: ${{ github.event.workflow_run.conclusion == 'success' }}
         run: |

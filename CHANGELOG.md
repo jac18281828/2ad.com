@@ -1,3 +1,8 @@
+# 1.0.82 (2023-06-28)
+
+* simple cleanup
+* remove destroy clause from deploy
+
 # 1.0.81 (2023-06-16)
 
 * 500ml iced tea
