@@ -1,3 +1,7 @@
+# 1.0.83 (2023-07-09)
+
+* the latin east
+
 # 1.0.82 (2023-06-28)
 
 * simple cleanup
