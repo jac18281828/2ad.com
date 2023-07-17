@@ -1,3 +1,7 @@
+# 1.0.86 (2023-07-17) 
+
+* deploy image from tag rather than sha
+
 # 1.0.85 (2023-07-17) 
 
 * deploy only on a tag to avoid ref confusion
