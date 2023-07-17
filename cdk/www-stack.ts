@@ -75,7 +75,7 @@ export class WwwStack extends cdk.Stack {
         }),
       },
       publicLoadBalancer: true,
-      desiredCount: 2,
+      desiredCount: 5,
       cpu: 256,
       memoryLimitMiB: 512,
       redirectHTTP: true,
@@ -85,7 +85,7 @@ export class WwwStack extends cdk.Stack {
 
     const scaling = fargate.service.autoScaleTaskCount({
       minCapacity: 1,
-      maxCapacity: 2,
+      maxCapacity: 5,
     });
 
     scaling.scaleOnMemoryUtilization('MemoryScaling', {
@@ -94,7 +94,7 @@ export class WwwStack extends cdk.Stack {
     });
 
     fargate.targetGroup.configureHealthCheck({
-      path: '/health',
+      path: '/',
       interval: cdk.Duration.seconds(30),
       unhealthyThresholdCount: 2,
     });

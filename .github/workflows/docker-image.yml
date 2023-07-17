@@ -80,7 +80,6 @@ jobs:
         run: |
           echo "REPOSITORY_PATH=$( echo ${GITHUB_REPOSITORY} | tr '[:upper:]' '[:lower:]' )" >> ${GITHUB_ENV}
           echo "REPOSITORY_SHA=$( echo ${GITHUB_SHA} | cut -c 1-8 )" >> ${GITHUB_ENV}
-          echo "Build commit is ${{ env.REPOSITORY_SHA }}"
       - name: Install dependencies
         run: yarn install
       - name: Synth stack
