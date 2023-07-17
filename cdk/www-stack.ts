@@ -41,7 +41,8 @@ export class WwwStack extends cdk.Stack {
 
     const cluster = new ecs.Cluster(this, 'www-cluster', {
       clusterName: 'www-2ad-cluster',
-      containerInsights: true,
+      containerInsights: false,
+      enableFargateCapacityProviders: true,
       vpc: vpc,
     });
 
@@ -52,6 +53,12 @@ export class WwwStack extends cdk.Stack {
 
     const fargate = new ecsp.ApplicationLoadBalancedFargateService(this, 'Www2adFargateService', {
       cluster: cluster,
+      assignPublicIp: true,
+      taskSubnets: {
+        subnetType: SubnetType.PUBLIC,
+      },
+      minHealthyPercent: 100,
+      maxHealthyPercent: 200,
       circuitBreaker: {
         rollback: true,
       },
@@ -67,14 +74,23 @@ export class WwwStack extends cdk.Stack {
           logRetention: RetentionDays.ONE_WEEK,
         }),
       },
-      assignPublicIp: true,
       publicLoadBalancer: true,
-      desiredCount: 1,
+      desiredCount: 2,
       cpu: 256,
       memoryLimitMiB: 512,
       redirectHTTP: true,
       certificate: certificate,
       healthCheckGracePeriod: cdk.Duration.seconds(60),
+    });
+
+    const scaling = fargate.service.autoScaleTaskCount({
+      minCapacity: 1,
+      maxCapacity: 2,
+    });
+
+    scaling.scaleOnMemoryUtilization('MemoryScaling', {
+      targetUtilizationPercent: 70,
+      scaleInCooldown: cdk.Duration.seconds(60),
     });
 
     fargate.targetGroup.configureHealthCheck({
