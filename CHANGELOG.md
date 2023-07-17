@@ -1,3 +1,7 @@
+# 1.0.89 (2023-07-17) 
+
+* combine aws deploy and build for consistent versioning
+
 # 1.0.88 (2023-07-17) 
 
 * tag starts with v
