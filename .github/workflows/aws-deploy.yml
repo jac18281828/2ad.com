@@ -31,7 +31,7 @@ jobs:
         run: |
           echo "REPOSITORY_PATH=$( echo ${GITHUB_REPOSITORY} | tr '[:upper:]' '[:lower:]' )" >> ${GITHUB_ENV}
           echo "REPOSITORY_SHA=$( echo ${GITHUB_SHA} | cut -c 1-8 )" >> ${GITHUB_ENV}
-          echo "REPOSITORY_TAG=$( echo ${GITHUB_REF_NAME} )" >> ${GITHUB_ENV}
+          echo "REPOSITORY_TAG=$( git describe --tags --abbrev=0 )" >> ${GITHUB_ENV}
       - name: Install dependencies
         run: yarn install
       - name: Synth stack
@@ -39,5 +39,5 @@ jobs:
       - name: Deploy stack
         if: ${{ github.event.workflow_run.conclusion == 'success' }}
         run: |
-          echo "Deploying from ghcr.io/${{ env.REPOSITORY_PATH }}:${{ env.REPOSITORY_SHA }}"
+          echo "Deploying from ghcr.io/${{ env.REPOSITORY_PATH }}:${{ env.REPOSITORY_TAG }}"
           yarn cdk deploy --all --require-approval never --parameters Stack2ad:repository=ghcr.io/${{ env.REPOSITORY_PATH }} --parameters Stack2ad:version=${{ env.REPOSITORY_TAG }}

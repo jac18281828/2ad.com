@@ -1,3 +1,7 @@
+# 1.0.87 (2023-07-17) 
+
+* fixing tag - look it up from git
+
 # 1.0.86 (2023-07-17) 
 
 * deploy image from tag rather than sha
