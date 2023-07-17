@@ -1,3 +1,8 @@
+# 1.0.84 (2023-07-17)
+
+* load auto scaling to reduce circuit breaker times
+* 19 cats
+
 # 1.0.83 (2023-07-09)
 
 * the latin east

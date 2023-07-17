@@ -96,7 +96,7 @@ export class WwwStack extends cdk.Stack {
     fargate.targetGroup.configureHealthCheck({
       path: '/health',
       interval: cdk.Duration.seconds(30),
-      unhealthyThresholdCount: 3,
+      unhealthyThresholdCount: 2,
     });
 
     this.loadBalancer = fargate.loadBalancer;
