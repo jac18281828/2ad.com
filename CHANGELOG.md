@@ -1,3 +1,7 @@
+# 1.0.92 (2023-07-17)
+
+* update to author page
+
 # 1.0.91 (2023-07-17)
 
 * use / for health check
