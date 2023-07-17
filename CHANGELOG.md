@@ -1,3 +1,7 @@
+# 1.0.90 (2023-07-17) 
+
+* aws needs docker build
+
 # 1.0.89 (2023-07-17) 
 
 * combine aws deploy and build for consistent versioning

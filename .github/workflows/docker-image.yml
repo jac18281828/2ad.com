@@ -60,6 +60,7 @@ jobs:
           release_name: ${{ github.ref_name }}
           body_path: CHANGELOG.md
   aws_cdk:
+    needs: docker-build
     runs-on: ubuntu-latest
     steps:
       - name: Checkout repo
@@ -85,7 +86,6 @@ jobs:
       - name: Synth stack
         run: yarn cdk synth
       - name: Deploy stack
-        if: ${{ github.event.workflow_run.conclusion == 'success' }}
         run: |
           echo "Deploying from ghcr.io/${{ env.REPOSITORY_PATH }}:${{ github.ref_name }}"
           yarn cdk deploy --all --require-approval never --parameters Stack2ad:repository=ghcr.io/${{ env.REPOSITORY_PATH }} --parameters Stack2ad:version=v${{ github.ref_name }}
