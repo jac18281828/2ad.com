@@ -1,3 +1,7 @@
+# 1.0.91 (2023-07-17)
+
+* use / for health check
+
 # 1.0.90 (2023-07-17) 
 
 * aws needs docker build
