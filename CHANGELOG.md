@@ -1,3 +1,7 @@
+# 1.0.88 (2023-07-17) 
+
+* tag starts with v
+
 # 1.0.87 (2023-07-17) 
 
 * fixing tag - look it up from git
