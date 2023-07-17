@@ -1,3 +1,7 @@
+# 1.0.85 (2023-07-17) 
+
+* deploy only on a tag to avoid ref confusion
+
 # 1.0.84 (2023-07-17)
 
 * load auto scaling to reduce circuit breaker times
