@@ -1,3 +1,7 @@
+# 1.0.93 (2023-07-17)
+
+* fix image link
+
 # 1.0.92 (2023-07-17)
 
 * update to author page
