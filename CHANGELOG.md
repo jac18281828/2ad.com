@@ -1,3 +1,7 @@
+# 1.0.96 (2023-07-28)
+
+* beyond the hairball
+
 # 1.0.95 (2023-07-28)
 
 * emacs global-set-key
