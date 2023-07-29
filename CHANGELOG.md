@@ -1,3 +1,7 @@
+# 1.0.95 (2023-07-28)
+
+* emacs global-set-key
+
 # 1.0.94 (2023-07-24)
 
 * vm.mockCall
