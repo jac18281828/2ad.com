@@ -1,3 +1,7 @@
+# 1.0.97 (2023-07-29)
+
+* unicorn fart ice cream
+
 # 1.0.96 (2023-07-28)
 
 * beyond the hairball
