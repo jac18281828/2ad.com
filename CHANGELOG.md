@@ -1,3 +1,7 @@
+# 1.0.98 (2023-07-29)
+
+* unicorn fart ice cream - fix youtube link
+
 # 1.0.97 (2023-07-29)
 
 * unicorn fart ice cream
