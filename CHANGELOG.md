@@ -1,3 +1,7 @@
+# 1.0.99 (2023-07-31)
+
+* the gibraltar crusade
+
 # 1.0.98 (2023-07-29)
 
 * unicorn fart ice cream - fix youtube link
