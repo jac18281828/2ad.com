@@ -57,7 +57,7 @@ jobs:
           draft: false
           prerelease: false        
           tag_name: ${{ github.ref_name }}
-          release_name: ${{ github.ref_name }}
+          release_name: v${{ github.ref_name }}
           body_path: CHANGELOG.md
   aws_cdk:
     needs: docker-build
