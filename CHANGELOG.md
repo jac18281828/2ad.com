@@ -1,3 +1,7 @@
+# 1.0.100 (2023-08-01)
+
+* antares rocket launch
+
 # 1.0.99 (2023-07-31)
 
 * the gibraltar crusade
