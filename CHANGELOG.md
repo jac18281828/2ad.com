@@ -1,3 +1,7 @@
+# 1.0.103 (2023-08-11)
+
+* add rustdev announcement
+
 # 1.0.102 (2023-08-09)
 
 * add hairball video
