@@ -1,3 +1,7 @@
+# 1.0.104 (2023-08-15)
+
+* golang 1.21.0
+
 # 1.0.103 (2023-08-11)
 
 * add rustdev announcement
