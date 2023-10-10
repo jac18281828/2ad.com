@@ -1,3 +1,7 @@
+# 1.0.112 (2023-10-10)
+
+* solidity only testing
+
 # 1.0.111 (2023-10-03)
 
 * did-eth-pr
