@@ -1,3 +1,7 @@
+# 1.0.114 (2023-10-10)
+
+* fixing last height due to experimental change
+
 # 1.0.113 (2023-10-10)
 
 * youtube embed requires height
@@ -13,28 +17,3 @@
 # 1.0.110 (2023-10-03)
 
 * xmtp foundry 1.0.1
-
-# 1.0.109 (2023-10-03)
-
-* tsdev v18.18.0
-
-# 1.0.108 (2023-09-29)
-
-* did:eth
-
-# 1.0.107 (2023-09-09)
-
-* Go 1.21.1
-
-# 1.0.106 (2023-08-29)
-
-* tsdev v18.17.1
-
-# 1.0.105 (2023-08-26)
-
-* fiat shamir identity
-
-# 1.0.104 (2023-08-15)
-
-* golang 1.21.0
-
