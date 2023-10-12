@@ -1,3 +1,7 @@
+# 1.0.115 (2023-10-11)
+
+* xmtp-foundry v1.0.2
+
 # 1.0.114 (2023-10-10)
 
 * fixing last height due to experimental change
