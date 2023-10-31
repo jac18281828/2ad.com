@@ -15,7 +15,7 @@ COPY package.json .
 RUN yarn install
 
 COPY . .
-RUN chown -R jac.jac .
+RUN chown -R jac:jac .
 USER jac
 
 RUN yarn prettier:check

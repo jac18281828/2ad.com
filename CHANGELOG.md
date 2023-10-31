@@ -1,3 +1,8 @@
+# 1.0.118 (2023-10-31)
+
+* solc 0.8.22
+* deterministic deployments
+
 # 1.0.117 (2023-10-20)
 
 * EIP1056Registry
