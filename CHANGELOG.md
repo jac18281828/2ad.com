@@ -1,3 +1,7 @@
+# 1.0.120 (2023-11-01)
+
+* formatting improvements
+
 # 1.0.119 (2023-11-01)
 
 * xmtp foundry 1.0.4
