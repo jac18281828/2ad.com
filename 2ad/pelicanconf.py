@@ -69,7 +69,12 @@ STATIC_PATHS = ('static',
                 'static/favicon-16x16.png',
                 'static/favicon-32x32.png',
                 'static/favicon.ico',
+                'emom',
 )
+
+ARTICLE_EXCLUDES = [
+    'emom',
+]
 
 EXTRA_PATH_METADATA = {
     'static/robots.txt': {'path': 'robots.txt'},
@@ -80,7 +85,11 @@ EXTRA_PATH_METADATA = {
     'static/apple-touch-icon.png': {'path': 'apple-touch-icon.png'},
     'static/favicon-16x16.png': {'path': 'favicon-16x16.png'},
     'static/favicon-32x32.png': {'path': 'favicon-32x32.png'},
-    'static/favicon-ico': {'path': 'favicon.ico'},    
+    'static/favicon-ico': {'path': 'favicon.ico'},
+    'emom/index.html': {'path': 'emom.html'},
+    'emom/emom-5a41a665adaa2aa7.js': {'path': 'emom-5a41a665adaa2aa7.js'},
+    'emom/emom-5a41a665adaa2aa7_bg.wasm': {'path': 'emom-5a41a665adaa2aa7_bg.wasm'},
+    'emom/style-71e3bafba90cbbd5.css': {'path': 'style-71e3bafba90cbbd5.css'},
 }
 
 PATH = 'content'
