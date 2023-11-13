@@ -1,3 +1,8 @@
+# 1.0.123 (2023-11-12)
+
+* update emom timer
+* rustdev 0.2.5
+
 # 1.0.122 (2023-11-11)
 
 * emom timer

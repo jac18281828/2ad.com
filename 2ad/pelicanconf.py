@@ -87,9 +87,9 @@ EXTRA_PATH_METADATA = {
     'static/favicon-32x32.png': {'path': 'favicon-32x32.png'},
     'static/favicon-ico': {'path': 'favicon.ico'},
     'emom/index.html': {'path': 'emom.html'},
-    'emom/emom-5a41a665adaa2aa7.js': {'path': 'emom-5a41a665adaa2aa7.js'},
-    'emom/emom-5a41a665adaa2aa7_bg.wasm': {'path': 'emom-5a41a665adaa2aa7_bg.wasm'},
-    'emom/style-71e3bafba90cbbd5.css': {'path': 'style-71e3bafba90cbbd5.css'},
+    'emom/emom-75510ab204f28557.js': {'path': 'emom-75510ab204f28557.js'},
+    'emom/emom-75510ab204f28557_bg.wasm': {'path': 'emom-75510ab204f28557_bg.wasm'},
+    'emom/style-de0842a6310b857a.css': {'path': 'style-de0842a6310b857a.css'},
 }
 
 PATH = 'content'
