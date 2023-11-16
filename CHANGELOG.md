@@ -1,3 +1,7 @@
+# 1.0.124 (2023-11-16)
+
+* Gobble Gobble Meow Meow
+
 # 1.0.123 (2023-11-12)
 
 * update emom timer
