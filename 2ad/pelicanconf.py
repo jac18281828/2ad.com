@@ -69,11 +69,9 @@ STATIC_PATHS = ('static',
                 'static/favicon-16x16.png',
                 'static/favicon-32x32.png',
                 'static/favicon.ico',
-                'emom',
 )
 
 ARTICLE_EXCLUDES = [
-    'emom',
 ]
 
 EXTRA_PATH_METADATA = {
@@ -86,10 +84,6 @@ EXTRA_PATH_METADATA = {
     'static/favicon-16x16.png': {'path': 'favicon-16x16.png'},
     'static/favicon-32x32.png': {'path': 'favicon-32x32.png'},
     'static/favicon-ico': {'path': 'favicon.ico'},
-    'emom/index.html': {'path': 'emom.html'},
-    'emom/emom-75510ab204f28557.js': {'path': 'emom-75510ab204f28557.js'},
-    'emom/emom-75510ab204f28557_bg.wasm': {'path': 'emom-75510ab204f28557_bg.wasm'},
-    'emom/style-de0842a6310b857a.css': {'path': 'style-de0842a6310b857a.css'},
 }
 
 PATH = 'content'
