@@ -1,3 +1,7 @@
+# 1.0.131 (2023-11-25)
+
+* add image of fallen pickup
+
 # 1.0.130 (2023-11-25)
 
 * les paul hacking
