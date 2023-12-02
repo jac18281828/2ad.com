@@ -71,8 +71,7 @@ STATIC_PATHS = ('static',
                 'static/favicon.ico',
 )
 
-ARTICLE_EXCLUDES = [
-]
+ARTICLE_EXCLUDES = []
 
 EXTRA_PATH_METADATA = {
     'static/robots.txt': {'path': 'robots.txt'},
@@ -113,7 +112,7 @@ LINKS = (
     ('GitHub', 'https://github.com/jac18281828'),
     ('jac1828.eth', 'https://app.ens.domains/jac1828.eth'),
     ('LinkedIn', 'https://www.linkedin.com/in/johnacairns'),
-    ('DD453D1420D17CA...', 'https://keys.openpgp.org/search?q=DD453D1420D17CA0102FF85C7BEF3762B55F70AD'),
+    ('DD453D1420D...', 'https://keys.openpgp.org/search?q=DD453D1420D17CA0102FF85C7BEF3762B55F70AD'),
     ('converse.xyz', 'https://converse.xyz/dm/jac1828.eth'),
     ('LibriVox', 'https://librivox.org/reader/12659'),
     ('', ''),
