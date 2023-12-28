@@ -1,3 +1,7 @@
+# 1.0.141 (2023-12-28)
+
+* lyn parser scanner
+
 # 1.0.140 (2023-12-15)
 
 * fix deployment issue
