@@ -112,7 +112,7 @@ LINKS = (
     ('GitHub', 'https://github.com/jac18281828'),
     ('jac1828.eth', 'https://app.ens.domains/jac1828.eth'),
     ('LinkedIn', 'https://www.linkedin.com/in/johnacairns'),
-    ('DD453D1420D...', 'https://keys.openpgp.org/search?q=DD453D1420D17CA0102FF85C7BEF3762B55F70AD'),
+    ('FD311EE84C8...', 'https://keys.openpgp.org/search?q=FD311EE84C8321C3E93C1E639028C4309ACCEB9B'),
     ('converse.xyz', 'https://converse.xyz/dm/jac1828.eth'),
     ('LibriVox', 'https://librivox.org/reader/12659'),
     ('', ''),

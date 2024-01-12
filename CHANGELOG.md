@@ -1,3 +1,7 @@
+# 1.0.143 (2024-01-12)
+
+* updated public key
+
 # 1.0.142 (2024-01-01)
 
 * dancing cells
