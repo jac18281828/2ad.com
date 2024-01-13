@@ -1,3 +1,7 @@
+# 1.0.144 (2024-01-13)
+
+* dependabot
+
 # 1.0.143 (2024-01-12)
 
 * updated public key
