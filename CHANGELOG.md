@@ -1,3 +1,7 @@
+# 1.0.149 (2024-02-26)
+
+* create and edit hyperlinks in emacs org mode
+
 # 1.0.148 (2024-02-23)
 
 * doxy dogs and cats
