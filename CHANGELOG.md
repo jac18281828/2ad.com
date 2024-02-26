@@ -1,3 +1,8 @@
+# 1.0.150 (2025-02-26)
+
+* update rust 1.76.0
+* update collective foundry 1.0.0
+
 # 1.0.149 (2024-02-26)
 
 * create and edit hyperlinks in emacs org mode
