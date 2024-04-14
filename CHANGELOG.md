@@ -1,3 +1,7 @@
+# 1.0.156 (2024-04-14)
+
+* can pets eat cicadads
+
 # 1.0.155 (2024-03-21)
 
 * why is my cat so hungry
