@@ -1,3 +1,7 @@
+# 1.0.162 (2024-06-10)
+
+* what to do if rifed or terminated
+
 # 1.0.161 (2024-06-08)
 
 * newsweek - heat wave
