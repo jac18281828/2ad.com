@@ -1,3 +1,7 @@
+# 1.0.163 (2024-06-10)
+
+* fix embed 
+
 # 1.0.162 (2024-06-10)
 
 * what to do if rifed or terminated
