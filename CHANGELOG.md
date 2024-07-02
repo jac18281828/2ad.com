@@ -1,3 +1,7 @@
+# 1.0.165 (2024-07-02)
+
+* update aws version
+
 # 1.0.164 (2024-06-28)
 
 * collective foundry 1.0.4

@@ -13,7 +13,7 @@
     "cdk": "cdk"
   },
   "devDependencies": {
-    "@aws-cdk/assertions": "1.203.0",
+    "@aws-cdk/assertions": "1.204.0",
     "@types/jest": "29.5.0",
     "@types/node": "18.15.11",
     "@typescript-eslint/eslint-plugin": "5.31.0",
@@ -29,16 +29,16 @@
     "ts-node": "10.9.1"
   },
   "dependencies": {
-    "@aws-cdk/aws-certificatemanager": "1.203.0",
-    "@aws-cdk/aws-ec2": "1.203.0",
-    "@aws-cdk/aws-ecs": "1.203.0",
-    "@aws-cdk/aws-ecs-patterns": "1.203.0",
-    "@aws-cdk/aws-elasticloadbalancingv2": "1.203.0",
-    "@aws-cdk/aws-elasticloadbalancingv2-targets": "1.203.0",
-    "@aws-cdk/aws-route53": "1.203.0",
-    "@aws-cdk/aws-route53-targets": "1.203.0",
-    "@aws-cdk/aws-logs": "1.203.0",
-    "@aws-cdk/core": "1.203.0",
+    "@aws-cdk/aws-certificatemanager": "1.204.0",
+    "@aws-cdk/aws-ec2": "1.204.0",
+    "@aws-cdk/aws-ecs": "1.204.0",
+    "@aws-cdk/aws-ecs-patterns": "1.204.0",
+    "@aws-cdk/aws-elasticloadbalancingv2": "1.204.0",
+    "@aws-cdk/aws-elasticloadbalancingv2-targets": "1.204.0",
+    "@aws-cdk/aws-route53": "1.204.0",
+    "@aws-cdk/aws-route53-targets": "1.204.0",
+    "@aws-cdk/aws-logs": "1.204.0",
+    "@aws-cdk/core": "1.204.0",
     "aws-cdk": "2.83.0",
     "typescript": "5.0.4"
   }
