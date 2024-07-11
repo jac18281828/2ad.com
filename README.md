@@ -3,6 +3,13 @@
 public code for (2ad website)[https://www.2ad.com]
 
 
+### Test Server
+
+```
+$ sh test.sh
+```
+
+
 ### Deployment
 
 1. `yarn install --dev`
