@@ -1,3 +1,8 @@
+# 1.0.166 (2024-08-01)
+
+* dna testing dogs
+* so youre a vet now what
+
 # 1.0.165 (2024-07-02)
 
 * update aws version
