@@ -9,7 +9,6 @@ public code for (2ad website)[https://www.2ad.com]
 $ sh test.sh
 ```
 
-
 ### Deployment
 
 #### get started with submodules

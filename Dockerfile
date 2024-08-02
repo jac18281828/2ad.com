@@ -1,4 +1,4 @@
-FROM debian:stable-slim as builder
+FROM debian:stable-slim AS builder
 
 RUN export DEBIAN_FRONTEND=noninteractive && \
     apt update && \

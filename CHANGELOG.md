@@ -1,4 +1,9 @@
-# 1.0.167_1 (2024-08-0)
+# 1.0.168 (2024-08-02)
+
+* site and az changes for cost reduction
+* deploy a new action because existing one is stuck
+
+# 1.0.167_1 (2024-08-02)
 
 * back out azs change 2 required
 
