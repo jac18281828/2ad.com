@@ -6,7 +6,7 @@
     {
       "label": "install",
       "type": "shell",
-      "command": "yarn install --save-dev",
+      "command": "yarn install --dev --frozen-lockfile",
       "group": "build"
     },
     {

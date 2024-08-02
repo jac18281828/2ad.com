@@ -47,7 +47,7 @@ ARG PROJECT=2ad.com
 WORKDIR /workspaces/${PROJECT}
 
 COPY package.json .
-RUN yarn install --dev
+RUN yarn install --dev --frozen-lockfile
 
 COPY . .
 RUN chown -R jac:jac .

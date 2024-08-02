@@ -85,7 +85,7 @@ export class WwwStack extends cdk.Stack {
 
     const scaling = fargate.service.autoScaleTaskCount({
       minCapacity: 1,
-      maxCapacity: 3,
+      maxCapacity: 4,
     });
 
     scaling.scaleOnMemoryUtilization('MemoryScaling', {

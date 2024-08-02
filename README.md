@@ -16,7 +16,7 @@ $ sh test.sh
 $ git submodule update --recursive --init --force
 ```
 
-1. `yarn install --dev`
+1. `yarn install --dev --frozen-lockfile`
 2. `cdk synth`
 3. `cdk deploy`
 ...
