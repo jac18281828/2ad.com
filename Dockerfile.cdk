@@ -1,4 +1,4 @@
-FROM debian:stable-slim as go-builder
+FROM debian:stable-slim AS go-builder
 # defined from build kit
 # DOCKER_BUILDKIT=1 docker build . -t ...
 ARG TARGETARCH
@@ -61,7 +61,7 @@ RUN yarn lint
 RUN yarn build
 RUN yarn test
 
-CMD yarn cdk synth
+CMD ["yarn", "cdk", "synth"]
 
 LABEL org.label-schema.name="aws2ad" \
     org.label-schema.description="2ad aws cdk deployment image" \
