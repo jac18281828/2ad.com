@@ -1,3 +1,7 @@
+# 1.0.169_1 (2024-08-02)
+
+* fix cpu and memory configuration 256/512 is the minimum
+
 # 1.0.169 (2024-08-02)
 
 * public subnet
