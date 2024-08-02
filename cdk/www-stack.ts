@@ -32,7 +32,7 @@ export class WwwStack extends cdk.Stack {
       enableDnsSupport: true,
       subnetConfiguration: [
         {
-          name: 'public-subnet-1',
+          name: 'public-subnet',
           subnetType: SubnetType.PUBLIC,
           cidrMask: 24,
         },

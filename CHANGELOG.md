@@ -1,3 +1,7 @@
+# 1.0.169 (2024-08-02)
+
+* public subnet
+
 # 1.0.168 (2024-08-02)
 
 * site and az changes for cost reduction
