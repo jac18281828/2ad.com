@@ -36,11 +36,6 @@ export class WwwStack extends cdk.Stack {
           subnetType: SubnetType.PUBLIC,
           cidrMask: 24,
         },
-        {
-          name: 'public-subnet-2',
-          subnetType: SubnetType.PUBLIC,
-          cidrMask: 24,
-        },
       ],
     });
 
