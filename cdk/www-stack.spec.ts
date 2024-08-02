@@ -37,7 +37,7 @@ describe('WwwStack', () => {
       EnableDnsHostnames: true,
       EnableDnsSupport: true,
     });
-    template.resourceCountIs('AWS::EC2::Subnet', 1);
+    template.resourceCountIs('AWS::EC2::Subnet', 4);
   });
 
   it('references the correct certificate in the load balancer', () => {

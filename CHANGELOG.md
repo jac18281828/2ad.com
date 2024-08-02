@@ -1,3 +1,7 @@
+# 1.0.167_1 (2024-08-0)
+
+* back out azs change 2 required
+
 # 1.0.167 (2024-08-02)
 
 * optimize stack to try to reduce cost

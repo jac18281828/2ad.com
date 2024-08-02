@@ -27,12 +27,17 @@ export class WwwStack extends cdk.Stack {
 
     const vpc = new ec2.Vpc(this, 'www-vpc', {
       natGateways: 0,
-      maxAzs: 1,
+      maxAzs: 2,
       enableDnsHostnames: true,
       enableDnsSupport: true,
       subnetConfiguration: [
         {
-          name: 'public-subnet',
+          name: 'public-subnet-1',
+          subnetType: SubnetType.PUBLIC,
+          cidrMask: 24,
+        },
+        {
+          name: 'public-subnet-2',
           subnetType: SubnetType.PUBLIC,
           cidrMask: 24,
         },
