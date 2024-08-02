@@ -1,3 +1,7 @@
+# 1.0.167 (2024-08-02)
+
+* optimize stack to try to reduce cost
+
 # 1.0.166 (2024-08-01)
 
 * dna testing dogs

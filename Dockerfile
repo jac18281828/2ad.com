@@ -42,13 +42,10 @@ COPY --from=builder /htmltmp/kellycairns/output /usr/share/nginx/kellycairns
 
 COPY sites/ /etc/nginx/conf.d/
 
-LABEL org.label-schema.build-date=$BUILD_DATE \
-    org.label-schema.name="2ad.com" \
+LABEL org.label-schema.name="2ad.com" \
     org.label-schema.description="2ad.com website" \
     org.label-schema.url="https://github.com/jac18281828/2ad.com" \
-    org.label-schema.vcs-ref=$VCS_REF \
     org.label-schema.vcs-url="git@github.com:jac18281828/2ad.com.git" \
     org.label-schema.vendor="John Cairns" \
-    org.label-schema.version=$VERSION \
     org.label-schema.schema-version="1.0" \
     org.opencontainers.image.description="2ad.com nginx server image"

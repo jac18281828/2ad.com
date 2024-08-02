@@ -12,6 +12,11 @@ $ sh test.sh
 
 ### Deployment
 
+#### get started with submodules
+```bash
+$ git submodule update --recursive --init --force
+```
+
 1. `yarn install --dev`
 2. `cdk synth`
 3. `cdk deploy`

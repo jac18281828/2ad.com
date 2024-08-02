@@ -27,7 +27,7 @@ export class WwwStack extends cdk.Stack {
 
     const vpc = new ec2.Vpc(this, 'www-vpc', {
       natGateways: 0,
-      maxAzs: 2,
+      maxAzs: 1,
       enableDnsHostnames: true,
       enableDnsSupport: true,
       subnetConfiguration: [
@@ -57,7 +57,7 @@ export class WwwStack extends cdk.Stack {
       taskSubnets: {
         subnetType: SubnetType.PUBLIC,
       },
-      minHealthyPercent: 100,
+      minHealthyPercent: 50,
       maxHealthyPercent: 200,
       circuitBreaker: {
         rollback: true,
@@ -75,9 +75,9 @@ export class WwwStack extends cdk.Stack {
         }),
       },
       publicLoadBalancer: true,
-      desiredCount: 5,
-      cpu: 256,
-      memoryLimitMiB: 512,
+      desiredCount: 1,
+      cpu: 128,
+      memoryLimitMiB: 256,
       redirectHTTP: true,
       certificate: certificate,
       healthCheckGracePeriod: cdk.Duration.seconds(60),
@@ -85,12 +85,13 @@ export class WwwStack extends cdk.Stack {
 
     const scaling = fargate.service.autoScaleTaskCount({
       minCapacity: 1,
-      maxCapacity: 5,
+      maxCapacity: 4,
     });
 
     scaling.scaleOnMemoryUtilization('MemoryScaling', {
-      targetUtilizationPercent: 70,
+      targetUtilizationPercent: 80,
       scaleInCooldown: cdk.Duration.seconds(60),
+      scaleOutCooldown: cdk.Duration.seconds(60),
     });
 
     fargate.targetGroup.configureHealthCheck({
