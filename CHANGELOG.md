@@ -1,3 +1,7 @@
+# 1.0.169_2 (2024-08-05)
+
+* increase max capacity, add cpu scaling
+
 # 1.0.169_1 (2024-08-02)
 
 * fix cpu and memory configuration 256/512 is the minimum
