@@ -53,7 +53,7 @@ describe('WwwStack', () => {
   it('configures auto-scaling for the Fargate service', () => {
     template.hasResourceProperties('AWS::ApplicationAutoScaling::ScalableTarget', {
       MinCapacity: 1,
-      MaxCapacity: 4,
+      MaxCapacity: 8,
     });
 
     template.hasResourceProperties('AWS::ApplicationAutoScaling::ScalingPolicy', {
