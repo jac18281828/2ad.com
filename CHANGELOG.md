@@ -1,4 +1,8 @@
-# 1.0.170 (2024-08-06)
+# 1.0.171 (2024-08-25)
+
+* fixing links to kelly podcast
+
+# 1.0.170 (2024-08-24)
 
 * kelly cairns podcast - mentorship
 
