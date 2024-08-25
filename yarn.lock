@@ -1775,12 +1775,19 @@
   resolved "https://registry.npmjs.org/@types/json5/-/json5-0.0.29.tgz"
   integrity sha512-dRLjCWHYg4oaA77cxO64oO+7JwCwnIzkZPdrrC71jQmQtlhM556pwKo5bUzqvZndkVbeFLIIi+9TC40JNF5hNQ==
 
-"@types/node@*", "@types/node@22.1.0":
+"@types/node@*":
   version "22.1.0"
   resolved "https://registry.yarnpkg.com/@types/node/-/node-22.1.0.tgz#6d6adc648b5e03f0e83c78dc788c2b037d0ad94b"
   integrity sha512-AOmuRF0R2/5j1knA3c6G3HOk523Ga+l+ZXltX8SF1+5oqcXijjfTd8fY3XRZqSihEu9XhtQnKYLmkFaoxgsJHw==
   dependencies:
     undici-types "~6.13.0"
+
+"@types/node@22.4.1":
+  version "22.4.1"
+  resolved "https://registry.yarnpkg.com/@types/node/-/node-22.4.1.tgz#9b595d292c65b94c20923159e2ce947731b6fdce"
+  integrity sha512-1tbpb9325+gPnKK0dMm+/LMriX0vKxf6RnB0SZUqfyVkQ4fMgUSySqhxE/y8Jvs4NyF1yHzTfG9KlnkIODxPKg==
+  dependencies:
+    undici-types "~6.19.2"
 
 "@types/semver@^7.3.12":
   version "7.5.8"
@@ -2067,10 +2074,10 @@ available-typed-arrays@^1.0.7:
   dependencies:
     possible-typed-array-names "^1.0.0"
 
-aws-cdk@2.151.0:
-  version "2.151.0"
-  resolved "https://registry.yarnpkg.com/aws-cdk/-/aws-cdk-2.151.0.tgz#5ae6b7cc66f0a183a434ffa2efee47a2f5eb4bf4"
-  integrity sha512-+pM3mTXjzZk44U5q+jaji5Y1X8J2c4ro8szqm2V/Wwa+xXCsJfVwJYiQbstSZkOz6ondfgkrJKtx6EzaodxRNw==
+aws-cdk@2.154.1:
+  version "2.154.1"
+  resolved "https://registry.yarnpkg.com/aws-cdk/-/aws-cdk-2.154.1.tgz#0d30d289512243044e4361abc92072f674489d9b"
+  integrity sha512-yJoLTo+fUHRLD4YQMt/QoOPgiT/daci4I5KcaDK8Cx2fWA0Z3h5U9+bWS3ah+8OeZ91fciNCwt6Yt/0p+cp2GQ==
   optionalDependencies:
     fsevents "2.3.2"
 
@@ -4842,6 +4849,11 @@ undici-types@~6.13.0:
   version "6.13.0"
   resolved "https://registry.yarnpkg.com/undici-types/-/undici-types-6.13.0.tgz#e3e79220ab8c81ed1496b5812471afd7cf075ea5"
   integrity sha512-xtFJHudx8S2DSoujjMd1WeWvn7KKWFRESZTMeL1RptAYERu29D6jphMjjY+vn96jvN3kVPDNxU/E13VTaXj6jg==
+
+undici-types@~6.19.2:
+  version "6.19.8"
+  resolved "https://registry.yarnpkg.com/undici-types/-/undici-types-6.19.8.tgz#35111c9d1437ab83a7cdc0abae2f26d88eda0a02"
+  integrity sha512-ve2KP6f/JnbPBFyobGHuerC9g1FYGn/F8n1LWTwNxCEzd6IfqTwUQcNXgEtmmQ6DlRrC1hrSrBnCZPokRrDHjw==
 
 universalify@^2.0.0:
   version "2.0.0"
