@@ -1,3 +1,7 @@
+# 1.0.170 (2024-08-06)
+
+* kelly cairns podcast - mentorship
+
 # 1.0.169_2 (2024-08-05)
 
 * increase max capacity, add cpu scaling
