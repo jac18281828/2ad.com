@@ -1,11 +1,11 @@
-import * as r53 from '@aws-cdk/aws-route53';
-import * as r53t from '@aws-cdk/aws-route53-targets';
-import * as cdk from '@aws-cdk/core';
-
-import { ApplicationLoadBalancer } from '@aws-cdk/aws-elasticloadbalancingv2';
+import * as cdk from 'aws-cdk-lib';
+import { Construct } from 'constructs';
+import { aws_route53 as r53 } from 'aws-cdk-lib';
+import * as r53t from 'aws-cdk-lib/aws-route53-targets';
+import { ApplicationLoadBalancer } from 'aws-cdk-lib/aws-elasticloadbalancingv2';
 
 export class NsLbStack extends cdk.Stack {
-  constructor(scope: cdk.Construct, id: string, lb: ApplicationLoadBalancer, props?: cdk.StackProps) {
+  constructor(scope: Construct, id: string, lb: ApplicationLoadBalancer, props?: cdk.StackProps) {
     super(scope, id, props);
 
     const loadBalancerTarget = new r53t.LoadBalancerTarget(lb);

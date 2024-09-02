@@ -1,18 +1,17 @@
-import * as ec2 from '@aws-cdk/aws-ec2';
-import * as ecs from '@aws-cdk/aws-ecs';
-import * as cdk from '@aws-cdk/core';
-import * as ecsp from '@aws-cdk/aws-ecs-patterns';
-import * as cert from '@aws-cdk/aws-certificatemanager';
-import { RetentionDays } from '@aws-cdk/aws-logs';
-
-import { ApplicationLoadBalancer } from '@aws-cdk/aws-elasticloadbalancingv2';
-import { SubnetType } from '@aws-cdk/aws-ec2';
-import { CfnOutput } from '@aws-cdk/core';
+import * as cdk from 'aws-cdk-lib';
+import { Construct } from 'constructs';
+import { ApplicationLoadBalancer } from 'aws-cdk-lib/aws-elasticloadbalancingv2';
+import { CfnOutput } from 'aws-cdk-lib';
+import * as ec2 from 'aws-cdk-lib/aws-ec2';
+import * as ecs from 'aws-cdk-lib/aws-ecs';
+import * as ecsp from 'aws-cdk-lib/aws-ecs-patterns';
+import * as cert from 'aws-cdk-lib/aws-certificatemanager';
+import { RetentionDays } from 'aws-cdk-lib/aws-logs';
 
 export class WwwStack extends cdk.Stack {
   readonly loadBalancer: ApplicationLoadBalancer;
 
-  constructor(scope: cdk.Construct, id: string, props?: cdk.StackProps) {
+  constructor(scope: Construct, id: string, props?: cdk.StackProps) {
     super(scope, id, props);
 
     const imageRepository = new cdk.CfnParameter(this, 'repository', {
@@ -33,7 +32,7 @@ export class WwwStack extends cdk.Stack {
       subnetConfiguration: [
         {
           name: 'public-subnet',
-          subnetType: SubnetType.PUBLIC,
+          subnetType: ec2.SubnetType.PUBLIC,
           cidrMask: 24,
         },
       ],
@@ -55,7 +54,7 @@ export class WwwStack extends cdk.Stack {
       cluster: cluster,
       assignPublicIp: true,
       taskSubnets: {
-        subnetType: SubnetType.PUBLIC,
+        subnetType: ec2.SubnetType.PUBLIC,
       },
       minHealthyPercent: 50,
       maxHealthyPercent: 200,

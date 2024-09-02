@@ -1,5 +1,5 @@
-import * as cdk from '@aws-cdk/core';
-import * as r53 from '@aws-cdk/aws-route53';
+import * as cdk from 'aws-cdk-lib';
+import { aws_route53 as r53 } from 'aws-cdk-lib';
 
 import { Ns2adStack } from './ns-2ad-stack';
 import { NsKellyCairnsStack } from './ns-kellycairns-stack';

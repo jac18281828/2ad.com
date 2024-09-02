@@ -13,7 +13,6 @@
     "cdk": "cdk"
   },
   "devDependencies": {
-    "@aws-cdk/assertions": "1.204.0",
     "@types/jest": "29.5.12",
     "@types/node": "22.5.2",
     "@typescript-eslint/eslint-plugin": "5.62.0",
@@ -29,16 +28,8 @@
     "ts-node": "10.9.2"
   },
   "dependencies": {
-    "@aws-cdk/aws-certificatemanager": "1.204.0",
-    "@aws-cdk/aws-ec2": "1.204.0",
-    "@aws-cdk/aws-ecs": "1.204.0",
-    "@aws-cdk/aws-ecs-patterns": "1.204.0",
-    "@aws-cdk/aws-elasticloadbalancingv2": "1.204.0",
-    "@aws-cdk/aws-elasticloadbalancingv2-targets": "1.204.0",
-    "@aws-cdk/aws-route53": "1.204.0",
-    "@aws-cdk/aws-route53-targets": "1.204.0",
-    "@aws-cdk/aws-logs": "1.204.0",
-    "@aws-cdk/core": "1.204.0",
+    "aws-cdk-lib": "2.155.0",
+    "constructs": "10.0.0",
     "typescript": "5.5.4"
   }
 }

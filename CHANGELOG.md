@@ -1,3 +1,7 @@
+# 1.0.172 (2024-09-02)
+
+* update to aws cdk v2
+
 # 1.0.171 (2024-08-25)
 
 * fixing links to kelly podcast
