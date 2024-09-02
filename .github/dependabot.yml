@@ -9,12 +9,16 @@ updates:
   - package-ecosystem: "devcontainers"
     directory: "/"
     schedule:
-      interval: weekly
+      interval: monthly
   - package-ecosystem: "docker"
     directory: "/"
     schedule:
-      interval: weekly
+      interval: monthly
   - package-ecosystem: "npm"
     directory: "/"
     schedule:
-      interval: weekly
+      interval: monthly
+  - package-ecosystem: "pip"
+    directory: "/"
+    schedule:
+      interval: monthly

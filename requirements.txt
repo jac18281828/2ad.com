@@ -1,5 +1,4 @@
 pelican
-jinja2==3.1.4
+jinja2
 markdown
 beautifulsoup4
-
