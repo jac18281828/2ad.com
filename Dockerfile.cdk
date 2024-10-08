@@ -50,8 +50,8 @@ COPY package.json .
 RUN yarn install --dev --frozen-lockfile
 
 COPY . .
-RUN chown -R jac:jac .
-USER jac
+RUN chown -R tsdev:tsdev .
+USER tsdev
 ENV PATH=${PATH}:/usr/local/go/bin
 
 RUN yamlfmt -lint .github/*.yml .github/workflows/*.yml
