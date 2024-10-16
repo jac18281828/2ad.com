@@ -1,3 +1,7 @@
+# 1.0.177 (2024-10-15)
+
+* cdk bootstrap and dependabot updates
+
 # 1.0.176 (2024-10-08)
 
 * cdk version

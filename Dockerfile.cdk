@@ -1,35 +1,16 @@
-FROM debian:stable-slim AS go-builder
+# Stage 1: Build yamlfmt
+FROM golang:1 AS go-builder
 # defined from build kit
 # DOCKER_BUILDKIT=1 docker build . -t ...
 ARG TARGETARCH
 
-RUN export DEBIAN_FRONTEND=noninteractive && \
-    apt update && \
-    apt install -y -q --no-install-recommends \
-    git curl gnupg2 build-essential coreutils \
-    openssl libssl-dev pkg-config \
-    ca-certificates apt-transport-https \
-    python3 && \
-    apt clean && \
-    rm -rf /var/lib/apt/lists/*
-
-## Go Lang
-ARG GO_VERSION=1.22.4
-ADD https://go.dev/dl/go${GO_VERSION}.linux-$TARGETARCH.tar.gz /goinstall/go${GO_VERSION}.linux-$TARGETARCH.tar.gz
-RUN echo 'SHA256 of this go source package...'
-RUN cat /goinstall/go${GO_VERSION}.linux-$TARGETARCH.tar.gz | sha256sum 
-RUN tar -C /usr/local -xzf /goinstall/go${GO_VERSION}.linux-$TARGETARCH.tar.gz
-ENV PATH=$PATH:/usr/local/go/bin
-RUN go version
-
-## Yaml Format
+# Install yamlfmt
 WORKDIR /yamlfmt
-ENV GOBIN=/usr/local/go/bin
-ENV PATH=$PATH:${GOBIN}
-RUN go install github.com/google/yamlfmt/cmd/yamlfmt@latest
-RUN ls -lR /usr/local/go/bin/yamlfmt && strip /usr/local/go/bin/yamlfmt && ls -lR /usr/local/go/bin/yamlfmt
-RUN yamlfmt --version
+RUN go install github.com/google/yamlfmt/cmd/yamlfmt@latest && \
+    strip $(which yamlfmt) && \
+    yamlfmt --version
 
+# Stage 2: CDK Build
 FROM ghcr.io/jac18281828/tsdev:latest
 
 # need python for pelican
@@ -41,7 +22,7 @@ RUN export DEBIAN_FRONTEND=noninteractive && \
   rm -rf /var/lib/apt/lists/*
 
 # GO LANG
-COPY --from=go-builder /usr/local/go /usr/local/go
+COPY --chown=${USER}:${USER} --from=go-builder /go/bin/yamlfmt /go/bin/yamlfmt
 
 ARG PROJECT=2ad.com
 WORKDIR /workspaces/${PROJECT}
@@ -52,7 +33,7 @@ RUN yarn install --dev --frozen-lockfile
 COPY . .
 RUN chown -R tsdev:tsdev .
 USER tsdev
-ENV PATH=${PATH}:/usr/local/go/bin
+ENV PATH=${PATH}:/go/bin
 
 RUN yamlfmt -lint .github/*.yml .github/workflows/*.yml
 
