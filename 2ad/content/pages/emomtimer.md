@@ -1,0 +1,22 @@
+title: Emom Timer
+date: 2022-10-20
+
+<!doctype html>
+<html lang="en">
+  <head>
+        <link rel="stylesheet" href="https://2ad.com/emomtimer/style-73c4cf06201d9eb4.css" integrity="sha384&#x2D;A&#x2F;xB16&#x2F;gC5miFREpUH2ZnTUM21ZfddyNfll4rGDISie4yfiF6biW1mA&#x2B;4W9r2CDL"/>    
+    <link rel="modulepreload" href="https://2ad.com/emomtimer/emom-2c3c7d70053c7b66.js" crossorigin=anonymous integrity="sha384-vGb7nt/wqCJ3tNCIaDv5J9ewPemabgkXfhYJNwFtgYRXZL3WcVBYFcirsajiz8Ve"><link rel="preload" href="https://2ad.com/emomtimer/emom-2c3c7d70053c7b66_bg.wasm" crossorigin=anonymous integrity="sha384-y2tuDddeeZw3GOMGahGGXWtJ5BjKcNE/wsLLf+i/OMEL9M18hEmqqhYBzXIT+EEO" as="fetch" type="application/wasm"></head>
+    <body>
+<script type="module" nonce="DGghJp7E7RD9yGdge3nQgQ==">
+import init, * as bindings from 'https://2ad.com/emomtimer/emom-2c3c7d70053c7b66.js';
+const wasm = await init('https://2ad.com/emomtimer/emom-2c3c7d70053c7b66_bg.wasm');
+
+
+window.wasmBindings = bindings;
+
+
+dispatchEvent(new CustomEvent("TrunkApplicationStarted", {detail: {wasm}}));
+
+</script></body>
+</html>
+
