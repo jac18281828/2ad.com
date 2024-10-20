@@ -58,17 +58,19 @@ CC_LICENSE = {
     "slug": "by-sa",
 }
 
-STATIC_PATHS = ('static',
-                'images',
-                'static/robots.txt',
-                'static/favicon.ico',
-                'static/site.webmanifest',
-                'static/android-chrome-192x192.png',
-                'static/android-chrome-512x512.png',
-                'static/apple-touch-icon.png',
-                'static/favicon-16x16.png',
-                'static/favicon-32x32.png',
-                'static/favicon.ico',
+STATIC_PATHS = (
+    'emomtimer',
+    'images',
+    'static',
+    'static/android-chrome-192x192.png',
+    'static/android-chrome-512x512.png',
+    'static/apple-touch-icon.png',
+    'static/favicon-16x16.png',
+    'static/favicon-32x32.png',
+    'static/favicon.ico',
+    'static/favicon.ico',
+    'static/robots.txt',
+    'static/site.webmanifest',
 )
 
 ARTICLE_EXCLUDES = []

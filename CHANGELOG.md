@@ -1,3 +1,7 @@
+# 1.0.178 (2024-10-15)
+
+* add emom timer
+
 # 1.0.177 (2024-10-15)
 
 * cdk bootstrap and dependabot updates
