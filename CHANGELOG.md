@@ -1,3 +1,7 @@
+# 1.0.179 (2024-10-20)
+
+* emom timer update
+
 # 1.0.178 (2024-10-15)
 
 * add emom timer

@@ -3,7 +3,7 @@ FROM debian:stable-slim AS builder
 RUN export DEBIAN_FRONTEND=noninteractive && \
     apt update && \
     apt install -y -q --no-install-recommends \
-    build-essential git \
+    make git \
     python3 python3-pip python3-venv && \
     apt clean && \
     rm -rf /var/lib/apt/lists/*

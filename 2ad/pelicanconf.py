@@ -59,7 +59,6 @@ CC_LICENSE = {
 }
 
 STATIC_PATHS = (
-    'emomtimer',
     'images',
     'static',
     'static/android-chrome-192x192.png',
