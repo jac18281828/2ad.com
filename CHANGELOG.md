@@ -1,3 +1,7 @@
+# 1.0.180 (2024-11-24)
+
+* debugging in foundry with forge
+
 # 1.0.179 (2024-10-20)
 
 * emom timer update
