@@ -1,3 +1,7 @@
+# 1.0.181 (2024-11-25)
+
+* Advent of Code 2025
+
 # 1.0.180 (2024-11-24)
 
 * debugging in foundry with forge
