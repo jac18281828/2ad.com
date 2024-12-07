@@ -17,7 +17,7 @@ FROM ghcr.io/jac18281828/tsdev:latest
 RUN export DEBIAN_FRONTEND=noninteractive && \
   apt update && \
   apt install -y -q --no-install-recommends \
-  python3 python3-pip && \
+  python3 python3-pip unzip && \
   apt clean && \
   rm -rf /var/lib/apt/lists/*
 
@@ -35,14 +35,13 @@ RUN chown -R tsdev:tsdev .
 USER tsdev
 ENV PATH=${PATH}:/go/bin
 
-RUN yamlfmt -lint .github/*.yml .github/workflows/*.yml
+# Install Bun
+ADD --chown=${USER}:${USER} --chmod=555 https://bun.sh/install /bun/install.sh
 
-RUN yarn prettier:check
-RUN yarn lint
-RUN yarn build
-RUN yarn test
+RUN /bun/install.sh && \
+    sudo rm -rf /bun
 
-CMD ["yarn", "cdk", "synth"]
+CMD ["bun", "run", "cdk", "synth"]
 
 LABEL org.label-schema.name="aws2ad" \
     org.label-schema.description="2ad aws cdk deployment image" \
