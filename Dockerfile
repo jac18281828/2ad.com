@@ -1,11 +1,11 @@
 FROM debian:stable-slim AS builder
 
 RUN export DEBIAN_FRONTEND=noninteractive && \
-    apt update && \
-    apt install -y -q --no-install-recommends \
+    apt-get update && \
+    apt-get install -y -q --no-install-recommends \
     make git \
     python3 python3-pip python3-venv && \
-    apt clean && \
+    apt-get clean && \
     rm -rf /var/lib/apt/lists/*
 
 WORKDIR /tools

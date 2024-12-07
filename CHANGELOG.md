@@ -1,3 +1,7 @@
+# 1.0.183 (2024-12-07)
+
+* Solana with Anchor Dockerfile
+
 # 1.0.182 (2024-11-29)
 
 * const in rust
