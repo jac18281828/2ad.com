@@ -6,27 +6,27 @@
     {
       "label": "install",
       "type": "shell",
-      "command": "yarn install --dev --frozen-lockfile",
+      "command": "bun install --include=dev --frozen-lockfile",
       "group": "build"
     },
     {
       "label": "prettier",
       "type": "shell",
-      "command": "yarn prettier:check",
+      "command": "bun run prettier:check",
       "dependsOn": "install",
       "group": "build"
     },
     {
       "label": "lint",
       "type": "shell",
-      "command": "yarn lint",
+      "command": "bun run lint",
       "dependsOn": "prettier",
       "group": "build"
     },
     {
       "label": "build",
       "type": "shell",
-      "command": "yarn build",
+      "command": "bun run build",
       "dependsOn": "lint",
       "group": {
         "kind": "build",
@@ -36,7 +36,7 @@
     {
       "label": "test",
       "type": "shell",
-      "command": "yarn test",
+      "command": "bun run test",
       "dependsOn": "build",
       "group": {
         "kind": "test",

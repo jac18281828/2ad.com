@@ -72,10 +72,10 @@ jobs:
           echo "REPOSITORY_PATH=$( echo ${GITHUB_REPOSITORY} | tr '[:upper:]' '[:lower:]' )" >> ${GITHUB_ENV}
           echo "REPOSITORY_SHA=$( echo ${GITHUB_SHA} | cut -c 1-8 )" >> ${GITHUB_ENV}
       - name: Install dependencies
-        run: yarn install
+        run: bun install
       - name: Synth stack
-        run: yarn cdk synth
+        run: bun run cdk synth
       - name: Deploy stack
         run: |
           echo "Deploying from ghcr.io/${{ env.REPOSITORY_PATH }}:${{ github.ref_name }}"
-          yarn cdk deploy --all --require-approval never --parameters Stack2ad:repository=ghcr.io/${{ env.REPOSITORY_PATH }} --parameters Stack2ad:version=v${{ github.ref_name }}
+          bun run cdk deploy --all --require-approval never --parameters Stack2ad:repository=ghcr.io/${{ env.REPOSITORY_PATH }} --parameters Stack2ad:version=v${{ github.ref_name }}
