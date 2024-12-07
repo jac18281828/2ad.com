@@ -41,6 +41,9 @@ ADD --chown=${USER}:${USER} --chmod=555 https://bun.sh/install /bun/install.sh
 RUN /bun/install.sh && \
     sudo rm -rf /bun
 
+ENV PATH=${PATH}:/home/tsdev/.bun/bin
+RUN bun install --include=dev && \
+    bun run test
 CMD ["bun", "run", "cdk", "synth"]
 
 LABEL org.label-schema.name="aws2ad" \
