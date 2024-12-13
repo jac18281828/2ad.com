@@ -1,3 +1,7 @@
+# 1.0.184 (2024-12-13)
+
+* custom error in Ethereum
+
 # 1.0.183 (2024-12-07)
 
 * Solana with Anchor Dockerfile
