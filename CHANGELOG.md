@@ -1,3 +1,7 @@
+# 1.0.186 (2025-01-01)
+
+* panettone blind taste test
+
 # 1.0.185 (2024-12-31)
 
 * dependabot updates
