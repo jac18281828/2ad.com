@@ -1,3 +1,7 @@
+# 1.0.185 (2024-12-31)
+
+* dependabot updates
+
 # 1.0.184 (2024-12-13)
 
 * custom error in Ethereum
