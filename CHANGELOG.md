@@ -1,3 +1,7 @@
+# 1.0.187 (2025-01-03)
+
+* how to use ed
+
 # 1.0.186 (2025-01-01)
 
 * panettone blind taste test
