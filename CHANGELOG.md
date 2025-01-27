@@ -1,3 +1,7 @@
+# 1.0.189 (2025-01-26)
+
+* GLC Series
+
 # 1.0.188 (2025-01-26)
 
 * I'm still practicing
