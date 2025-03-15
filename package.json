@@ -1,6 +1,6 @@
 {
   "name": "2ad.com",
-  "version": "1.0.191",
+  "version": "1.0.192",
   "license": "BSD-3-Clause",
   "scripts": {
     "build": "tsc",
@@ -26,7 +26,7 @@
     "prettier": "3.5.3",
     "ts-jest": "29.2.5",
     "ts-node": "10.9.2",
-    "typescript-eslint": "8.25.0"
+    "typescript-eslint": "8.26.0"
   },
   "dependencies": {
     "aws-cdk-lib": "2.181.1",
