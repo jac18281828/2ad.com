@@ -1,3 +1,7 @@
+# 1.0.191 (2025-03-15)
+
+* finding the joy in veterinary medicine
+
 # 1.0.190 (2025-02-22)
 
 * power of ten
