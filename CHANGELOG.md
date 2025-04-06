@@ -1,3 +1,7 @@
+# 1.0.192 (2025-04-06)
+
+* canonical urls
+
 # 1.0.191 (2025-03-15)
 
 * finding the joy in veterinary medicine
