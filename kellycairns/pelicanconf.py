@@ -4,7 +4,7 @@ from __future__ import unicode_literals
 
 AUTHOR = u'Kelly Cairns'
 SITENAME = u'Kelly Cairns DVM MS DACVIM'
-SITEURL = ''
+SITEURL = u'https://kellycairns.com'
 
 THEME = 'themes/Flex'
 
