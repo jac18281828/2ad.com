@@ -24,7 +24,6 @@ jobs:
         with:
           context: .
           file: Dockerfile.cdk
-          platforms: linux/amd64
           push: false
           build-args: |
             VERSION=latest
