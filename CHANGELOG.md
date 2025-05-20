@@ -1,3 +1,7 @@
+# 1.0.193 (2025-05-20)
+
+* checking deployment
+
 # 1.0.192 (2025-04-06)
 
 * canonical urls
