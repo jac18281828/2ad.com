@@ -1,3 +1,7 @@
+# 1.0.194 (2025-06-26)
+
+* Icteric Cat post
+
 # 1.0.193 (2025-05-20)
 
 * checking deployment
