@@ -103,6 +103,7 @@ LINKS = (
     ('news', '/category/news.html'),
     ('podcast', '/tag/podcast.html'),
     ('coaching', '/category/coaching.html'),
+    ('publication', '/category/publication.html'),
     ('Thrive Pet Healthcare', 'https://www.thrivepetcare.com'),
     ('LinkedIn', 'https://linkedin.com/in/kelly-cairns-68425060'),
     ('Instagram', 'https://www.instagram.com/cairns_kelly/'),
