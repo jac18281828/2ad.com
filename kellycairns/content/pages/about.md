@@ -4,7 +4,7 @@ category: bio
 date: 2018-12-15
 modified: 2023-04-19
 
-![Kelly Cairns]({static}/KellyCairns.jpg){: height=300 style="float:right; padding:16px"}
+![Dr. Kelly Cairns](/static/KellyCairns.jpg){: height=300 style="float:right; padding:16px"}
 
 Dr. Kelly Cairns graduated veterinary school from CSU in 2004, completed a small animal rotating internship at Cornell in 2005 and completed a small animal internal medicine residency at the Ohio State University in 2008, at which time she obtained Diplomate status. She enjoyed a rewarding clinical practice as an internist and medical director of a multi-specialty/ER hospital until joining Pathway Vet Alliance in January of 2018 (currently known as Thrive Pet Healthcare).
 
