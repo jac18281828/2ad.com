@@ -1,3 +1,7 @@
+# 1.0.189 (2025-09-02)
+
+* kelly about page
+
 # 1.0.197 (2025-08-01)
 
 * pet surrender
