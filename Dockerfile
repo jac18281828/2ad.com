@@ -18,8 +18,8 @@ ENV WORKPATH=/tools
 
 COPY requirements.txt .
 
-RUN python3 -m pip install --break-system-packages --upgrade pip && \
-    if [ -f requirements.txt ]; then python3 -m pip install -r requirements.txt --break-system-packages; fi 
+RUN pip install --no-cache-dir --upgrade pip \
+ && if [ -s requirements.txt ]; then pip install --no-cache-dir -r requirements.txt; fi
 
 RUN mkdir -p themes
 RUN (cd themes && git clone https://github.com/alexandrevicenzi/Flex.git)
@@ -28,13 +28,11 @@ ADD . /htmltmp
 
 WORKDIR /htmltmp
 
-RUN for dir in 2ad emmycairns archiecairns minacairns kellycairns; do ln -sf ${WORKPATH}/themes $dir/themes; done
-
-RUN make -C 2ad html && \
-    make -C emmycairns html && \
-    make -C archiecairns html && \
-    make -C minacairns html && \
-    make -C kellycairns html
+RUN for site in 2ad emmycairns archiecairns minacairns kellycairns; \
+    do \
+      ln -sf ${WORKPATH}/themes $site/themes; \
+      make -C $site html; \
+    done
 
 FROM nginx
 ARG VERSION
