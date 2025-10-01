@@ -25,9 +25,6 @@ THEME_COLOR_ENABLE_USER_OVERRIDE = True
 PYGMENTS_STYLE = 'emacs'
 PYGMENTS_STYLE_DARK = 'monokai'
 
-# plugin for clarity.microsoft.com
-MICROSOFT_CLARITY = "9lturow2fn"
-
 # instruct flex theme to introduce the canonical link
 REL_CANONICAL=True
 

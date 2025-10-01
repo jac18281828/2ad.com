@@ -1,3 +1,7 @@
+# 1.0.199 (2025-10-01)
+
+* remove clarity
+
 # 1.0.198 (2025-09-02)
 
 * kelly about page
