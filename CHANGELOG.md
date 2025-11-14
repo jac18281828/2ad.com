@@ -1,3 +1,8 @@
+# 1.0.200 (2025-11-14)
+
+* every light meter tutorial is wrong
+* c style loop in bash
+
 # 1.0.199 (2025-10-01)
 
 * remove clarity
