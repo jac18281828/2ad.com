@@ -6,6 +6,8 @@ on:
 concurrency:
   group: "ghcr-image"
   cancel-in-progress: true
+env:
+  DOCKER_BUILDKIT: 1
 jobs:
   docker-build:
     runs-on: ubuntu-latest
@@ -78,8 +80,8 @@ jobs:
       - name: Install dependencies
         run: bun install
       - name: Synth stack
-        run: bun run cdk synth
+        run: bun run cdk --no-telemetry synth
       - name: Deploy stack
         run: |
           echo "Deploying from ghcr.io/${{ env.REPOSITORY_PATH }}:${{ github.ref_name }}"
-          bun run cdk deploy --all --require-approval never --parameters Stack2ad:repository=ghcr.io/${{ env.REPOSITORY_PATH }} --parameters Stack2ad:version=v${{ github.ref_name }}
+          bun run cdk --no-telemetry deploy --all --require-approval never --parameters Stack2ad:repository=ghcr.io/${{ env.REPOSITORY_PATH }} --parameters Stack2ad:version=v${{ github.ref_name }}

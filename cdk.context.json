@@ -26,5 +26,6 @@
   "hosted-zone:account=504242000181:domainName=emmycairns.com:region=us-east-2": {
     "Id": "/hostedzone/Z0892853S30T7EU6Q7TP",
     "Name": "emmycairns.com."
-  }
+  },
+  "cli-telemetry": false
 }
