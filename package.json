@@ -10,14 +10,18 @@
     "lint:fix": "eslint --fix cdk/**/*.ts",
     "lint": "eslint cdk/**/*.ts",
     "test": "jest",
-    "cdk": "cdk"
+    "cdk:synth": "cdk synth",
+    "cdk:deploy": "cdk deploy",
+    "cdk:diff": "cdk diff",
+    "cdk:destroy": "cdk destroy",
+    "cdk:bootstrap": "cdk bootstrap"
   },
   "devDependencies": {
     "@types/jest": "30.0.0",
     "@types/node": "24.9.2",
     "@typescript-eslint/eslint-plugin": "8.45.0",
     "@typescript-eslint/parser": "8.26.0",
-    "aws-cdk": "2.1005.0",
+    "aws-cdk": "2.1031.2",
     "eslint": "9.39.0",
     "eslint-config-prettier": "10.1.1",
     "eslint-plugin-import": "2.31.0",
@@ -29,7 +33,7 @@
     "typescript-eslint": "8.26.0"
   },
   "dependencies": {
-    "aws-cdk-lib": "2.221.1",
+    "aws-cdk-lib": "2.224.0",
     "constructs": "10.4.2",
     "typescript": "5.9.3"
   }
