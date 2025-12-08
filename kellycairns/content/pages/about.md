@@ -1,4 +1,4 @@
-title: About Dr. Kelly Cairns | Veterinary Leader & Speaker
+title: About Dr. Kelly Cairns - Veterinary Leader & Speaker
 slug: about_kelly_cairns
 category: bio
 date: 2018-12-15
