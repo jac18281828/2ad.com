@@ -2,7 +2,7 @@
 # -*- coding: utf-8 -*- #
 from __future__ import unicode_literals
 
-AUTHOR = u'Kelly Cairns'
+AUTHOR = u'Dr. Kelly Cairns'
 SITENAME = u'Kelly Cairns DVM MS DACVIM'
 SITEURL = u'https://kellycairns.com'
 
@@ -11,12 +11,12 @@ THEME = 'themes/Flex'
 # flex
 FAVICON = 'favicon.ico'
 SITELOGO = '/static/KellyHeadshot.jpg'
-SITETITLE = u'Dr. Kelly Cairns'
+SITETITLE = u'%s' % AUTHOR
 HOME_HIDE_TAGS = False
 MAIN_MENU = True
 FEED_USE_SUMMARY = True
 BROWSER_COLOR = '#333'
-SITEDESCRIPTION = u'%s\'Veterinary Specialist, Public Speaker and Leader' % AUTHOR
+SITEDESCRIPTION = u'%s\' is a board-certified veterinary internal medicine specialist, executive leader, and nationally recognized educator and speaker on clinical excellence, veterinary education and wellbeing.' % AUTHOR
 
 THEME_COLOR = 'light'
 THEME_COLOR_AUTO_DETECT_BROWSER_PREFERENCE = True
@@ -101,10 +101,8 @@ LINKS = (
     ('podcast', '/tag/podcast.html'),
     ('coaching', '/category/coaching.html'),
     ('publication', '/category/publication.html'),
-    ('Thrive Pet Healthcare', 'https://www.thrivepetcare.com'),
     ('LinkedIn', 'https://linkedin.com/in/kelly-cairns-68425060'),
     ('Instagram', 'https://www.instagram.com/cairns_kelly/'),
-    ('Thrive Instagram', 'https://www.instagram.com/thrive__petcare/'),
 )
 
 # Social widget
