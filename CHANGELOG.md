@@ -1,3 +1,7 @@
+# 1.0.203 (2025-12-08)
+
+* update kelly about page
+
 # 1.0.200 (2025-11-14)
 
 * every light meter tutorial is wrong
