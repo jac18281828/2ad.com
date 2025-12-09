@@ -4,11 +4,9 @@ category: bio
 date: 2018-12-15
 modified: 2025-12-08
 
-# Dr. Kelly Cairns | Veterinary Leader & Speaker
-
 Dr. Kelly Cairns is a board-certified Small Animal Internal Medicine Specialist and senior veterinary medical executive recognized nationally for her leadership in veterinary medicine, clinical education, medical quality and organizational culture. With nearly two decades of experience across general practice, emergency medicine and multi-specialty veterinary care, she is a trusted expert for veterinary professionals, media outlets and academic institutions.
 
-![Dr. Kelly Cairns](/static/KellyCairns.jpg){: height=300 style="float:right; padding:16px"}
+![Dr. Kelly Cairns | Veterinary Leader & Speaker](/static/KellyCairns.jpg){: height=300 style="float:right; padding:16px"}
 
 Dr. Cairns earned her DVM from Colorado State University in 2004, completed a rotating internship at Cornell University in 2005 and finished her Small Animal Internal Medicine residency at The Ohio State University in 2008, when she became a Diplomate of the ACVIM. Her clinical background includes years as a practicing internist and medical director in multi-specialty and emergency hospitals.
 

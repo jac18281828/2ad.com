@@ -12,10 +12,10 @@ Current projects:
 * [EmomTimer app](https://github.com/jac18281828/emomtimer)
 * [Implementation of Knuth's MMIX computer](https://github.com/jac18281828/checksmix)
 * [Intuitive renaming for unix](https://github.com/jac18281828/snipren)
+* [Warfare in the Age of Crusades](https://www.penandswordbooks.com/author/john-cairns/)
 * [A good Java BlockingQueue](https://github.com/conversant/disruptor)
 * [ETOPO 22 Bedrock and Ice Surface Docker](https://github.com/jac18281828/bedrock)
 * [Diceware](https://github.com/jac18281828/diceware)
 
-* [Warfare in the Age of Crusades](https://www.penandswordbooks.com/author/john-cairns/)
 
 
