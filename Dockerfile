@@ -21,12 +21,11 @@ COPY requirements.txt .
 RUN pip install --no-cache-dir --upgrade pip \
  && if [ -s requirements.txt ]; then pip install --no-cache-dir -r requirements.txt; fi
 
-RUN mkdir -p themes
-RUN (cd themes && git clone https://github.com/alexandrevicenzi/Flex.git)
-
 ADD . /htmltmp
 
 WORKDIR /htmltmp
+
+COPY themes $WORKPATH/themes
 
 RUN for site in 2ad emmycairns archiecairns minacairns kellycairns; \
     do \

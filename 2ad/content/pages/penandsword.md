@@ -1,4 +1,4 @@
-title: Pen and Sword Military
+title: P&S Military
 
 # Coming Soon! 
 

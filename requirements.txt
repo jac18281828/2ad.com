@@ -2,3 +2,4 @@ pelican
 jinja2
 markdown
 beautifulsoup4
+pytz

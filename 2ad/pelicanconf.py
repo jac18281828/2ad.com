@@ -2,8 +2,8 @@
 # -*- coding: utf-8 -*- #
 from __future__ import unicode_literals
 
-AUTHOR = u'John Cairns'
-SITENAME = u'John Cairns'
+AUTHOR = u'John A Cairns'
+SITENAME = u'John A Cairns'
 SITEURL = u'https://2ad.com'
 
 THEME = 'themes/Flex'
@@ -12,6 +12,7 @@ THEME = 'themes/Flex'
 FAVICON = 'favicon.ico'
 SITELOGO = '/static/sitelogo.jpg'
 SITETITLE = u'Manzikert 2021'
+SITESUBTITLE = u'%s' % AUTHOR
 SITEDESCRIPTION = u'%s\'s Manzikert 2021 - Writing, Code, Tech, Recipes and more' % AUTHOR
 HOME_HIDE_TAGS = False
 MAIN_MENU = True

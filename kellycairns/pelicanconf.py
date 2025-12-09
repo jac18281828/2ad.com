@@ -12,6 +12,7 @@ THEME = 'themes/Flex'
 FAVICON = 'favicon.ico'
 SITELOGO = '/static/KellyHeadshot.jpg'
 SITETITLE = u'%s' % AUTHOR
+SITESUBTITLE = u'Veterinary Leader & Speaker'
 HOME_HIDE_TAGS = False
 MAIN_MENU = True
 FEED_USE_SUMMARY = True
