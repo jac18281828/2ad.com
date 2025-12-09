@@ -1,3 +1,7 @@
+# 1.0.206 (2025-12-09)
+
+* cleanup about page
+
 # 1.0.204 (2025-12-09)
 
 * fixing formatting
