@@ -24,12 +24,16 @@ jobs:
         uses: actions/setup-node@v4
         with:
           node-version: 22.16.0
+      - name: Set up Bun
+        uses: oven-sh/setup-bun@v2
+        with:
+          bun-version: latest
       - name: Set up Python
         uses: actions/setup-python@v5
         with:
           python-version: "3.12"
       - name: Install Node dependencies
-        run: npm ci
+        run: bun install --include=dev --frozen-lockfile
       - name: Install Python dependencies
         run: |
           python -m pip install --upgrade pip
@@ -43,7 +47,7 @@ jobs:
           aws-region: ${{ env.AWS_REGION }}
           role-to-assume: arn:aws:iam::504242000181:role/GithubDeployCI
       - name: Deploy infrastructure
-        run: npm run cdk:deploy -- --all --require-approval never --outputs-file cdk-outputs.json --no-telemetry
+        run: bun run cdk:deploy -- --all --require-approval never --outputs-file cdk-outputs.json --no-telemetry
       - name: Build static sites
         run: ./scripts/build-sites.sh
       - name: Sync static sites to S3 and invalidate CloudFront
