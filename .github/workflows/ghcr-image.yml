@@ -1,87 +1,62 @@
-name: GHCR AWS Build Push CI
+name: Release Deploy
 on:
   push:
     tags:
       - "*"
+  workflow_dispatch:
+permissions:
+  id-token: write
+  contents: write
 concurrency:
-  group: "ghcr-image"
+  group: "release-deploy-${{ github.ref }}"
   cancel-in-progress: true
 env:
-  DOCKER_BUILDKIT: 1
+  AWS_REGION: "us-east-1"
 jobs:
-  docker-build:
-    runs-on: ubuntu-latest
-    steps:
-      - name: Checkout
-        uses: actions/checkout@v3
-        with:
-          submodules: recursive
-      - name: Set up QEMU
-        uses: docker/setup-qemu-action@v2
-      - name: Set up Docker Buildx
-        uses: docker/setup-buildx-action@v2
-      - name: Generate repository name
-        run: |
-          echo "REPOSITORY_PATH=$( echo ${GITHUB_REPOSITORY} | tr '[:upper:]' '[:lower:]' )" >> ${GITHUB_ENV}
-          echo "REPOSITORY_SHA=$( echo ${GITHUB_SHA} | cut -c 1-8 )" >> ${GITHUB_ENV}
-      - name: Login to GitHub Container Registry
-        uses: docker/login-action@v2
-        with:
-          registry: ghcr.io
-          username: ${{ github.repository_owner }}
-          password: ${{ secrets.GITHUB_TOKEN }}
-      - name: Build and Push
-        uses: docker/build-push-action@v3
-        with:
-          context: .
-          platforms: linux/amd64
-          push: true
-          build-args: |
-            VERSION=${{ github.ref_name }}
-          tags: |
-            ghcr.io/${{ env.REPOSITORY_PATH }}:v${{ github.ref_name }}
-            ghcr.io/${{ env.REPOSITORY_PATH }}:${{ env.REPOSITORY_SHA }}
-            ghcr.io/${{ env.REPOSITORY_PATH }}:latest
-      - name: GitHub Release
-        uses: actions/create-release@v1
-        env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-        with:
-          draft: false
-          prerelease: false
-          tag_name: ${{ github.ref_name }}
-          release_name: v${{ github.ref_name }}
-          body_path: CHANGELOG.md
-  aws_cdk:
-    needs: docker-build
+  deploy:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout repo
-        uses: actions/checkout@v3
+        uses: actions/checkout@v4
         with:
           submodules: recursive
       - name: Set up Node.js
         uses: actions/setup-node@v4
         with:
-          node-version: 20.9.0
-      - uses: oven-sh/setup-bun@v2
+          node-version: 22.16.0
+      - name: Set up Python
+        uses: actions/setup-python@v5
         with:
-          bun-version: latest
-      - name: Configure aws credentials
-        uses: aws-actions/configure-aws-credentials@master
+          python-version: "3.12"
+      - name: Install Node dependencies
+        run: npm ci
+      - name: Install Python dependencies
+        run: |
+          python -m pip install --upgrade pip
+          if [ -s requirements.txt ]; then
+            pip install -r requirements.txt
+          fi
+      - name: Configure AWS credentials
+        uses: aws-actions/configure-aws-credentials@v5
         with:
-          aws-access-key-id: ${{ secrets.AWS_ACCESS_KEY_ID }}
-          aws-secret-access-key: ${{ secrets.AWS_SECRET_KEY_ID }}
-          aws-region: 'us-east-2'
-      - name: Generate repository name
-        run: |
-          echo "REPOSITORY_PATH=$( echo ${GITHUB_REPOSITORY} | tr '[:upper:]' '[:lower:]' )" >> ${GITHUB_ENV}
-          echo "REPOSITORY_SHA=$( echo ${GITHUB_SHA} | cut -c 1-8 )" >> ${GITHUB_ENV}
-      - name: Install dependencies
-        run: bun install
-      - name: Synth stack
-        run: bun run cdk --no-telemetry synth
-      - name: Deploy stack
-        run: |
-          echo "Deploying from ghcr.io/${{ env.REPOSITORY_PATH }}:${{ github.ref_name }}"
-          bun run cdk --no-telemetry deploy --all --require-approval never --parameters Stack2ad:repository=ghcr.io/${{ env.REPOSITORY_PATH }} --parameters Stack2ad:version=v${{ github.ref_name }}
+          audience: sts.amazonaws.com
+          aws-region: ${{ env.AWS_REGION }}
+          role-to-assume: arn:aws:iam::504242000181:role/GithubDeployCI
+      - name: Deploy infrastructure
+        run: npm run cdk:deploy -- --all --require-approval never --outputs-file cdk-outputs.json --no-telemetry
+      - name: Build static sites
+        run: ./scripts/build-sites.sh
+      - name: Sync static sites to S3 and invalidate CloudFront
+        run: ./scripts/s3-sync-sites.sh cdk-outputs.json
+      - name: GitHub Release
+        uses: softprops/action-gh-release@v2
+        with:
+          draft: false
+          prerelease: false
+          tag_name: ${{ github.ref_name }}
+          name: Release ${{ github.ref_name }}
+          body_path: CHANGELOG.md
+          generate_release_notes: true
+          make_latest: true
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}

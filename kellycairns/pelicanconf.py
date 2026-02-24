@@ -67,7 +67,6 @@ STATIC_PATHS = ('static',
                 'static/apple-touch-icon.png',
                 'static/favicon-16x16.png',
                 'static/favicon-32x32.png',
-                'static/favicon.ico',
 )
 
 EXTRA_PATH_METADATA = {
@@ -79,7 +78,6 @@ EXTRA_PATH_METADATA = {
     'static/apple-touch-icon.png': {'path': 'apple-touch-icon.png'},
     'static/favicon-16x16.png': {'path': 'favicon-16x16.png'},
     'static/favicon-32x32.png': {'path': 'favicon-32x32.png'},
-    'static/favicon-ico': {'path': 'favicon.ico'},    
 }
 
 

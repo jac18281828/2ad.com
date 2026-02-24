@@ -1,3 +1,7 @@
+# 1.0.213 (2026-02-23)
+
+* total refactor to use cloud front instead of service
+
 # 1.0.212 (2026-02-19)
 
 * fix 19 cats and counting episode 155 copy

@@ -23,7 +23,7 @@ jobs:
         uses: docker/build-push-action@v3
         with:
           context: .
-          file: Dockerfile.cdk
+          file: Dockerfile
           push: false
           build-args: |
             VERSION=latest
