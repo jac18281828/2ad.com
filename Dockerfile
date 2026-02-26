@@ -38,6 +38,7 @@ RUN export DEBIAN_FRONTEND=noninteractive && \
      git \
      python3 \
      python3-pip \
+     python3-venv \
      ripgrep \     
      sudo \
      unzip && \
