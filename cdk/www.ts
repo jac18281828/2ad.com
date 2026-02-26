@@ -4,6 +4,7 @@ import * as cdk from 'aws-cdk-lib';
 import { EmomTimerStack } from './emomtimer-stack';
 import { SiteDefinition, SITE_DEFINITIONS } from './site-config';
 import { SiteStack } from './site-stack';
+import { SolitareStack } from './solitare-stack';
 
 import { ACCOUNT, REGION } from './config';
 
@@ -19,6 +20,10 @@ const createSiteStack = (site: SiteDefinition): void => {
 SITE_DEFINITIONS.forEach(createSiteStack);
 
 new EmomTimerStack(app, 'StackEmomTimer2adCom', {
+  env: { account: ACCOUNT, region: 'us-east-1' },
+});
+
+new SolitareStack(app, 'StackSolitare2adCom', {
   env: { account: ACCOUNT, region: 'us-east-1' },
 });
 

@@ -1,3 +1,8 @@
+# 1.0.214 (2026-02-25)
+
+* solitare.2ad.com
+* emomtimer.2ad.com
+
 # 1.0.213 (2026-02-23)
 
 * total refactor to use cloud front instead of service
