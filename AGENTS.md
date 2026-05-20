@@ -125,6 +125,8 @@ Scope is restricted to `kellycairns/` content only. See `kellycairns/CLAUDE.md` 
 
 All changes reach production via merged PR. No direct commits to `main`.
 
+**This repo enforces linear history — rebase and merge only, no merge commits.**
+
 1. `git checkout -b <scope>/<short-description>` — e.g. `kelly/spring-post`, `john/update-about`
 2. Make changes in the appropriate content directories
 3. `make html` inside the relevant site directory to verify the build succeeds
@@ -132,6 +134,10 @@ All changes reach production via merged PR. No direct commits to `main`.
 5. `git commit -m "<type>(<site>): <description>"` — e.g. `content(kellycairns): add spring 2025 post`
 6. `git push origin <branch>`
 7. `gh pr create --draft --title "..." --body "..."`
-8. Stop — a human reviews and merges.
+8. If `main` has moved since the branch was created, rebase before merge:
+   - `git fetch origin && git rebase origin/main`
+   - Resolve any conflicts, then `git push --force-with-lease origin <branch>`
+   - Never `git merge main` into a feature branch — that creates a merge commit.
+9. Stop — a human reviews and uses **Rebase and merge** in the GitHub UI.
 
-Production deploys only after a human merges the PR and pushes a release tag.
+Production deploys only after a human rebase-merges the PR and pushes a release tag.
