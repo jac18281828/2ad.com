@@ -1,3 +1,8 @@
+# 1.0.216 (2026-05-20)
+
+* agent policy and per-site scoping (CLAUDE.md / AGENTS.md / kellycairns)
+* dependency updates
+
 # 1.0.215 (2026-02-25)
 
 * solitare.2ad.com
