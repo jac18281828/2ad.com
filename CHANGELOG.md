@@ -1,3 +1,7 @@
+# 1.0.217 (2026-06-04)
+
+* dependency updates (ts-jest, @types/node, typescript-eslint, @typescript-eslint/parser, eslint-plugin-import)
+
 # 1.0.216 (2026-05-20)
 
 * agent policy and per-site scoping (CLAUDE.md / AGENTS.md / kellycairns)
