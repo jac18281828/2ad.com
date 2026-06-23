@@ -1,3 +1,10 @@
+# 1.0.218 (2026-06-23)
+
+* refreshed site identity, About page and SEO/JSON-LD metadata (engineering focus, physics, Fabric, Conversant Disruptor)
+* new Cartography & Books page — six Pen & Sword / Westholme military-history titles with covers, summaries and review blurbs
+* added llms.txt for AI crawlers and Instagram/TikTok to the social graph (SOCIAL widget + sameAs)
+* fixed two malformed post categories and empty web manifest name fields
+
 # 1.0.217 (2026-06-04)
 
 * dependency updates (ts-jest, @types/node, typescript-eslint, @typescript-eslint/parser, eslint-plugin-import)
