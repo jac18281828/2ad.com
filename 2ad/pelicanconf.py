@@ -11,9 +11,9 @@ THEME = 'themes/Flex'
 # flex
 FAVICON = 'favicon.ico'
 SITELOGO = '/static/sitelogo.jpg'
-SITETITLE = u'Manzikert 2021'
-SITESUBTITLE = u'%s' % AUTHOR
-SITEDESCRIPTION = u'%s\'s Manzikert 2021 - Writing, Code, Tech, Recipes and more' % AUTHOR
+SITETITLE = u'John A. Cairns'
+SITESUBTITLE = u'Software engineer · smart contracts & trading infrastructure · illustrator & computer cartographer'
+SITEDESCRIPTION = u'John A. Cairns — software engineer with three decades in distributed systems, building smart contracts and multi-chain trading infrastructure in Rust and Solidity. Enthusiastic amateur illustrator, photographer and computer cartographer. Writing on code, cryptography, craft and more.'
 HOME_HIDE_TAGS = False
 MAIN_MENU = True
 FEED_USE_SUMMARY = True
@@ -67,12 +67,14 @@ STATIC_PATHS = (
     'static/favicon.ico',
     'static/robots.txt',
     'static/site.webmanifest',
+    'static/llms.txt',
 )
 
 ARTICLE_EXCLUDES = []
 
 EXTRA_PATH_METADATA = {
     'static/robots.txt': {'path': 'robots.txt'},
+    'static/llms.txt': {'path': 'llms.txt'},
     'static/favicon.ico': {'path': 'favicon.ico'},
     'static/site.webmanifest': {'path': 'site.webmanifest'},
     'static/android-chrome-192x192.png': {'path': 'android-chrome-192x192.png'},
@@ -105,20 +107,23 @@ LINKS = (
     ('history', '/category/history.html'),
     ('food', '/category/food.html'),
     ('', ''),
-    ('My Author Page', 'https://www.amazon.com/author/johncairns'),
     ('GitHub', 'https://github.com/jac18281828'),
+    ('My Author Page', 'https://www.amazon.com/author/johncairns'),
     ('jac1828.eth', 'https://app.ens.domains/jac1828.eth'),
     ('LinkedIn', 'https://www.linkedin.com/in/johnacairns'),
     ('FD311EE84C8...', 'https://keys.openpgp.org/search?q=FD311EE84C8321C3E93C1E639028C4309ACCEB9B'),
-    ('converse.xyz', 'https://converse.xyz/dm/jac1828.eth'),
+    ('', ''),    
     ('LibriVox', 'https://librivox.org/reader/12659'),
-    ('', ''),
-    ('Mike Riley', 'http://mikeriley.com'),
-    ('John Winan\'s Basement', 'https://www.youtube.com/channel/UCik0xMsb7kSpPUvT2JoJQ1w')
 )
 
-# Social widget
-#SOCIAL = ()
+# Social widget — Flex renders these as Font Awesome brand icons (fa-brands fa-<name>)
+SOCIAL = (
+    ('github', 'https://github.com/jac18281828'),
+    ('linkedin', 'https://www.linkedin.com/in/johnacairns'),
+    ('youtube', 'https://www.youtube.com/@johnacairns'),
+    ('instagram', 'https://www.instagram.com/jac18281828'),
+    ('tiktok', 'https://www.tiktok.com/@jac1828'),
+)
 
 DEFAULT_PAGINATION = 6
 

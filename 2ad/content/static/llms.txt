@@ -1,0 +1,56 @@
+# John A. Cairns — 2ad.com
+
+> John A. Cairns is a Chicago-based software engineer with three decades in distributed
+> systems and a background in physics, who builds smart contracts and multi-chain trading
+> infrastructure in Rust and Solidity (Base, Arbitrum, Solana) — including Fabric, a
+> high-performance DEX aggregator. He is also an enthusiastic amateur illustrator,
+> photographer, and computer cartographer — he created the regional maps for six
+> military-history books written by Brian Todd Carey (Pen & Sword / Westholme), from
+> Warfare in the Ancient World through the Warfare in the Age of Crusades series — plus a LibriVox
+> narrator, musician, and home baker. This site collects his writing on code, cryptography,
+> craft, food, and more.
+
+## About
+
+- [About John](https://2ad.com/pages/about-john.html): Full bio — engineering focus, selected work, and links.
+- [Cartography & Books](https://2ad.com/pages/cartography.html): The six military-history books John illustrated regional maps for, with covers and summaries.
+
+## Focus areas
+
+- Distributed software systems (three decades of experience)
+- Smart contracts and on-chain trading infrastructure (Rust + Solidity, multi-chain)
+- Rust systems programming and composable Unix command-line tools
+- Applied cryptography and zero-knowledge proofs (interest / exploration)
+- Computer-science fundamentals (Knuth's MMIX, data structures, algorithms)
+- Illustration and computer cartography (regional maps for the Warfare in the Age of Crusades series)
+
+## Selected projects
+
+- [parsm](https://github.com/jac18281828/parsm): Structured-data processor for the CLI (JSON/CSV/YAML/TOML/logfmt/text); a friendlier superset of sed/awk/grep. Published on crates.io.
+- [EMOM Timer](https://emomtimer.2ad.com): Precision drift-correcting workout timer in Rust + WebAssembly (Yew). Source: https://github.com/jac18281828/emomtimer
+- [checksmix](https://github.com/jac18281828/checksmix): Fast emulator and assembler for Knuth's MMIX architecture.
+- [snipren](https://github.com/jac18281828/snipren): Fast, intent-aware file rename utility for Unix pipelines.
+- [Conversant Disruptor](https://github.com/conversant/disruptor): High-performance Java ring-buffer BlockingQueue (~320 stars). On Maven Central, packaged for Debian/Ubuntu, used by Apache Log4j 2 as an async-logging queue.
+- [Collective Governance](https://github.com/collectivexyz/collective-governance-v1): Author of an on-chain Ethereum voting/consensus protocol (Solidity).
+- [Fabric](https://benchmark.withfabric.xyz): High-performance multi-chain DEX aggregator (live benchmark).
+
+## Writing
+
+- [Technology posts](https://2ad.com/category/tech.html): Smart contracts, Solidity/Foundry, Rust, Go, zero-knowledge proofs, systems.
+- [History](https://2ad.com/category/history.html): Medieval and crusades-era military history notes.
+- [Food](https://2ad.com/category/food.html): Baking and recipes.
+- [Books](https://2ad.com/category/books.html): The Warfare in the Age of Crusades series (regional cartography) and reading notes.
+
+## Links
+
+- GitHub: https://github.com/jac18281828
+- LinkedIn: https://www.linkedin.com/in/johnacairns
+- YouTube: https://www.youtube.com/@johnacairns
+- Instagram: https://www.instagram.com/jac18281828
+- TikTok: https://www.tiktok.com/@jac1828
+- Amazon author page: https://amazon.com/author/johncairns
+- Pen & Sword author page: https://www.penandswordbooks.com/author/john-cairns/
+- LibriVox: https://librivox.org/reader/12659
+- ENS: jac1828.eth
+- Atom feed: https://2ad.com/feeds/all.atom.xml
+- Sitemap: https://2ad.com/sitemap.xml
