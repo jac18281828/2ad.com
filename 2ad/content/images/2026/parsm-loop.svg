@@ -1,0 +1,45 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 520" role="img" aria-label="Diagram of the patch loop: a good idea feeds a shallow implementation, which surfaces a bug, which gets patched, which loops back to the implementation, eventually producing a system whose reward has drifted.">
+  <defs>
+    <marker id="arrow" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+      <path d="M0,0 L10,5 L0,10 z" fill="#475569"/>
+    </marker>
+  </defs>
+
+  <!-- flow lines (drawn first, boxes on top) -->
+  <path d="M210,75 L300,75" fill="none" stroke="#475569" stroke-width="2.5" marker-end="url(#arrow)"/>
+  <path d="M520,75 L690,75" fill="none" stroke="#475569" stroke-width="2.5" marker-end="url(#arrow)"/>
+  <path d="M760,120 C760,220 700,280 650,328" fill="none" stroke="#475569" stroke-width="2.5" marker-end="url(#arrow)"/>
+  <path d="M460,350 C300,350 255,220 378,122" fill="none" stroke="#475569" stroke-width="2.5" marker-end="url(#arrow)"/>
+  <path d="M680,375 C705,378 722,381 738,384" fill="none" stroke="#475569" stroke-width="2.5" marker-end="url(#arrow)"/>
+
+  <text x="300" y="240" text-anchor="middle" font-family="system-ui, -apple-system, Segoe UI, Roboto, sans-serif" font-style="italic" font-size="15" fill="#475569">repeat</text>
+  <text x="710" y="470" text-anchor="middle" font-family="system-ui, -apple-system, Segoe UI, Roboto, sans-serif" font-style="italic" font-size="15" fill="#475569">after enough repeats</text>
+
+  <!-- Good Idea: feeds the cycle once, from the outside -->
+  <rect x="20" y="30" width="190" height="90" rx="12" fill="#ecfdf5" stroke="#047857" stroke-width="2"/>
+  <text x="115" y="65" text-anchor="middle" font-family="system-ui, -apple-system, Segoe UI, Roboto, sans-serif" font-weight="700" font-size="20" fill="#065f46">A Good Idea</text>
+  <text x="115" y="87" text-anchor="middle" font-family="system-ui, -apple-system, Segoe UI, Roboto, sans-serif" font-size="15" fill="#065f46">one grammar,</text>
+  <text x="115" y="106" text-anchor="middle" font-family="system-ui, -apple-system, Segoe UI, Roboto, sans-serif" font-size="15" fill="#065f46">one source of truth</text>
+
+  <!-- Shallow Implementation -->
+  <rect x="300" y="30" width="220" height="90" rx="12" fill="#eef2f7" stroke="#334155" stroke-width="2"/>
+  <text x="410" y="65" text-anchor="middle" font-family="system-ui, -apple-system, Segoe UI, Roboto, sans-serif" font-weight="700" font-size="20" fill="#1e293b">Shallow</text>
+  <text x="410" y="87" text-anchor="middle" font-family="system-ui, -apple-system, Segoe UI, Roboto, sans-serif" font-weight="700" font-size="20" fill="#1e293b">Implementation</text>
+  <text x="410" y="108" text-anchor="middle" font-family="system-ui, -apple-system, Segoe UI, Roboto, sans-serif" font-size="15" fill="#1e293b">gaps you can't see yet</text>
+
+  <!-- Bug Surfaces -->
+  <rect x="690" y="30" width="220" height="90" rx="12" fill="#eef2f7" stroke="#334155" stroke-width="2"/>
+  <text x="800" y="65" text-anchor="middle" font-family="system-ui, -apple-system, Segoe UI, Roboto, sans-serif" font-weight="700" font-size="20" fill="#1e293b">A Bug Surfaces</text>
+  <text x="800" y="88" text-anchor="middle" font-family="system-ui, -apple-system, Segoe UI, Roboto, sans-serif" font-size="15" fill="#1e293b">found in ordinary use</text>
+
+  <!-- Patch -->
+  <rect x="460" y="330" width="220" height="90" rx="12" fill="#eef2f7" stroke="#334155" stroke-width="2"/>
+  <text x="570" y="365" text-anchor="middle" font-family="system-ui, -apple-system, Segoe UI, Roboto, sans-serif" font-weight="700" font-size="20" fill="#1e293b">A Patch</text>
+  <text x="570" y="388" text-anchor="middle" font-family="system-ui, -apple-system, Segoe UI, Roboto, sans-serif" font-size="15" fill="#1e293b">avoids the hard part</text>
+
+  <!-- Result -->
+  <rect x="740" y="330" width="230" height="110" rx="12" fill="#fffbeb" stroke="#b45309" stroke-width="2"/>
+  <text x="855" y="364" text-anchor="middle" font-family="system-ui, -apple-system, Segoe UI, Roboto, sans-serif" font-weight="700" font-size="20" fill="#78350f">Reward Drifts</text>
+  <text x="855" y="386" text-anchor="middle" font-family="system-ui, -apple-system, Segoe UI, Roboto, sans-serif" font-size="15" fill="#78350f">two parsers,</text>
+  <text x="855" y="405" text-anchor="middle" font-family="system-ui, -apple-system, Segoe UI, Roboto, sans-serif" font-size="15" fill="#78350f">not one good one</text>
+</svg>
