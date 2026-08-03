@@ -1,3 +1,7 @@
+# 1.0.221 (2026-08-03)
+
+* fix: use postscript lexer for MMIX code blocks in Advent of Code 2025 post (asm/gas lexer doesn't recognize % as a comment, rendered as error tokens)
+
 # 1.0.220 (2026-08-02)
 
 * fix: sync bun.lockb with dependency bumps — was blocking Release Deploy's frozen-lockfile install
