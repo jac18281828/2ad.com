@@ -1,3 +1,7 @@
+# 1.0.220 (2026-08-02)
+
+* fix: sync bun.lockb with dependency bumps — was blocking Release Deploy's frozen-lockfile install
+
 # 1.0.219 (2026-08-02)
 
 * new post: Save 40% on Input Tokens with This Prompt Hack (YouTube short)
