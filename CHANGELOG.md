@@ -1,3 +1,8 @@
+# 1.0.219 (2026-08-02)
+
+* new post: Save 40% on Input Tokens with This Prompt Hack (YouTube short)
+* dependency updates (eslint, constructs, prettier, typescript-eslint, jest)
+
 # 1.0.218 (2026-06-23)
 
 * refreshed site identity, About page and SEO/JSON-LD metadata (engineering focus, physics, Fabric, Conversant Disruptor)
