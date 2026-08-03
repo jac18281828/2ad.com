@@ -1,3 +1,9 @@
+# 1.0.222 (2026-08-03)
+
+* fix: correct MMIX calling-convention bug in Advent of Code 2025 dial program — persistent state ($10/$12 dial/hit-count, $2/$3 direction/magnitude) never survived PUSHJ/POP call boundaries; promoted to GREGs and fixed the RemEuclid call-site hole register. Verified against checksmix 0.2.24: dial=32, 3 hits, 10 ops now matches the post's claim
+* fix: use nasm lexer with ; comments for MMIX code blocks (real asm coloring, checksmix also accepts ; as a comment)
+* rename input-array label MyInput -> PuzzleInput
+
 # 1.0.221 (2026-08-03)
 
 * fix: use postscript lexer for MMIX code blocks in Advent of Code 2025 post (asm/gas lexer doesn't recognize % as a comment, rendered as error tokens)
