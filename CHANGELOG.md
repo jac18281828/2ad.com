@@ -1,3 +1,7 @@
+# 1.0.223 (2026-08-08)
+
+* new post: Dispatch a Claude Prompt Straight from Emacs's Kill Ring (YouTube short)
+
 # 1.0.222 (2026-08-03)
 
 * fix: correct MMIX calling-convention bug in Advent of Code 2025 dial program — persistent state ($10/$12 dial/hit-count, $2/$3 direction/magnitude) never survived PUSHJ/POP call boundaries; promoted to GREGs and fixed the RemEuclid call-site hole register. Verified against checksmix 0.2.24: dial=32, 3 hits, 10 ops now matches the post's claim
