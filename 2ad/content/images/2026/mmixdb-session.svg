@@ -1,41 +1,44 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 620" role="img" aria-label="Terminal screenshot of an mmixdb debugging session.">
-  <rect x="0" y="0" width="900" height="620" rx="10" fill="#1e1e2e"/>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 841" width="900" height="841" role="img" aria-label="Terminal screenshot of an mmixdb session stepping through atan(1).">
+  <rect x="0" y="0" width="900" height="841" rx="10" fill="#1e1e2e"/>
   <rect x="0" y="0" width="900" height="36" rx="10" fill="#313244"/>
   <rect x="0" y="26" width="900" height="10" fill="#313244"/>
   <circle cx="22" cy="18" r="6" fill="#f38ba8"/>
   <circle cx="42" cy="18" r="6" fill="#f9e2af"/>
   <circle cx="62" cy="18" r="6" fill="#a6e3a1"/>
-  <text x="450" y="23" text-anchor="middle" font-family="SFMono-Regular, Menlo, Consolas, monospace" font-size="13" fill="#a6adc8">mmixdb — examples/fibonacci.mms</text>
-
-  <g font-family="SFMono-Regular, Menlo, Consolas, monospace" font-size="14.5" xml:space="preserve">
-    <text x="20" y="66"  fill="#a6adc8">$ mmixdb examples/fibonacci.mms</text>
-
-    <text x="20" y="94"  fill="#89b4fa">(mmixdb)</text><text x="105" y="94" fill="#f5e0dc"> b FibLoop</text>
-    <text x="20" y="118" fill="#a6e3a1">Breakpoint set at 0x154 (FibLoop)</text>
-
-    <text x="20" y="146" fill="#89b4fa">(mmixdb)</text><text x="105" y="146" fill="#f5e0dc"> run</text>
-    <text x="20" y="170" fill="#94e2d5">examples/fibonacci.mms:32</text><text x="270" y="170" fill="#cdd6f4">ADDU    $4,$1,$2</text><text x="470" y="170" fill="#6c7086">% tmp = a + b</text>
-
-    <text x="20" y="198" fill="#89b4fa">(mmixdb)</text><text x="105" y="198" fill="#f5e0dc"> list</text>
-    <text x="20" y="222" fill="#6c7086">  30    SETI    $3,2                    % i = 2</text>
-    <text x="20" y="244" fill="#6c7086">  31 FibLoop</text>
-    <text x="20" y="266" fill="#f9e2af">&gt; 32    ADDU    $4,$1,$2                % tmp = a + b</text>
-    <text x="20" y="288" fill="#6c7086">  33    SET     $1,$2                   % a = b</text>
-    <text x="20" y="310" fill="#6c7086">  34    SET     $2,$4                   % b = tmp</text>
-
-    <text x="20" y="338" fill="#89b4fa">(mmixdb)</text><text x="105" y="338" fill="#f5e0dc"> print $1</text>
-    <text x="20" y="360" fill="#cdd6f4">0</text>
-    <text x="20" y="384" fill="#89b4fa">(mmixdb)</text><text x="105" y="384" fill="#f5e0dc"> print $2</text>
-    <text x="20" y="406" fill="#cdd6f4">1</text>
-
-    <text x="20" y="434" fill="#89b4fa">(mmixdb)</text><text x="105" y="434" fill="#f5e0dc"> next</text>
-    <text x="20" y="458" fill="#94e2d5">examples/fibonacci.mms:33</text><text x="270" y="458" fill="#cdd6f4">SET     $1,$2</text><text x="470" y="458" fill="#6c7086">% a = b</text>
-    <text x="20" y="482" fill="#89b4fa">(mmixdb)</text><text x="105" y="482" fill="#f5e0dc"> next</text>
-    <text x="20" y="506" fill="#94e2d5">examples/fibonacci.mms:34</text><text x="270" y="506" fill="#cdd6f4">SET     $2,$4</text><text x="470" y="506" fill="#6c7086">% b = tmp</text>
-
-    <text x="20" y="534" fill="#89b4fa">(mmixdb)</text><text x="105" y="534" fill="#f5e0dc"> print $1</text>
-    <text x="20" y="556" fill="#cdd6f4">1</text>
-    <text x="20" y="580" fill="#89b4fa">(mmixdb)</text><text x="105" y="580" fill="#f5e0dc"> print $2</text>
-    <text x="20" y="602" fill="#cdd6f4">1</text>
+  <text x="450" y="23" text-anchor="middle" font-family="SFMono-Regular, Menlo, Consolas, monospace" font-size="13" fill="#a6adc8">mmixdb — atan_test.mms</text>
+  <g font-family="SFMono-Regular, Menlo, Consolas, monospace" font-size="13.5" xml:space="preserve">
+    <text x="20" y="62"><tspan fill="#a6adc8">$ mmixdb atan_test.mms</tspan></text>
+    <text x="20" y="83"><tspan fill="#94e2d5">atan_test.mms:186</tspan></text>
+    <text x="20" y="111"><tspan fill="#89b4fa">(mmixdb)</tspan><tspan fill="#f5e0dc"> b 210</tspan></text>
+    <text x="20" y="132"><tspan fill="#a6e3a1">Breakpoint set at 0x1138 (210)</tspan></text>
+    <text x="20" y="160"><tspan fill="#89b4fa">(mmixdb)</tspan><tspan fill="#f5e0dc"> run</tspan></text>
+    <text x="20" y="181"><tspan fill="#a6adc8">atan tests:</tspan></text>
+    <text x="20" y="202"><tspan fill="#94e2d5">atan_test.mms:210</tspan></text>
+    <text x="20" y="230"><tspan fill="#89b4fa">(mmixdb)</tspan><tspan fill="#f5e0dc"> c</tspan></text>
+    <text x="20" y="251"><tspan fill="#a6adc8">[0] PASS  x=0000000000000000  got=0000000000000000  exp=0000000000000000</tspan></text>
+    <text x="20" y="272"><tspan fill="#94e2d5">atan_test.mms:210</tspan></text>
+    <text x="20" y="300"><tspan fill="#89b4fa">(mmixdb)</tspan><tspan fill="#f5e0dc"> s</tspan></text>
+    <text x="20" y="321"><tspan fill="#94e2d5">atan.mms:70</tspan><tspan fill="#cdd6f4">           FUN     $1,$0,$0</tspan></text>
+    <text x="20" y="349"><tspan fill="#89b4fa">(mmixdb)</tspan><tspan fill="#f5e0dc"> b 116</tspan></text>
+    <text x="20" y="370"><tspan fill="#a6e3a1">Breakpoint set at 0x27c (116)</tspan></text>
+    <text x="20" y="398"><tspan fill="#89b4fa">(mmixdb)</tspan><tspan fill="#f5e0dc"> c</tspan></text>
+    <text x="20" y="419"><tspan fill="#94e2d5">atan.mms:116</tspan><tspan fill="#cdd6f4">          FMUL    $2,$0,$0</tspan><tspan fill="#6c7086">   % t = u*u</tspan></text>
+    <text x="20" y="440"><tspan fill="#89b4fa">(mmixdb)</tspan><tspan fill="#f5e0dc"> p $0</tspan></text>
+    <text x="20" y="461"><tspan fill="#cdd6f4">0</tspan></text>
+    <text x="20" y="489"><tspan fill="#89b4fa">(mmixdb)</tspan><tspan fill="#f5e0dc"> b 147</tspan></text>
+    <text x="20" y="510"><tspan fill="#a6e3a1">Breakpoint set at 0x2f0 (147)</tspan></text>
+    <text x="20" y="538"><tspan fill="#89b4fa">(mmixdb)</tspan><tspan fill="#f5e0dc"> c</tspan></text>
+    <text x="20" y="559"><tspan fill="#94e2d5">atan.mms:147</tspan><tspan fill="#cdd6f4">          FADD    $0,$0,$4</tspan></text>
+    <text x="20" y="580"><tspan fill="#89b4fa">(mmixdb)</tspan><tspan fill="#f5e0dc"> p $0</tspan></text>
+    <text x="20" y="601"><tspan fill="#cdd6f4">0</tspan></text>
+    <text x="20" y="629"><tspan fill="#89b4fa">(mmixdb)</tspan><tspan fill="#f5e0dc"> list</tspan></text>
+    <text x="20" y="650"><tspan fill="#6c7086">  145</tspan><tspan fill="#6c7086">            GETA     $4,:Atan_PiOver4</tspan></text>
+    <text x="20" y="671"><tspan fill="#6c7086">  146</tspan><tspan fill="#6c7086">            LDOUI   $4,$4,0</tspan></text>
+    <text x="20" y="692"><tspan fill="#f9e2af">&gt; 147</tspan><tspan fill="#cdd6f4">            FADD    $0,$0,$4</tspan></text>
+    <text x="20" y="713"><tspan fill="#6c7086">  148</tspan><tspan fill="#6c7086">    :Atan_NoUnShf IS @</tspan></text>
+    <text x="20" y="734"><tspan fill="#6c7086">  149</tspan></text>
+    <text x="20" y="762"><tspan fill="#89b4fa">(mmixdb)</tspan><tspan fill="#f5e0dc"> c</tspan></text>
+    <text x="20" y="783"><tspan fill="#a6e3a1">[1] PASS  x=3FF0000000000000  got=3FE921FB54442D18  exp=3FE921FB54442D18</tspan></text>
+    <text x="20" y="804"><tspan fill="#94e2d5">atan_test.mms:210</tspan></text>
   </g>
 </svg>
