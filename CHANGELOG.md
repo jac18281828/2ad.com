@@ -1,3 +1,7 @@
+# 1.0.224 (2026-08-09)
+
+* new post: A Fix is not a Plan (parsm's patch-layer postmortem)
+
 # 1.0.223 (2026-08-08)
 
 * new post: Dispatch a Claude Prompt Straight from Emacs's Kill Ring (YouTube short)
