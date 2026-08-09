@@ -1,44 +1,43 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 841" width="900" height="841" role="img" aria-label="Terminal screenshot of an mmixdb session stepping through atan(1).">
-  <rect x="0" y="0" width="900" height="841" rx="10" fill="#1e1e2e"/>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 824" width="900" height="824" role="img" aria-label="Terminal screenshot of an mmixdb session finding an off-by-one denominator bug in a series expansion for pi.">
+  <rect x="0" y="0" width="900" height="824" rx="10" fill="#1e1e2e"/>
   <rect x="0" y="0" width="900" height="36" rx="10" fill="#313244"/>
   <rect x="0" y="26" width="900" height="10" fill="#313244"/>
   <circle cx="22" cy="18" r="6" fill="#f38ba8"/>
   <circle cx="42" cy="18" r="6" fill="#f9e2af"/>
   <circle cx="62" cy="18" r="6" fill="#a6e3a1"/>
-  <text x="450" y="23" text-anchor="middle" font-family="SFMono-Regular, Menlo, Consolas, monospace" font-size="13" fill="#a6adc8">mmixdb — atan_test.mms</text>
+  <text x="450" y="23" text-anchor="middle" font-family="SFMono-Regular, Menlo, Consolas, monospace" font-size="13" fill="#a6adc8">mmixdb — pi_series.mms</text>
   <g font-family="SFMono-Regular, Menlo, Consolas, monospace" font-size="13.5" xml:space="preserve">
-    <text x="20" y="62"><tspan fill="#a6adc8">$ mmixdb atan_test.mms</tspan></text>
-    <text x="20" y="83"><tspan fill="#94e2d5">atan_test.mms:186</tspan></text>
-    <text x="20" y="111"><tspan fill="#89b4fa">(mmixdb)</tspan><tspan fill="#f5e0dc"> b 210</tspan></text>
-    <text x="20" y="132"><tspan fill="#a6e3a1">Breakpoint set at 0x1138 (210)</tspan></text>
+    <text x="20" y="62"><tspan fill="#a6adc8">$ mmixdb pi_series.mms</tspan></text>
+    <text x="20" y="83"><tspan fill="#94e2d5">pi_series.mms:25</tspan><tspan fill="#cdd6f4">        Main    SETI    Sum,0</tspan></text>
+    <text x="20" y="111"><tspan fill="#89b4fa">(mmixdb)</tspan><tspan fill="#f5e0dc"> b Loop</tspan></text>
+    <text x="20" y="132"><tspan fill="#a6e3a1">Breakpoint set at 0x150 (Loop)</tspan></text>
     <text x="20" y="160"><tspan fill="#89b4fa">(mmixdb)</tspan><tspan fill="#f5e0dc"> run</tspan></text>
-    <text x="20" y="181"><tspan fill="#a6adc8">atan tests:</tspan></text>
-    <text x="20" y="202"><tspan fill="#94e2d5">atan_test.mms:210</tspan></text>
-    <text x="20" y="230"><tspan fill="#89b4fa">(mmixdb)</tspan><tspan fill="#f5e0dc"> c</tspan></text>
-    <text x="20" y="251"><tspan fill="#a6adc8">[0] PASS  x=0000000000000000  got=0000000000000000  exp=0000000000000000</tspan></text>
-    <text x="20" y="272"><tspan fill="#94e2d5">atan_test.mms:210</tspan></text>
-    <text x="20" y="300"><tspan fill="#89b4fa">(mmixdb)</tspan><tspan fill="#f5e0dc"> s</tspan></text>
-    <text x="20" y="321"><tspan fill="#94e2d5">atan.mms:70</tspan><tspan fill="#cdd6f4">           FUN     $1,$0,$0</tspan></text>
-    <text x="20" y="349"><tspan fill="#89b4fa">(mmixdb)</tspan><tspan fill="#f5e0dc"> b 116</tspan></text>
-    <text x="20" y="370"><tspan fill="#a6e3a1">Breakpoint set at 0x27c (116)</tspan></text>
-    <text x="20" y="398"><tspan fill="#89b4fa">(mmixdb)</tspan><tspan fill="#f5e0dc"> c</tspan></text>
-    <text x="20" y="419"><tspan fill="#94e2d5">atan.mms:116</tspan><tspan fill="#cdd6f4">          FMUL    $2,$0,$0</tspan><tspan fill="#6c7086">   % t = u*u</tspan></text>
-    <text x="20" y="440"><tspan fill="#89b4fa">(mmixdb)</tspan><tspan fill="#f5e0dc"> p $0</tspan></text>
-    <text x="20" y="461"><tspan fill="#cdd6f4">0</tspan></text>
-    <text x="20" y="489"><tspan fill="#89b4fa">(mmixdb)</tspan><tspan fill="#f5e0dc"> b 147</tspan></text>
-    <text x="20" y="510"><tspan fill="#a6e3a1">Breakpoint set at 0x2f0 (147)</tspan></text>
-    <text x="20" y="538"><tspan fill="#89b4fa">(mmixdb)</tspan><tspan fill="#f5e0dc"> c</tspan></text>
-    <text x="20" y="559"><tspan fill="#94e2d5">atan.mms:147</tspan><tspan fill="#cdd6f4">          FADD    $0,$0,$4</tspan></text>
-    <text x="20" y="580"><tspan fill="#89b4fa">(mmixdb)</tspan><tspan fill="#f5e0dc"> p $0</tspan></text>
-    <text x="20" y="601"><tspan fill="#cdd6f4">0</tspan></text>
-    <text x="20" y="629"><tspan fill="#89b4fa">(mmixdb)</tspan><tspan fill="#f5e0dc"> list</tspan></text>
-    <text x="20" y="650"><tspan fill="#6c7086">  145</tspan><tspan fill="#6c7086">            GETA     $4,:Atan_PiOver4</tspan></text>
-    <text x="20" y="671"><tspan fill="#6c7086">  146</tspan><tspan fill="#6c7086">            LDOUI   $4,$4,0</tspan></text>
-    <text x="20" y="692"><tspan fill="#f9e2af">&gt; 147</tspan><tspan fill="#cdd6f4">            FADD    $0,$0,$4</tspan></text>
-    <text x="20" y="713"><tspan fill="#6c7086">  148</tspan><tspan fill="#6c7086">    :Atan_NoUnShf IS @</tspan></text>
-    <text x="20" y="734"><tspan fill="#6c7086">  149</tspan></text>
-    <text x="20" y="762"><tspan fill="#89b4fa">(mmixdb)</tspan><tspan fill="#f5e0dc"> c</tspan></text>
-    <text x="20" y="783"><tspan fill="#a6e3a1">[1] PASS  x=3FF0000000000000  got=3FE921FB54442D18  exp=3FE921FB54442D18</tspan></text>
-    <text x="20" y="804"><tspan fill="#94e2d5">atan_test.mms:210</tspan></text>
+    <text x="20" y="181"><tspan fill="#94e2d5">pi_series.mms:31</tspan><tspan fill="#cdd6f4">        Loop    DIV     Term,One,Den            </tspan><tspan fill="#6c7086">% Term = Scale/Den</tspan></text>
+    <text x="20" y="209"><tspan fill="#89b4fa">(mmixdb)</tspan><tspan fill="#f5e0dc"> p Den</tspan></text>
+    <text x="20" y="230"><tspan fill="#cdd6f4">1</tspan></text>
+    <text x="20" y="258"><tspan fill="#89b4fa">(mmixdb)</tspan><tspan fill="#f5e0dc"> s</tspan></text>
+    <text x="20" y="279"><tspan fill="#94e2d5">pi_series.mms:32</tspan><tspan fill="#cdd6f4">                BNZ     Neg,Minus</tspan></text>
+    <text x="20" y="307"><tspan fill="#89b4fa">(mmixdb)</tspan><tspan fill="#f5e0dc"> p Term</tspan></text>
+    <text x="20" y="328"><tspan fill="#cdd6f4">1000000000</tspan></text>
+    <text x="20" y="356"><tspan fill="#89b4fa">(mmixdb)</tspan><tspan fill="#f5e0dc"> c</tspan></text>
+    <text x="20" y="377"><tspan fill="#94e2d5">pi_series.mms:31</tspan><tspan fill="#cdd6f4">        Loop    DIV     Term,One,Den            </tspan><tspan fill="#6c7086">% Term = Scale/Den</tspan></text>
+    <text x="20" y="405"><tspan fill="#89b4fa">(mmixdb)</tspan><tspan fill="#f5e0dc"> p Den</tspan></text>
+    <text x="20" y="426"><tspan fill="#f38ba8">2</tspan></text>
+    <text x="20" y="454"><tspan fill="#89b4fa">(mmixdb)</tspan><tspan fill="#f5e0dc"> s</tspan></text>
+    <text x="20" y="475"><tspan fill="#94e2d5">pi_series.mms:32</tspan><tspan fill="#cdd6f4">                BNZ     Neg,Minus</tspan></text>
+    <text x="20" y="503"><tspan fill="#89b4fa">(mmixdb)</tspan><tspan fill="#f5e0dc"> p Term</tspan></text>
+    <text x="20" y="524"><tspan fill="#f38ba8">500000000</tspan></text>
+    <text x="20" y="552"><tspan fill="#89b4fa">(mmixdb)</tspan><tspan fill="#f5e0dc"> b 37</tspan></text>
+    <text x="20" y="573"><tspan fill="#a6e3a1">Breakpoint set at 0x168 (37)</tspan></text>
+    <text x="20" y="601"><tspan fill="#89b4fa">(mmixdb)</tspan><tspan fill="#f5e0dc"> c</tspan></text>
+    <text x="20" y="622"><tspan fill="#94e2d5">pi_series.mms:37</tspan><tspan fill="#cdd6f4">                ADDU    Den,Den,1               </tspan><tspan fill="#6c7086">% next denominator</tspan></text>
+    <text x="20" y="650"><tspan fill="#89b4fa">(mmixdb)</tspan><tspan fill="#f5e0dc"> l</tspan></text>
+    <text x="20" y="671"><tspan fill="#6c7086">  35    Minus   SUBU    Sum,Sum,Term</tspan></text>
+    <text x="20" y="692"><tspan fill="#6c7086">  36    Step    XOR     Neg,Neg,1               % alternate the sign</tspan></text>
+    <text x="20" y="713"><tspan fill="#f9e2af">&gt; 37</tspan><tspan fill="#cdd6f4">            ADDU    Den,Den,1               </tspan><tspan fill="#6c7086">% next denominator</tspan></text>
+    <text x="20" y="734"><tspan fill="#6c7086">  38            SUBU    Cnt,Cnt,1</tspan></text>
+    <text x="20" y="755"><tspan fill="#6c7086">  39            BNZ     Cnt,Loop</tspan></text>
+    <text x="20" y="783"><tspan fill="#89b4fa">(mmixdb)</tspan><tspan fill="#f5e0dc"> q</tspan></text>
+    <text x="20" y="804"><tspan fill="#a6adc8">Quit</tspan></text>
   </g>
 </svg>
