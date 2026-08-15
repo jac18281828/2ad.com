@@ -1,3 +1,7 @@
+# 1.0.225 (2026-08-15)
+
+* new post: MMIXdb — a Tiptoe through the Tangents (mmixdb, a Unix-style debugger for MMIX)
+
 # 1.0.224 (2026-08-09)
 
 * new post: A Fix is not a Plan (parsm's patch-layer postmortem)
