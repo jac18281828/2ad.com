@@ -141,3 +141,20 @@ All changes reach production via merged PR. No direct commits to `main`.
 9. Stop — a human reviews and uses **Rebase and merge** in the GitHub UI.
 
 Production deploys only after a human rebase-merges the PR and pushes a release tag.
+
+
+## Release Authorization
+
+Approving, merging, or commenting positively on a commit or PR does NOT
+authorize a release. That happens through normal review — it has no
+side effects on tagging or deploys.
+
+A release begins only when the owner explicitly invokes the
+release-branch skill (e.g. "use the release-branch skill," "deploy
+this," "cut a release"). Once invoked, the agent runs every step of
+that skill it is permitted to perform without asking again — it does
+not re-confirm or decline the task outright. It stops only at the
+specific actions already reserved for a human elsewhere in this file
+(pushing to main, pushing the release tag), and for those it prepares
+the exact command and hands it off instead of refusing the whole
+release.
