@@ -1,3 +1,7 @@
+# 1.0.226 (2026-08-15)
+
+* infra: emomtimer.2ad.com and solitare.2ad.com move to their own repositories; this app now defines only the family sites in `cdk/site-config.ts`
+
 # 1.0.225 (2026-08-15)
 
 * new post: MMIXdb — a Tiptoe through the Tangents (mmixdb, a Unix-style debugger for MMIX)
