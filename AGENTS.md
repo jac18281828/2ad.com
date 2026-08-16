@@ -83,6 +83,25 @@ Linear history only — rebase and merge, no merge commits.
    `<branch>` to `main`?" On yes, fetch, rebase if needed, fast-forward
    merge, `git push origin main` — right then, yourself.
 
-Cutting a release is the release-branch skill's job, not this file's —
-invoke it directly ("cut a release," "deploy this," "use the
-release-branch skill").
+---
+
+## How to Publish
+
+Landing `main` deploys nothing. The sites go live on a tag push, which runs
+`site-deploy`: `cdk deploy --all`, build all five sites, sync to S3,
+invalidate CloudFront, cut a GitHub Release. Publishing is Workflow item 3:
+ask once, act on yes.
+
+Two commits on the feature branch, landed together:
+
+1. Add an `X.Y.Z` entry to `CHANGELOG.md` and commit — this is R, the release
+   commit. `package.json` already reads `X.Y.Z`.
+2. Tag R `X.Y.Z`, signed and annotated; the tag message is a one-line release
+   note.
+3. Bump `package.json` to `X.Y.(Z+1)` and commit as `chore: stage X.Y.(Z+1)` —
+   this is S, staging the next release.
+4. Land the branch per PR Workflow above; push the tag — `site-deploy` fires
+   on tag push.
+5. Delete the feature branch (local and remote).
+
+The tag version equals the `package.json` version at the tagged commit.
