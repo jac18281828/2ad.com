@@ -79,10 +79,16 @@ Never run deployment or infrastructure commands:
 
 Never take destructive git actions:
 - No `git push --force` or `git push -f`
-- No `git push origin main` (no direct main branch commits)
 - No `git reset --hard`
 - No `git clean -f`
 - No `git submodule` commands
+
+Merging or pushing to `main`, and pushing release tags, always requires an
+explicit approval in chat first — never a standing/blanket permission (see
+**PR Workflow** and **Release Authorization**). Once John gives that
+approval, John's agent executes it immediately, itself: no re-confirming,
+no declining, no handing off the command instead of running it. Kelly's
+agent may never push to `main` under any circumstance.
 
 ---
 
@@ -99,6 +105,10 @@ Full site-management permissions.
 - Edit `README.md`, `CHANGELOG.md`
 - Run local site builds (`make html`) inside any site directory
 - Commit content changes to a feature branch and open a PR
+- Land a reviewed PR to `main` via fast-forward merge after asking once in
+  chat and getting a yes, and (once the release-branch skill is explicitly
+  invoked) push the release tag — see **PR Workflow** and **Release
+  Authorization**
 
 **Needs explicit instruction before:**
 - Adding or removing Pelican plugins
@@ -123,7 +133,7 @@ Scope is restricted to `kellycairns/` content only. See `kellycairns/CLAUDE.md` 
 
 ## PR Workflow
 
-All changes reach production via merged PR. No direct commits to `main`.
+All changes reach production via a reviewed PR — never an unreviewed commit straight to `main`. John's agent may land a PR itself once John says so in chat (see step 9); it never skips review to commit directly.
 
 **This repo enforces linear history — rebase and merge only, no merge commits.**
 
@@ -138,9 +148,16 @@ All changes reach production via merged PR. No direct commits to `main`.
    - `git fetch origin && git rebase origin/main`
    - Resolve any conflicts, then `git push --force-with-lease origin <branch>`
    - Never `git merge main` into a feature branch — that creates a merge commit.
-9. Stop — a human reviews and uses **Rebase and merge** in the GitHub UI.
+9. A human reviews the PR. To land it, John's agent asks once in chat —
+   e.g. "Ready to land `<branch>` to `main` via fast-forward merge —
+   proceed?" On an explicit yes, it lands immediately, itself: fetch
+   origin, rebase the branch onto current main if needed, fast-forward
+   merge locally, and `git push origin main` directly — no `--force`, no
+   merge commits, no asking again, no declining, no handing off the
+   command instead of running it.
 
-Production deploys only after a human rebase-merges the PR and pushes a release tag.
+Production deploys after the PR is approved and landed on `main`, and
+(for a release) a release tag is pushed.
 
 
 ## Release Authorization
@@ -151,10 +168,14 @@ side effects on tagging or deploys.
 
 A release begins only when the owner explicitly invokes the
 release-branch skill (e.g. "use the release-branch skill," "deploy
-this," "cut a release"). Once invoked, the agent runs every step of
-that skill it is permitted to perform without asking again — it does
-not re-confirm or decline the task outright. It stops only at the
-specific actions already reserved for a human elsewhere in this file
-(pushing to main, pushing the release tag), and for those it prepares
-the exact command and hands it off instead of refusing the whole
-release.
+this," "cut a release"). Once invoked, John's agent runs every step of
+that skill, including pushing to `main` and pushing the release tag —
+it does not re-confirm, decline the task outright, or hand off the
+final commands instead of running them. It still stops for anything the
+skill itself flags as needing owner input (e.g. an ambiguous version
+bump, or a conflict it can't resolve).
+
+This satisfies the operator's global "merge only on human approval" rule:
+the explicit skill invocation *is* that approval, covering every step the
+skill performs. It doesn't change how other projects (e.g. fabric/booda)
+require confirmation — see their own AGENTS.md.
