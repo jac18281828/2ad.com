@@ -1,3 +1,10 @@
+# 1.0.227 (2026-09-01)
+
+* chore: bump aws-cdk (CLI) to 2.1139.0 and sync bun.lockb — dependabot's npm_and_yarn ecosystem edits package.json but can't regenerate bun's binary lockfile; verified cdk synth produces byte-identical templates across all five stacks
+* chore: bump ts-jest, globals, typescript-eslint, @typescript-eslint/eslint-plugin (dependabot)
+* docs(agents): rewrite AGENTS.md as a workflow guide by trust tier instead of a permission system; add How to Publish section
+* docs: drop CLAUDE.md's session-start userEmail identity routing, superseded by AGENTS.md's trust-tier workflow
+
 # 1.0.226 (2026-08-15)
 
 * infra: emomtimer.2ad.com and solitare.2ad.com move to their own repositories; this app now defines only the family sites in `cdk/site-config.ts`
