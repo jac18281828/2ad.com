@@ -1,3 +1,7 @@
+# 1.0.230 (2026-09-06)
+
+* gman page: drop the trademark disclaimer, lead with why to use it instead of its history, move history to the bottom
+
 # 1.0.229 (2026-09-06)
 
 * new page: gman — a RenderMan-compatible renderer, rendered sample image, build/install and first-scene walkthrough
