@@ -8,9 +8,11 @@ summary: A from-scratch RenderMan-compatible renderer — point it at a .rib fil
 
 RenderMan is the interface Pixar published for turning a 3D scene description into an image: cameras, geometry, lights and shaders, all in a plain-text RIB file. It's the API behind decades of film rendering, but the implementations that speak it are proprietary, heavyweight, or both.
 
-[GMAN](https://github.com/jac18281828/gman) is a from-scratch, RenderMan-compatible renderer: point it at a `.rib` file, get a picture. No studio license, no black box — a real object → world → camera → screen → NDC → raster pipeline with analytic normals, backface culling and z-buffering, real lighting (`ambientlight`, `distantlight`, `pointlight`) and real C++ surface shaders (`matte`, `plastic`, `metal`), writing TIFF, PNG, JPEG or PNM.
+[GMAN](https://github.com/jac18281828/gman) is a from-scratch, RenderMan-compatible renderer. Point it at a `.rib` file and it produces an image using the familiar object → world → camera → screen → NDC → raster pipeline.
 
-It's small enough to read end to end and modern enough to build with one CMake preset and a C++23 compiler. If you want to see how a REYES-era renderer actually turns geometry into pixels, or just want something RenderMan-shaped you can run and inspect yourself, this is it.
+It implements analytic normals, backface culling, z-buffering, lighting (`ambientlight`, `distantlight`, `pointlight`) and C++ surface shaders including `matte`, `plastic` and `metal`. Output can be written as TIFF, PNG, JPEG or PNM.
+
+The codebase is deliberately small enough to read end to end. It builds with CMake and a C++23 compiler, and is intended as a practical way to explore how a REYES-era rendering pipeline turns geometry into pixels.
 
 ### Build and install
 
