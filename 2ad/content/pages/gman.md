@@ -47,4 +47,4 @@ Then render it:
 
 ### Where to find it
 
-The [repository](https://github.com/jac18281828/gman) and its README track what GMAN supports — check there, not here.
+[GitHub](https://github.com/jac18281828/gman) 
