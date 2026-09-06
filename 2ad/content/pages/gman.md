@@ -1,4 +1,4 @@
-title: GMAN — a RenderMan-Compatible Renderer
+title: GMAN
 slug: gman
 category: tech
 date: 2026-09-06

@@ -10,6 +10,7 @@ THEME = 'themes/Flex'
 
 # flex
 FAVICON = 'favicon.ico'
+CUSTOM_CSS = 'static/custom.css'
 SITELOGO = '/static/sitelogo.jpg'
 SITETITLE = u'John A. Cairns'
 SITESUBTITLE = u'Software engineer · smart contracts & trading infrastructure · illustrator & computer cartographer'
@@ -105,21 +106,24 @@ AUTHOR_FEED_RSS = None
 
 # Blogroll
 LINKS = (
+    ('', ''),
+    ('GitHub', 'https://github.com/jac18281828'),
+    ('LinkedIn', 'https://www.linkedin.com/in/johnacairns'),
+    ('', ''),
+    ('playmmix', 'https://playmmix.2ad.com'),
+    ('emomtimer', 'https://emomtimer.2ad.com'),
+    ('solitare', 'https://solitare.2ad.com'),
+    ('', ''),
     ('news', '/category/news.html'),
     ('tech', '/category/tech.html'),
     ('books', '/category/books.html'),
     ('history', '/category/history.html'),
     ('food', '/category/food.html'),
     ('', ''),
-    ('GitHub', 'https://github.com/jac18281828'),
     ('My Author Page', 'https://www.amazon.com/author/johncairns'),
-    ('gman', '/gman.html'),
-    ('emomtimer', 'https://emomtimer.2ad.com'),
-    ('solitare', 'https://solitare.2ad.com'),
     ('jac1828.eth', 'https://app.ens.domains/jac1828.eth'),
-    ('LinkedIn', 'https://www.linkedin.com/in/johnacairns'),
     ('FD311EE84C8...', 'https://keys.openpgp.org/search?q=FD311EE84C8321C3E93C1E639028C4309ACCEB9B'),
-    ('', ''),    
+    ('', ''),
     ('LibriVox', 'https://librivox.org/reader/12659'),
 )
 

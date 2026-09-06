@@ -1,0 +1,11 @@
+/* sidebar link-list separators: LINKS entries with an empty name/href
+   render as an empty <li><a></a></li> — turn that into a divider line */
+nav .list li:has(> a:empty[href=""]) {
+  list-style: none;
+  border-top: 1px solid rgba(128, 128, 128, .3);
+  margin: .5em 0;
+  padding: 0;
+}
+nav .list li:has(> a:empty[href=""]) > a {
+  display: none;
+}
