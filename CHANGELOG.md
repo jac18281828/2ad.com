@@ -1,3 +1,7 @@
+# 1.0.231 (2026-09-06)
+
+* gman page: rewrite the intro for clarity, drop Oxford commas
+
 # 1.0.230 (2026-09-06)
 
 * gman page: drop the trademark disclaimer, lead with why to use it instead of its history, move history to the bottom
