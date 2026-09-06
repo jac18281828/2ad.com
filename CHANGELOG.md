@@ -1,3 +1,7 @@
+# 1.0.228 (2026-09-05)
+
+* new post: playmmix — MMIX in the Browser (browser MMIX playground built on checksmix, recursive primality test example)
+
 # 1.0.227 (2026-09-01)
 
 * chore: bump aws-cdk (CLI) to 2.1139.0 and sync bun.lockb — dependabot's npm_and_yarn ecosystem edits package.json but can't regenerate bun's binary lockfile; verified cdk synth produces byte-identical templates across all five stacks
