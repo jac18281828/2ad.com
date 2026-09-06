@@ -29,6 +29,10 @@ PYGMENTS_STYLE_DARK = 'monokai'
 # instruct flex theme to introduce the canonical link
 REL_CANONICAL=True
 
+# serve pages at the site root instead of under /pages/
+PAGE_URL = '{slug}.html'
+PAGE_SAVE_AS = '{slug}.html'
+
 PLUGIN_PATHS = ['../pelican-plugins' ]
 
 PLUGINS = [
