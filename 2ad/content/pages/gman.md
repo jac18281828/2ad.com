@@ -6,7 +6,7 @@ summary: A clean-room RenderMan-compatible renderer, revived in 2026 after twent
 
 ![GMAN is at it again!]({static}/images/2026/gman-vase.png)
 
-[GMAN](https://github.com/jac18281828/gman) reads RenderMan Interface Bytestream (RIB) scene files and writes images. RenderMan is Pixar's published interface specification; GMAN is a clean-room implementation of it. RenderMan is a registered trademark of Pixar; GMAN is not associated with or endorsed by Pixar.
+[GMAN](https://github.com/jac18281828/gman) reads RenderMan Interface Bytestream (RIB) scene files and writes images. RenderMan is Pixar's published interface specification; GMAN is a clean-room implementation of it.
 
 ### History
 
