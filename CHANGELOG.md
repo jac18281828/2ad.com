@@ -1,3 +1,10 @@
+# 1.0.229 (2026-09-06)
+
+* new page: gman — a RenderMan-compatible renderer, rendered sample image, build/install and first-scene walkthrough
+* pages now serve at the site root (`/gman.html`) instead of under `/pages/`
+* sidebar: projects (playmmix, gman, emomtimer, solitare) and GitHub/LinkedIn moved up top, divider lines between groups
+* fix: use `;` for MMIX comments in playmmix's example (asm/gas lexer doesn't recognize `%` as a comment, same fix as 1.0.221)
+
 # 1.0.228 (2026-09-05)
 
 * new post: playmmix — MMIX in the Browser (browser MMIX playground built on checksmix, recursive primality test example)
