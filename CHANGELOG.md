@@ -1,3 +1,7 @@
+# 1.0.232 (2026-09-16)
+
+* playmmix post: replace the recursive primality test with a loop, exit 0 for prime and 1 for composite, redraw the GIF, tighten the walkthrough
+
 # 1.0.231 (2026-09-06)
 
 * gman page: rewrite the intro for clarity, drop Oxford commas
