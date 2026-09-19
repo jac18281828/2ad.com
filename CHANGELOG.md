@@ -1,3 +1,8 @@
+# 1.0.233 (2026-09-19)
+
+* deps: aws-cdk 2.1142.0, aws-cdk-lib 2.270.0, constructs 10.8.1 (no infrastructure diff)
+* dependabot: raise open-pull-requests-limit to 10
+
 # 1.0.232 (2026-09-16)
 
 * playmmix post: replace the recursive primality test with a loop, exit 0 for prime and 1 for composite, redraw the GIF, tighten the walkthrough
