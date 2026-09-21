@@ -1,3 +1,9 @@
+# 1.0.234 (2026-09-21)
+
+* MMIX posts: `#` remark-style comments, since checksmix now treats `;` as the MMIXAL statement separator; a note citing Knuth on remarks
+* Advent of Code post: fix the program's hang (save `rJ` across the nested `PUSHJ`), `RemEuclid` reads the remainder from `rR`, tighter prose, answer table
+* playmmix post: `asm` fence
+
 # 1.0.233 (2026-09-19)
 
 * deps: aws-cdk 2.1142.0, aws-cdk-lib 2.270.0, constructs 10.8.1 (no infrastructure diff)
