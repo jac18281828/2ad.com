@@ -1,3 +1,7 @@
+# 1.0.235 (2026-09-21)
+
+* mmixdb post: fenced code blocks, `asm` with `#` remarks for MMIX and `text` for math, shell output and the debugger listing; no more error boxes around `$`
+
 # 1.0.234 (2026-09-21)
 
 * MMIX posts: `#` remark-style comments, since checksmix now treats `;` as the MMIXAL statement separator; a note citing Knuth on remarks
