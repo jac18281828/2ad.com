@@ -1,3 +1,9 @@
+# 1.0.236 (2026-09-22)
+
+* MMIX posts: Knuth's mnemonics (`SET`, `NEG`, base forms instead of the `*I` spellings); wide constants held in `GREG` registers
+* checksmix post: Hello world passes the string in `$255`, Fibonacci follows the `PUSHJ`/`POP` calling convention, `#` remarks
+* mmixdb post: breakpoint on line 35 to match the shorter program
+
 # 1.0.235 (2026-09-21)
 
 * mmixdb post: fenced code blocks, `asm` with `#` remarks for MMIX and `text` for math, shell output and the debugger listing; no more error boxes around `$`
