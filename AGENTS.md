@@ -100,8 +100,11 @@ Two commits on the feature branch, landed together:
    note.
 3. Bump `package.json` to `X.Y.(Z+1)` and commit as `chore: stage X.Y.(Z+1)` —
    this is S, staging the next release.
-4. Land the branch per PR Workflow above; push the tag — `site-deploy` fires
-   on tag push.
+4. Open a PR for R and S and land it by fast-forward (`git merge --ff-only`,
+   then push) — GitHub's rebase and squash buttons rewrite SHAs, leaving the
+   tag off `main`. Push the tag once `main` contains R and CI is green:
+   `site-deploy` deploys whatever the tag points at, whether or not `main`
+   has it.
 5. Delete the feature branch (local and remote).
 
 The tag version equals the `package.json` version at the tagged commit.
