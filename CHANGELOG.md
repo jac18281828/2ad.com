@@ -1,3 +1,7 @@
+# 1.0.242 (2026-09-29)
+
+* kellycairns: credentials page becomes Experience & Credentials, a web CV from the October 2026 CV: professional experience (including the Canine Stroke Foundation), consulting and advisory roles, and CVMA offices by year; same URL
+
 # 1.0.241 (2026-09-29)
 
 * 2ad: the ENS name and PGP key move from the sidebar to About under "Find me on-chain", with a line saying what each is; the sidebar's Amazon link now reads "My Books on Amazon"
