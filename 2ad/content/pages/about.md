@@ -38,19 +38,9 @@ summary: John A. Cairns is a software engineer at Open Standard with three decad
 
 A proud husband and father of three. I love my kids' sports, soccer and volleyball. I'm an avid photographer, and when I'm not working I'm with my children.
 
-## Find me
+## Find me on-chain
 
-<div class="pills">
-<a href="https://github.com/jac18281828">GitHub</a>
-<a href="https://www.linkedin.com/in/johnacairns">LinkedIn</a>
-<a href="https://www.youtube.com/@johnacairns">YouTube</a>
-<a href="https://www.instagram.com/jac18281828">Instagram</a>
-<a href="https://www.tiktok.com/@jac1828">TikTok</a>
-<a href="https://www.amazon.com/author/johncairns">Amazon author page</a>
-<a href="https://app.ens.domains/jac1828.eth">jac1828.eth</a>
-</div>
-
-[PGP `FD311EE84C8321C3E93C1E639028C4309ACCEB9B`](https://keys.openpgp.org/search?q=FD311EE84C8321C3E93C1E639028C4309ACCEB9B)
+My ENS name is [jac1828.eth](https://app.ens.domains/jac1828.eth), a human-readable name on Ethereum. My [PGP key](https://keys.openpgp.org/search?q=FD311EE84C8321C3E93C1E639028C4309ACCEB9B) has the fingerprint `FD311EE84C8321C3E93C1E639028C4309ACCEB9B`.
 
 <script type="application/ld+json">
 {

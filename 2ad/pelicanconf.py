@@ -120,9 +120,7 @@ LINKS = (
     ('history', '/category/history.html'),
     ('food', '/category/food.html'),
     ('', ''),
-    ('My Author Page', 'https://www.amazon.com/author/johncairns'),
-    ('jac1828.eth', 'https://app.ens.domains/jac1828.eth'),
-    ('FD311EE84C8...', 'https://keys.openpgp.org/search?q=FD311EE84C8321C3E93C1E639028C4309ACCEB9B'),
+    ('My Books on Amazon', 'https://www.amazon.com/author/johncairns'),
     ('', ''),
     ('LibriVox', 'https://librivox.org/reader/12659'),
 )
