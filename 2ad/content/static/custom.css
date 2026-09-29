@@ -10,7 +10,7 @@ nav .list li:has(> a:empty[href=""]) > a {
   display: none;
 }
 
-/* about page: hero and alternating feature rows */
+/* hero and alternating feature rows: About and GMAN */
 .hero {
   display: flex;
   gap: 1.5rem;
@@ -48,6 +48,9 @@ nav .list li:has(> a:empty[href=""]) > a {
   aspect-ratio: 4 / 3;
   object-fit: cover;
   border-radius: 6px;
+}
+.feature > img.render {
+  aspect-ratio: 16 / 10;
 }
 .feature > img.map {
   object-fit: contain;

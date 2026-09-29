@@ -9,27 +9,38 @@ summary: A RenderMan-compatible renderer with a path tracer, a ray tracer and a 
 
 [GMAN](https://github.com/jac18281828/gman) is an open-source, RenderMan-compatible renderer. Point it at a `.rib` file and choose a renderer with `-r`. `gmanzbuffer` is the default preview. `gmanraytracer` adds shadows, reflection, refraction and transparency. `gmanpathtracer` adds light bounced off every surface, soft shadows from area lights and glossy reflection.
 
-### Try it
+### Get it
+
+Download the build for your machine from the [releases page](https://github.com/jac18281828/gman/releases): Linux x86_64, Linux arm64 or macOS arm64. Then unpack it and install:
 
 ```sh
-curl -sL https://github.com/jac18281828/gman/releases/download/1.0.0/gman-1.0.0-linux-x86_64.tar.gz | tar xz
-curl -sLO https://raw.githubusercontent.com/jac18281828/gman/1.0.0/samples/vase.rib
-export PATH="$PWD/gman-1.0.0-linux-x86_64/bin:$PATH"
-gman -r gmanraytracer vase.rib
+tar xzf gman-1.0.0-linux-x86_64.tar.gz
+cd gman-1.0.0-linux-x86_64
+sudo ./install.sh
 ```
 
-That writes `vase.png` in a few seconds. It needs libtiff, libpng, libjpeg and zlib installed. Linux arm64 and macOS arm64 builds are on the [releases page](https://github.com/jac18281828/gman/releases).
+The runtime libraries, another prefix and uninstalling are in the [README](https://github.com/jac18281828/gman#install).
+
+### Ray trace it
+
+From the unpacked folder:
+
+```sh
+gman -r gmanraytracer samples/vase.rib
+```
+
+That writes `vase.png`, a ray-traced render of the scene above, in a few seconds.
 
 ### Path trace it
 
-Add one line to `vase.rib`, under `PixelSamples 2 2`, and render it through the path tracer:
+Add one line to `samples/vase.rib`, under `PixelSamples 2 2`, and render it through the path tracer:
 
 ```
 Option "pathtracer" "integer samples" [64]
 ```
 
 ```sh
-gman -r gmanpathtracer vase.rib
+gman -r gmanpathtracer samples/vase.rib
 ```
 
 That writes the picture at the top of this page. Sixty-four paths through each of the four subpixels follow the light as it bounces off the walls, floor and table. The render takes about three minutes on one core of an Apple M3 Max, where the ray tracer takes seconds. The path tracer computes the bounce light the scene's `ambientlight` stood in for, so it skips that light and says so:
@@ -40,7 +51,7 @@ gmanpathtracer: ambientlight lights nothing under the path tracer; skipped 1 lig
 
 ### Bounce light under the ray tracer
 
-The ray tracer adds bounce light through a radiosity pass. Add one line to `vase.rib`, under `PixelSamples 2 2`, and render it through the ray tracer as before:
+The ray tracer adds bounce light through a radiosity pass. Add one line to `samples/vase.rib`, under `PixelSamples 2 2`, and render it through the ray tracer as before:
 
 ```
 Option "render" "string indirect" ["radiosity"]
@@ -50,14 +61,35 @@ The pass dices the scene into patches and solves the diffuse light bouncing betw
 
 ### Poke it
 
-Change one line of `vase.rib` and render it again with `gman -r gmanraytracer vase.rib`. Each picture starts from the original scene.
+Change one line of `samples/vase.rib` and render it again with `gman -r gmanraytracer samples/vase.rib`. Each picture starts from the original scene.
 
-| Picture | Edit |
-|---|---|
-| ![the vase in glass]({static}/images/2026/gman-glass.png) | **Glass vase.** In the `## Vase` block, make the surface `Surface "glass"` and delete the `Opacity`. |
-| ![the robot's dome as a mirror]({static}/images/2026/gman-mirror.png) | **Mirror dome.** Under `# head dome`, make the surface `Surface "mirror" "Kr" [1]`. |
-| ![the room lit by sunlight]({static}/images/2026/gman-sunlight.png) | **Sunlight.** Swap the lamp for the sun: `LightSource "distantlight" 2 "intensity" [1.2] "lightcolor" [1 0.95 0.83] "from" [1 3 10] "to" [0 0 1]`. The walls now shadow the room. |
-| ![the scene through the z-buffer renderer]({static}/images/2026/gman-zbuffer.png) | **The z-buffer.** No edit: plain `gman vase.rib` renders the fast preview, without shadows, reflection or refraction. |
+<div class="feature">
+<img class="render" src="{static}/images/2026/gman-glass.png" alt="the vase in glass">
+<div>
+<p><strong>Glass vase.</strong> In the <code>## Vase</code> block, make the surface <code>Surface "glass"</code> and delete the <code>Opacity</code>.</p>
+</div>
+</div>
+
+<div class="feature flip">
+<img class="render" src="{static}/images/2026/gman-mirror.png" alt="the robot's dome as a mirror">
+<div>
+<p><strong>Mirror dome.</strong> Under <code># head dome</code>, make the surface <code>Surface "mirror" "Kr" [1]</code>.</p>
+</div>
+</div>
+
+<div class="feature">
+<img class="render" src="{static}/images/2026/gman-sunlight.png" alt="the room lit by sunlight">
+<div>
+<p><strong>Sunlight.</strong> Swap the lamp for the sun: <code>LightSource "distantlight" 2 "intensity" [1.2] "lightcolor" [1 0.95 0.83] "from" [1 3 10] "to" [0 0 1]</code>. The walls now shadow the room.</p>
+</div>
+</div>
+
+<div class="feature flip">
+<img class="render" src="{static}/images/2026/gman-zbuffer.png" alt="the scene through the z-buffer renderer">
+<div>
+<p><strong>The z-buffer.</strong> No edit: plain <code>gman samples/vase.rib</code> renders the fast preview, without shadows, reflection or refraction.</p>
+</div>
+</div>
 
 ### What it renders
 
