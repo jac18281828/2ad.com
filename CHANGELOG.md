@@ -1,3 +1,7 @@
+# 1.0.238 (2026-09-29)
+
+* kellycairns: subtitle now reads "Veterinary Medical Leader | Educator | Strategist | Speaker" (was "Veterinary Leader & Speaker"); bio page photo alt text to match
+
 # 1.0.237 (2026-09-28)
 
 * 19 Cats episode 155 post (Outdoor Cats, Stress and Pandora Syndrome): "Prefer to watch?" YouTube link; fix "Rita Reimers's" typo
