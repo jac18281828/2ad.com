@@ -1,3 +1,8 @@
+# 1.0.239 (2026-09-29)
+
+* 2ad: About rewritten as an introduction to the blog: a lead, code and maps rows, "Beyond the machine", and "Find me"; the page now lives at `/about.html` (was `/about-john.html`), with Open Standard as the current employer and structured data to match
+* 2ad: site subtitle and description now read distributed systems, Rust, and smart contracts for Ethereum and Solana
+
 # 1.0.238 (2026-09-29)
 
 * kellycairns: subtitle now reads "Veterinary Medical Leader | Educator | Strategist | Speaker" (was "Veterinary Leader & Speaker"); bio page photo alt text to match
