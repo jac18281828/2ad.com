@@ -1,3 +1,7 @@
+# 1.0.241 (2026-09-29)
+
+* 2ad: the ENS name and PGP key move from the sidebar to About under "Find me on-chain", with a line saying what each is; the sidebar's Amazon link now reads "My Books on Amazon"
+
 # 1.0.240 (2026-09-29)
 
 * kellycairns: credentials page rebuilt from the 2026 CV: board certification and degrees (master's corrected to MS), teaching and faculty development, honors and distinctions, professional leadership and service, memberships
