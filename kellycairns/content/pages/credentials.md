@@ -6,7 +6,7 @@ modified: 2026-09-29
 
 ## Professional Experience
 
-#### University of Maryland Eastern Shore {: style="margin-bottom:0.3em"}
+#### University of Maryland Eastern Shore School of Veterinary Medicine {: style="margin-bottom:0.3em"}
 **Education Specialist & Curriculum Consultant** · 2026–present  
 Curriculum implementation partner for a new three-year distributed veterinary program launching in 2027
 
