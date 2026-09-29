@@ -1,48 +1,56 @@
-title: About John
+title: About
+slug: about
 category: bio
 date: 2020-12-22
-modified: 2026-06-23
-summary: John A. Cairns is a software engineer with three decades in distributed systems, building smart contracts and multi-chain trading infrastructure in Rust and Solidity — and an enthusiastic illustrator, photographer and computer cartographer.
+modified: 2026-09-29
+summary: John A. Cairns is a software engineer at Open Standard with three decades in distributed systems. He is also an illustrator, photographer and computer cartographer, and writes about all of it here.
 
-![John Cairns]({static}/images/2022/sep2222_sm.jpg){: width=28% style="float:right; padding:16px"}
+<div class="hero">
+<img src="{static}/images/2022/sep2222_sm.jpg" alt="John Cairns">
+<div>
+<p class="lead">I'm <strong>John Cairns</strong>, a software engineer in Chicago.</p>
+<p>I build <strong>distributed systems</strong> in <strong>Rust</strong> at <a href="https://joinopenstandard.com">Open Standard</a>. I write <strong>smart contracts for Ethereum and Solana</strong>. My background in <strong>physics</strong> and systems programming grounds my work. I appreciate the balance of art and science, and a considered approach in all things.</p>
+<p>This blog covers code, maps, and everything I am interested in. My code is on&nbsp;<a href="https://github.com/jac18281828">GitHub</a>.</p>
+</div>
+</div>
 
-I'm **John A. Cairns** — a software engineer based in Chicago with three decades of experience building **distributed software systems**. I build in **Rust** and develop **smart contracts for Ethereum**; a background in **physics** and systems programming grounds my work in blockchain, financial engineering, and open source. I appreciate the inherent balance of art and science, and a considered approach in all things.
+## What you'll find here
 
-### What I work on
+<div class="feature">
+<img src="{static}/images/2026/playmmix-mobile.jpg" alt="PlayMMIX Run, Step, Next and Share controls above an MMIX assembly editor">
+<div>
+<h3>Code and computing</h3>
+<p>Checksmix, MMIX in the browser, everything engineering and how to build on Ethereum.</p>
+<p><a href="{filename}../posts/2026/05.playmmix.md">PlayMMIX</a> · <a href="{filename}../posts/2026/01.parsm-one-parser.md">A Fix is not a Plan</a> · <a href="{category}tech">all code posts</a></p>
+</div>
+</div>
 
-My day-to-day is **smart contracts and on-chain trading infrastructure** — the systems behind **[Fabric](https://benchmark.withfabric.xyz)**, a high-performance DEX aggregator. These are production services written in **Rust and Solidity** that run across multiple chains (Base, Arbitrum, Solana), spanning the full stack of a modern trading platform:
+<div class="feature flip">
+<img class="map" src="{static}/images/2023/Gibraltar1340.jpg" alt="Spanish and Muslim naval and land movements around Gibraltar, 1340">
+<div>
+<h3>Maps and history</h3>
+<p>I'm proud to be a part of six military-history books by Brian Todd Carey. I illustrated the regional maps.</p>
+<p><a href="{filename}../posts/2023/30.gibraltar_crusade.md">Gibraltar, 1340</a> · <a href="{filename}penandsword.md">Cartography &amp; Books</a> · <a href="{category}history">all history posts</a></p>
+</div>
+</div>
 
-* **Multi-chain pool indexing and quoting** — services that snapshot and query liquidity across Uniswap V2/V3/V4-style pools in real time.
-* **On-chain swap execution** — Solidity execution engines that run off-chain-planned routes (sequences, splits, multi-pool paths) safely on-chain.
-* **Token discovery and risk** — fast, typeahead-grade token indexing with metadata and risk scoring.
-* **Data pipelines** — Ethereum log ETL into Arrow/Parquet for archival and real-time indexing, with resilient RPC handling.
+## Beyond the machine
 
-I care about correctness, performance, and tools that compose. A few things I've shipped that show how I think:
+A proud husband and father of three. I love my kids' sports, soccer and volleyball. I'm an avid photographer, and when I'm not working I'm with my children.
 
-* **[parsm](https://github.com/jac18281828/parsm)** — a structured-data processor for the command line (JSON, CSV, YAML, TOML, logfmt, plain text). A friendlier superset of `sed`/`awk`/`grep`. [Published on crates.io](https://crates.io/crates/parsm).
-* **[EMOM Timer](https://emomtimer.2ad.com)** — a precision, drift-correcting workout timer built in Rust + WebAssembly (Yew). [Source](https://github.com/jac18281828/emomtimer).
-* **[checksmix](https://github.com/jac18281828/checksmix)** — a fast emulator and assembler for Knuth's MMIX. A homage to *The Art of Computer Programming* and the fundamentals it teaches.
-* **[snipren](https://github.com/jac18281828/snipren)** and **[trimtrain](https://github.com/jac18281828/trimtrain)** — small, intent-aware Unix utilities that do one thing well.
-* **[Conversant Disruptor](https://github.com/conversant/disruptor)** — a high-performance Java ring-buffer `BlockingQueue` with ~320 stars, published on Maven Central, packaged for Debian and Ubuntu, and used by Apache Log4j 2 as an async-logging queue.
-* **On-chain protocols** — author of **[Collective Governance](https://github.com/collectivexyz/collective-governance-v1)**, an Ethereum voting/consensus protocol, and a contributor to **[Stader's ETHx](https://github.com/stader-labs/ethx)** liquid-staking protocol.
+## Find me
 
-I work comfortably across **Rust, Solidity, Go, C++, Python, and TypeScript**, and I keep a set of standardized dev containers so the toolchain is never the bottleneck. I also have a standing interest in **zero-knowledge proofs and applied cryptography** — Merkle proofs, Fiat–Shamir, ZoKrates and gnark — that I explore in the open as I go.
+<div class="pills">
+<a href="https://github.com/jac18281828">GitHub</a>
+<a href="https://www.linkedin.com/in/johnacairns">LinkedIn</a>
+<a href="https://www.youtube.com/@johnacairns">YouTube</a>
+<a href="https://www.instagram.com/jac18281828">Instagram</a>
+<a href="https://www.tiktok.com/@jac1828">TikTok</a>
+<a href="https://www.amazon.com/author/johncairns">Amazon author page</a>
+<a href="https://app.ens.domains/jac1828.eth">jac1828.eth</a>
+</div>
 
-### Illustration & cartography
-
-Away from code, I'm an enthusiastic amateur **illustrator, photographer, and computer cartographer**. I created the **regional maps** for six military-history books written by Brian Todd Carey — from *Warfare in the Ancient World* through the *Warfare in the Age of Crusades* series — maps that place campaigns, shifting frontiers, and battle sites within their geographic context, presenting complex history through clear, thoughtful cartography.
-
-* **[Cartography & Books]({filename}penandsword.md)** — the full set of six titles, with covers and summaries.
-* **[Amazon author page](https://amazon.com/author/johncairns)** · **[Pen & Sword Military](https://www.penandswordbooks.com/author/john-cairns/)**
-
-### Beyond the terminal
-
-A proud husband and father of three, I enjoy family time, travel, and the rich tapestry of life in Chicago. On the weekends you might find me on a long run in a forest preserve or at a kid's soccer match. I also bake, play music, and narrate public-domain works for **[LibriVox](https://librivox.org/reader/12659)**.
-
-### Find me
-
-* **[GitHub — jac18281828](https://github.com/jac18281828)** · **[LinkedIn](https://www.linkedin.com/in/johnacairns)** · **[YouTube](https://www.youtube.com/@johnacairns)** · **[Instagram](https://www.instagram.com/jac18281828)** · **[TikTok](https://www.tiktok.com/@jac1828)** · **[Amazon author page](https://amazon.com/author/johncairns)**
-* **[jac1828.eth](https://app.ens.domains/jac1828.eth)** · PGP `FD311EE84C8321C3E93C1E639028C4309ACCEB9B`
+[PGP `FD311EE84C8321C3E93C1E639028C4309ACCEB9B`](https://keys.openpgp.org/search?q=FD311EE84C8321C3E93C1E639028C4309ACCEB9B)
 
 <script type="application/ld+json">
 {
@@ -53,11 +61,11 @@ A proud husband and father of three, I enjoy family time, travel, and the rich t
       "@id": "https://2ad.com/#person",
       "name": "John A. Cairns",
       "url": "https://2ad.com",
-      "mainEntityOfPage": "https://2ad.com/pages/about-john.html",
+      "mainEntityOfPage": "https://2ad.com/about.html",
       "image": "https://2ad.com/images/2022/sep2222_sm.jpg",
       "jobTitle": "Software Engineer",
-      "description": "Software engineer with three decades in distributed systems and a background in physics, building smart contracts and multi-chain trading infrastructure in Rust and Solidity. Illustrator, photographer and computer cartographer.",
-      "worksFor": { "@id": "https://benchmark.withfabric.xyz/#org" },
+      "description": "Software engineer with three decades in distributed systems and a background in physics, at Open Standard, building distributed systems in Rust, with a background in physics. Writes smart contracts for Ethereum and Solana. Illustrator, photographer and computer cartographer.",
+      "worksFor": { "@id": "https://joinopenstandard.com/#org" },
       "address": {
         "@type": "PostalAddress",
         "addressLocality": "Chicago",
@@ -69,7 +77,6 @@ A proud husband and father of three, I enjoy family time, travel, and the rich t
         "Smart contracts",
         "Solidity",
         "Rust",
-        "On-chain trading infrastructure",
         "DEX aggregation",
         "Decentralized finance",
         "Financial engineering",
@@ -77,7 +84,6 @@ A proud husband and father of three, I enjoy family time, travel, and the rich t
         "On-chain governance",
         "Ethereum",
         "Solana",
-        "Layer 2 (Base, Arbitrum)",
         "Systems programming",
         "Concurrency",
         "WebAssembly",
@@ -103,10 +109,10 @@ A proud husband and father of three, I enjoy family time, travel, and the rich t
     },
     {
       "@type": "Organization",
-      "@id": "https://benchmark.withfabric.xyz/#org",
-      "name": "Fabric",
-      "description": "High-performance multi-chain DEX aggregator.",
-      "url": "https://benchmark.withfabric.xyz"
+      "@id": "https://joinopenstandard.com/#org",
+      "name": "Open Standard",
+      "description": "Issuer of the Open USD stablecoin for global money movement.",
+      "url": "https://joinopenstandard.com"
     },
     {
       "@type": "SoftwareSourceCode",
