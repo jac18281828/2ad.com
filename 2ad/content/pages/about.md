@@ -40,7 +40,9 @@ A proud husband and father of three. I love my kids' sports, soccer and volleyba
 
 ## Find me on-chain
 
-My ENS name is [jac1828.eth](https://app.ens.domains/jac1828.eth), a human-readable name on Ethereum. My [PGP key](https://keys.openpgp.org/search?q=FD311EE84C8321C3E93C1E639028C4309ACCEB9B) has the fingerprint `FD311EE84C8321C3E93C1E639028C4309ACCEB9B`.
+My ENS name is [jac1828.eth](https://app.ens.domains/jac1828.eth).
+
+My [PGP key](https://keys.openpgp.org/search?q=FD311EE84C8321C3E93C1E639028C4309ACCEB9B) has the fingerprint `FD311EE84C8321C3E93C1E639028C4309ACCEB9B`.
 
 <script type="application/ld+json">
 {
