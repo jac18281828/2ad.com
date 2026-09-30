@@ -1,3 +1,8 @@
+# 1.0.249 (2026-09-30)
+
+* all five sites: a missing page now shows a real 404 page with status 404, in place of a raw access-denied error; CloudFront maps the origin's 403 and 404 to /404.html and caches the answer for 60 seconds
+* 2ad, kellycairns: the favicon link is root-relative, so the icon loads on pages below the site root
+
 # 1.0.248 (2026-09-30)
 
 * kellycairns tags: consistent tags across all posts (interviews, press, speaking; outlets by name; topics including specific clinical areas), duplicates merged and copy-paste errors fixed; 84 tags become 69
