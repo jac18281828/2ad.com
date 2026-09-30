@@ -1,3 +1,7 @@
+# 1.0.244 (2026-09-29)
+
+* kellycairns publications: the 2005 Journal of Immunology and 2007 JFMS papers with plain-language summaries, the Feline Practitioner hepatic lipidosis article (in press), the decision deadlock article moved from coaching and dated September 21, 2022, and published titles throughout
+
 # 1.0.243 (2026-09-29)
 
 * kellycairns: bio rewritten around current roles (LMU Assistant Professor, UMES School of Veterinary Medicine, Canine Stroke Foundation, consulting), with a link to Experience & Credentials; page title capitalized to Bio
