@@ -1,3 +1,8 @@
+# 1.0.243 (2026-09-29)
+
+* kellycairns: bio rewritten around current roles (LMU Assistant Professor, UMES School of Veterinary Medicine, Canine Stroke Foundation, consulting), with a link to Experience & Credentials; page title capitalized to Bio
+* kellycairns: Experience & Credentials uses the full UMES School of Veterinary Medicine name
+
 # 1.0.242 (2026-09-29)
 
 * kellycairns: credentials page becomes Experience & Credentials, a web CV from the October 2026 CV: professional experience (including the Canine Stroke Foundation), consulting and advisory roles, and CVMA offices by year; same URL
