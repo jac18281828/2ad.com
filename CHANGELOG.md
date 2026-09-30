@@ -1,3 +1,7 @@
+# 1.0.245 (2026-09-29)
+
+* kellycairns podcast: Leading Out Loud episode 15, "Leading Medical Excellence Across the Veterinary Profession" (May 26, 2026), with the YouTube episode embedded and Spotify and Apple Podcasts links
+
 # 1.0.244 (2026-09-29)
 
 * kellycairns publications: the 2005 Journal of Immunology and 2007 JFMS papers with plain-language summaries, the Feline Practitioner hepatic lipidosis article (in press), the decision deadlock article moved from coaching and dated September 21, 2022, and published titles throughout
