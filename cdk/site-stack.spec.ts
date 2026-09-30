@@ -59,3 +59,24 @@ describe('SiteStack', () => {
     });
   });
 });
+
+describe.each(SITE_DEFINITIONS)('SiteStack error pages for $domainName', (site) => {
+  it('maps origin 403 and 404 to /404.html with status 404', () => {
+    const stack = new SiteStack(new cdk.App(), 'ErrorPageStack', {
+      env: {
+        account: '504242000181',
+        region: 'us-east-1',
+      },
+      site: site,
+    });
+
+    Template.fromStack(stack).hasResourceProperties('AWS::CloudFront::Distribution', {
+      DistributionConfig: {
+        CustomErrorResponses: Match.arrayEquals([
+          { ErrorCode: 403, ResponseCode: 404, ResponsePagePath: '/404.html', ErrorCachingMinTTL: 60 },
+          { ErrorCode: 404, ResponseCode: 404, ResponsePagePath: '/404.html', ErrorCachingMinTTL: 60 },
+        ]),
+      },
+    });
+  });
+});

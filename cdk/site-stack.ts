@@ -60,6 +60,13 @@ export class SiteStack extends cdk.Stack {
         compress: true,
         responseHeadersPolicy: cloudfront.ResponseHeadersPolicy.SECURITY_HEADERS,
       },
+      // The OAC origin answers a missing key with 403; 404 covers a list grant.
+      errorResponses: [403, 404].map((httpStatus) => ({
+        httpStatus,
+        responseHttpStatus: 404,
+        responsePagePath: '/404.html',
+        ttl: cdk.Duration.seconds(60),
+      })),
     });
 
     const cloudFrontTarget = r53.RecordTarget.fromAlias(new r53t.CloudFrontTarget(this.distribution));
