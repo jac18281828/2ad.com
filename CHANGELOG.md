@@ -1,3 +1,8 @@
+# 1.0.247 (2026-09-30)
+
+* kellycairns media: nine posts re-dated to the outlet's own publish date (Vet Blast, WBBM, ABC Action News, HuffPost, Brut, CBS Chicago, The VetMed Mind, Newsweek, The Veterinary Optimist)
+* kellycairns podcast: So You're a Vet... Now What? episode 226 post corrected (internal medicine, not neurology; host Dr. Moriah McCauley; published episode title)
+
 # 1.0.246 (2026-09-29)
 
 * kellycairns podcast: four missing 19 Cats and Counting episodes (105 Itchy Kitties, 135 Found Kittens, 151 Senior Cats and their Special Needs, 167 Giving Our Cats Relief from the Heat); all 16 episodes tagged 19 Cats and Counting, with their own tag page
