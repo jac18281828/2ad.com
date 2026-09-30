@@ -9,7 +9,7 @@ SITEURL = u'https://2ad.com'
 THEME = 'themes/Flex'
 
 # flex
-FAVICON = 'favicon.ico'
+FAVICON = '/favicon.ico'
 CUSTOM_CSS = 'static/custom.css'
 SITELOGO = '/static/sitelogo.jpg'
 SITETITLE = u'John A. Cairns'

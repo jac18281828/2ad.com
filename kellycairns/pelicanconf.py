@@ -9,7 +9,7 @@ SITEURL = u'https://kellycairns.com'
 THEME = 'themes/Flex'
 
 # flex
-FAVICON = 'favicon.ico'
+FAVICON = '/favicon.ico'
 SITELOGO = '/static/KellyHeadshot.jpg'
 SITETITLE = u'%s' % AUTHOR
 SITESUBTITLE = u'Veterinary Medical Leader | Educator | Strategist | Speaker'
