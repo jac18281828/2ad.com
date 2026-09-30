@@ -1,3 +1,9 @@
+# 1.0.248 (2026-09-30)
+
+* kellycairns tags: consistent tags across all posts (interviews, press, speaking; outlets by name; topics including specific clinical areas), duplicates merged and copy-paste errors fixed; 84 tags become 69
+* kellycairns: Consumer Reports, Forbes and Reader's Digest articles move into news; the doxycycline guide moves into publication; Cats Welcome! becomes a hidden Easter egg
+* kellycairns/CLAUDE.md: categories-and-tags guidance
+
 # 1.0.247 (2026-09-30)
 
 * kellycairns media: nine posts re-dated to the outlet's own publish date (Vet Blast, WBBM, ABC Action News, HuffPost, Brut, CBS Chicago, The VetMed Mind, Newsweek, The Veterinary Optimist)
