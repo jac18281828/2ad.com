@@ -33,14 +33,14 @@ I'm the **regional-map illustrator** for a series of military-history books writ
 </div>
 <div style="flex:1 1 280px;max-width:340px;border:1px solid rgba(128,128,128,.3);border-radius:8px;padding:1.1em;box-sizing:border-box;">
 <a href="https://www.penandswordbooks.com/9781848847415/warfare-in-the-medieval-world/"><img src="{static}/images/books/warfare-medieval-world.jpg" alt="Warfare in the Medieval World — cover" style="display:block;margin:0 auto .8em;width:150px;height:auto;border-radius:3px;"></a>
-<h3 style="margin:.2em 0;text-align:center;font-size:1.05em;"><a href="https://www.penandswordbooks.com/9781848847415/warfare-in-the-medieval-world/">Warfare in the Medieval World</a></h3>
+<h3 style="margin:.2em 0;text-align:center;font-size:1.05em;"><a href="{filename}/posts/2006/01.warfare.in.the.medieval.world.md">Warfare in the Medieval World</a></h3>
 <p style="text-align:center;opacity:.7;font-size:.85em;margin:.2em 0 .8em;">2006 · 100 maps · regional maps</p>
 <p style="font-size:.92em;margin:0;">Warfare from the fall of Rome to the dawn of reliable gunpowder, surveyed through thirty-three battles and the shifting interplay of heavy and light infantry and cavalry.</p>
 </div>
 <div style="flex:1 1 280px;max-width:340px;border:1px solid rgba(128,128,128,.3);border-radius:8px;padding:1.1em;box-sizing:border-box;">
-<a href="https://www.penandswordbooks.com/9781781592632/warfare-in-the-age-of-crusades/"><img src="{static}/images/books/warfare-ancient-world.jpg" alt="Warfare in the Ancient World — cover" style="display:block;margin:0 auto .8em;width:150px;height:auto;border-radius:3px;"></a>
-<h3 style="margin:.2em 0;text-align:center;font-size:1.05em;"><a href="https://www.penandswordbooks.com/9781781592632/warfare-in-the-age-of-crusades/">Warfare in the Ancient World</a></h3>
-<p style="text-align:center;opacity:.7;font-size:.85em;margin:.2em 0 .8em;">2006 · 150 illustrations</p>
+<a href="https://www.penandswordbooks.com/9781781592632/warfare-in-the-ancient-world/"><img src="{static}/images/books/warfare-ancient-world.jpg" alt="Warfare in the Ancient World — cover" style="display:block;margin:0 auto .8em;width:150px;height:auto;border-radius:3px;"></a>
+<h3 style="margin:.2em 0;text-align:center;font-size:1.05em;"><a href="{filename}/posts/2005/01.warfare.in.the.ancient.world.md">Warfare in the Ancient World</a></h3>
+<p style="text-align:center;opacity:.7;font-size:.85em;margin:.2em 0 .8em;">2005 · 150 illustrations</p>
 <p style="font-size:.92em;margin:0;">A one-volume introduction to the art of war across the Near East and Europe — from the rise of civilization in Mesopotamia to the fall of Rome — told through dozens of tactical maps.</p>
 </div>
 </div>
