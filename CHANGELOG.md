@@ -1,3 +1,9 @@
+# 1.0.251 (2026-10-01)
+
+* build tooling: CI, the release deploy and the dev image run Node 24, the Active LTS, in place of the end-of-life Node 20 and 22; every GitHub Action moved to its newest Node 24 major
+* build tooling: TypeScript 6.0.3 and patch bumps of eslint, prettier, jest, ts-jest, typescript-eslint and aws-cdk (first deployed in 1.0.250); the synthesized CloudFormation is unchanged
+* no site content changes
+
 # 1.0.250 (2026-10-01)
 
 * kellycairns menu: new podcast (22 episodes) and speaking (5 talks) sections; speaking replaces coaching, which is retired; the podcast link points at the new section
