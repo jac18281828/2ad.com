@@ -1,0 +1,6 @@
+10.323 36.853 LM Carthage
+10.062 37.057 RM Utica
+10.638 35.826 LM Hadrumetum
+8.715 36.182 LM Sicca (El Kef)
+8.357 36.224 RM Naraggara
+9.447 36.068 LM Zama Regia
