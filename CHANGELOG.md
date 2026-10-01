@@ -1,3 +1,11 @@
+# 1.0.254 (2026-10-01)
+
+* 2ad: new post, Warfare in the Ancient World (2005), with a globe of the Hellenistic world in 217 BCE; the GMT sources for the map are in maps/wwc-v1 (not built by the site)
+* 2ad: the update category is retired: the 35 container release announcements are deleted, 16 posts move to tech, news, art and books, the security posts join tech, and tags are lowercased (live since 1.0.253)
+* 2ad: the History Dictionary entries move to a dictionary category, linked from the about and Cartography & Books pages; article URLs are unchanged (live since 1.0.253)
+* 2ad: llms.txt points at the live about and cartography pages (live since 1.0.253)
+* build tooling: aws-cdk-lib 2.271.0 and typescript-eslint 8.71.0; the synthesized CloudFormation differs only in the CDK metadata string (live since 1.0.253)
+
 # 1.0.253 (2026-10-01)
 
 * kellycairns: new Speaking page (speaking areas with example talks, formats, selected engagements, links to past talks); the sidebar speaking link opens it, and publication moves up after it
