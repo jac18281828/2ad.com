@@ -11,13 +11,13 @@ jobs:
   run-commitlint-on-pull-request:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v2
+      - uses: actions/checkout@v7
         with:
           fetch-depth: 0
       - name: Setup Node
-        uses: actions/setup-node@v2
+        uses: actions/setup-node@v7
         with:
-          node-version: 22.x
+          node-version: 24.x
       - name: Install dependencies
         run: npm install -g @commitlint/{cli,config-conventional}
       - name: Validate all commits from PR
