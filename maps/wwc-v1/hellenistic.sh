@@ -1,5 +1,5 @@
 #!/usr/bin/env bash
-# Hellenistic world globe, c. 275 BCE. Runs inside jac18281828/bedrock (GMT 6).
+# Hellenistic world globe, c. 217 BCE. Runs inside jac18281828/bedrock (GMT 6).
 set -euo pipefail
 cd /work
 ETOPO=/bedrock/ETOPO_2022_v1_30s_N90W180_surface.nc
