@@ -1,3 +1,7 @@
+# 1.0.253 (2026-10-01)
+
+* kellycairns: new Speaking page (speaking areas with example talks, formats, selected engagements, links to past talks); the sidebar speaking link opens it, and publication moves up after it
+
 # 1.0.252 (2026-10-01)
 
 * kellycairns menu: the news link is labelled "media" (label only; the URL is unchanged)
