@@ -17,6 +17,6 @@ jobs:
       - name: Install yamlfmt
         run: |
           go install github.com/google/yamlfmt/cmd/yamlfmt@latest
-          strip $(which yamlfmt)
+          strip "$(which yamlfmt)"
       - name: Run yamlfmt
         run: yamlfmt -lint .github/*.yml .github/workflows/*.yml
