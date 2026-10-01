@@ -6,7 +6,7 @@ ETOPO=/bedrock/ETOPO_2022_v1_30s_N90W180_surface.nc
 GRID=out/etopo_6m.nc
 [ -f "$GRID" ] || gmt grdsample "$ETOPO" -I6m -R-180/180/-90/90 -G"$GRID"
 
-LON=36; LAT=38
+LON=42.54; LAT=39.14
 J=G${LON}/${LAT}/16c+z2500
 
 # old-world palette: grey-green sea, parchment land
@@ -37,7 +37,7 @@ gmt begin out/manzikert png,pdf
   gmt text labels.txt -F+f15p,Times-Bold,45/28/12+jCM
   gmt plot cities.txt -Sc0.16c -G45/28/12 -W0.5p,244/236/216
   gmt text cities.txt -F+f12p,Times-BoldItalic,45/28/12+j -Dj0.3c/0
-  gmt plot battles.txt -Skbattle/0.7c -G95/18/10
-  echo 42.54 39.14 Manzikert | gmt text -F+f12p,Times-BoldItalic,45/28/12+jLB -D0.35c/0.02c
-  echo 42.54 39.14 '(1071 CE)' | gmt text -F+f11p,Times-Italic,45/28/12+jLT -D0.35c/-0.06c
+  gmt plot battles.txt -Skbattle/1.0c -G95/18/10
+  echo 42.54 39.14 Manzikert | gmt text -F+f20p,Times-Bold,25/14/6+jLB -D0.55c/0.02c
+  echo 42.54 39.14 '(1071 CE)' | gmt text -F+f15p,Times-Bold,25/14/6+jLT -D0.55c/-0.08c
 gmt end
