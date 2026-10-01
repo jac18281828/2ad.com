@@ -12,8 +12,8 @@
 
 ## About
 
-- [About John](https://2ad.com/pages/about-john.html): Full bio — engineering focus, selected work, and links.
-- [Cartography & Books](https://2ad.com/pages/cartography.html): The six military-history books John illustrated regional maps for, with covers and summaries.
+- [About John](https://2ad.com/about.html): Full bio — engineering focus, selected work, and links.
+- [Cartography & Books](https://2ad.com/cartography.html): The six military-history books John illustrated regional maps for, with covers and summaries.
 
 ## Focus areas
 
