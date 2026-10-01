@@ -97,8 +97,8 @@ AUTHOR_FEED_RSS = None
 # Blogroll
 LINKS = (
     ('news', '/category/news.html'),
-    ('podcast', '/tag/podcast.html'),
-    ('coaching', '/category/coaching.html'),
+    ('podcast', '/category/podcast.html'),
+    ('speaking', '/category/speaking.html'),
     ('publication', '/category/publication.html'),
     ('LinkedIn', 'https://linkedin.com/in/kelly-cairns-68425060'),
     ('Instagram', 'https://www.instagram.com/cairns_kelly/'),
