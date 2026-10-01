@@ -30,7 +30,7 @@ summary: John A. Cairns is a software engineer at Open Standard with three decad
 <div>
 <h3>Maps and history</h3>
 <p>I'm proud to be a part of six military-history books by Brian Todd Carey. I illustrated the regional maps.</p>
-<p><a href="{filename}../posts/2023/30.gibraltar_crusade.md">Gibraltar, 1340</a> · <a href="{filename}penandsword.md">Cartography &amp; Books</a> · <a href="{category}history">all history posts</a></p>
+<p><a href="{filename}../posts/2023/30.gibraltar_crusade.md">Gibraltar, 1340</a> · <a href="{filename}penandsword.md">Cartography &amp; Books</a> · <a href="{category}history">all history posts</a> · <a href="{category}dictionary">Cairns History Dictionary</a></p>
 </div>
 </div>
 

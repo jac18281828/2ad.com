@@ -50,3 +50,7 @@ I'm the **regional-map illustrator** for a series of military-history books writ
 * **[Amazon author page](https://amazon.com/author/johncairns)**
 * **[Pen & Sword Military (US)](https://www.penandswordbooks.com/author/john-cairns/)**
 * **[Pen & Sword (UK)](https://www.pen-and-sword.co.uk/John-Cairns/a/7)**
+
+### The Cairns History Dictionary
+
+I also wrote a dictionary of ancient and medieval history: terms, people, peoples, places and events. Browse the [Cairns History Dictionary]({category}dictionary).
