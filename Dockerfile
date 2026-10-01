@@ -17,7 +17,7 @@ RUN export DEBIAN_FRONTEND=noninteractive && \
     apt-get install -y -q --no-install-recommends \
       ca-certificates curl git gnupg2 && \
     apt-get clean && rm -rf /var/lib/apt/lists/* /tmp/* /var/tmp/*
-ENV NODE_VERSION=v22.16.0
+ENV NODE_VERSION=v24.21.0
 ENV NVM_DIR=/usr/local/nvm
 RUN mkdir -p ${NVM_DIR}
 ADD https://raw.githubusercontent.com/creationix/nvm/master/install.sh /usr/local/etc/nvm/install.sh
@@ -64,7 +64,7 @@ COPY --chown=${USER}:${USER} . .
 
 
 # Node via NVM copied from node stage
-ENV NODE_VERSION=v22.16.0
+ENV NODE_VERSION=v24.21.0
 ENV NVM_DIR=/usr/local/nvm
 ENV NVM_NODE_PATH=${NVM_DIR}/versions/node/${NODE_VERSION}
 ENV NODE_PATH=${NVM_NODE_PATH}/lib/node_modules
