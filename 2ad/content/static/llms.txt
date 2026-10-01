@@ -13,7 +13,7 @@
 ## About
 
 - [About John](https://2ad.com/about.html): Full bio — engineering focus, selected work, and links.
-- [Cartography & Books](https://2ad.com/cartography.html): The six military-history books John illustrated regional maps for, with covers and summaries.
+- [Military History](https://2ad.com/cartography.html): The six military-history books John illustrated regional maps for, with covers and summaries, each linked to its post.
 
 ## Focus areas
 
@@ -37,9 +37,9 @@
 ## Writing
 
 - [Technology posts](https://2ad.com/category/tech.html): Smart contracts, Solidity/Foundry, Rust, Go, zero-knowledge proofs, systems.
-- [History](https://2ad.com/category/history.html): Medieval and crusades-era military history notes.
+- [History](https://2ad.com/category/history.html): Posts on the military-history books and their maps, ancient through crusades-era.
 - [Food](https://2ad.com/category/food.html): Baking and recipes.
-- [Books](https://2ad.com/category/books.html): The Warfare in the Age of Crusades series (regional cartography) and reading notes.
+- [Cairns History Dictionary](https://2ad.com/category/dictionary.html): A dictionary of ancient and medieval history: terms, people, peoples, places and events.
 
 ## Links
 

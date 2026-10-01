@@ -1,4 +1,4 @@
-title: Cartography & Books
+title: Military History
 slug: cartography
 summary: John A. Cairns created the regional maps for six military-history books written by Brian Todd Carey and published by Pen & Sword / Westholme — from the ancient world through the age of the Crusades.
 

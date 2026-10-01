@@ -116,7 +116,7 @@ LINKS = (
     ('', ''),
     ('news', '/category/news.html'),
     ('tech', '/category/tech.html'),
-    ('books', '/category/books.html'),
+    ('publications', '/cartography.html'),
     ('history', '/category/history.html'),
     ('food', '/category/food.html'),
     ('', ''),
