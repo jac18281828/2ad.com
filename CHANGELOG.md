@@ -1,3 +1,7 @@
+# 1.0.252 (2026-10-01)
+
+* kellycairns menu: the news link is labelled "media" (label only; the URL is unchanged)
+
 # 1.0.251 (2026-10-01)
 
 * build tooling: CI, the release deploy and the dev image run Node 24, the Active LTS, in place of the end-of-life Node 20 and 22; every GitHub Action moved to its newest Node 24 major
