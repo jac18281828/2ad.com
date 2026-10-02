@@ -1,3 +1,7 @@
+# 1.0.256 (2026-10-01)
+
+* 2ad: the 2018 LibriVox post moves out of the retired update folder and its modified key is corrected; no URL or page changes
+
 # 1.0.255 (2026-10-01)
 
 * 2ad: new history post, Warfare in the Medieval World (Volume 2), with a globe of Manzikert, 1071; both Warfare posts are proof-read and marked by volume, and the Cartography & Books page links each
