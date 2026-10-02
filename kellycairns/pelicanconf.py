@@ -7,13 +7,16 @@ SITENAME = u'Kelly Cairns DVM MS DACVIM'
 SITEURL = u'https://kellycairns.com'
 
 THEME = 'themes/Flex'
-CUSTOM_CSS = 'static/custom.css?v=2'
+CUSTOM_CSS = 'static/custom.css?v=4'
 
 # flex
 FAVICON = '/favicon.ico'
 SITELOGO = '/static/KellyHeadshot.jpg'
 SITETITLE = u'%s' % AUTHOR
-SITESUBTITLE = u'Veterinary Medical Leader | Educator | Strategist | Speaker'
+SITESUBTITLE = (u'<span class="kc-subtitle">Veterinary Medical Leader<br>'
+                u'<span class="kc-role">Educator |</span> '
+                u'<span class="kc-role">Strategist |</span> '
+                u'<span class="kc-role">Advisor</span></span>')
 HOME_HIDE_TAGS = False
 MAIN_MENU = True
 PAGES_SORT_ATTRIBUTE = 'menu_order'
@@ -102,17 +105,16 @@ AUTHOR_FEED_RSS = None
 
 # Blogroll
 LINKS = (
-    ('publication', '/category/publication.html'),
+    ('publications', '/category/publication.html'),
     ('media', '/category/news.html'),
-    ('podcast', '/category/podcast.html'),
+    ('podcasts', '/category/podcast.html'),
     ('all posts', '/blog.html'),
-    ('LinkedIn', 'https://linkedin.com/in/kelly-cairns-68425060'),
-    ('Instagram', 'https://www.instagram.com/cairns_kelly/'),
 )
 
-# Social widget
-# not used in current theme
-# SOCIAL = ()
+# Social icons, shown under the name in the sidebar
+SOCIAL = (
+    ('linkedin', 'https://linkedin.com/in/kelly-cairns-68425060'),
+)
 
 DEFAULT_PAGINATION = 8
 

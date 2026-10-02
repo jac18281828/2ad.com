@@ -7,3 +7,22 @@ main h1#home {
   margin-bottom: 0.6em;
   text-wrap: balance;
 }
+
+/* Sidebar subtitle: her title, then her roles on one line, a little
+   larger than Flex's default. Keep each role whole, so a narrow
+   sidebar breaks between roles, never inside one. */
+.kc-subtitle {
+  font-size: 1.15em;
+}
+
+.kc-role {
+  white-space: nowrap;
+}
+
+/* Portrait tablets give the sidebar its narrowest width; shrink the
+   subtitle there so it still fits on two lines. */
+@media (min-width: 768px) and (max-width: 991px) {
+  .kc-subtitle {
+    font-size: 0.8em;
+  }
+}

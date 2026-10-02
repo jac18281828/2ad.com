@@ -1,4 +1,4 @@
-title: Bio
+title: About
 slug: about_kelly_cairns
 menu_order: 1
 category: bio
