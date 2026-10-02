@@ -7,6 +7,7 @@ SITENAME = u'Kelly Cairns DVM MS DACVIM'
 SITEURL = u'https://kellycairns.com'
 
 THEME = 'themes/Flex'
+CUSTOM_CSS = 'static/custom.css?v=2'
 
 # flex
 FAVICON = '/favicon.ico'
@@ -104,6 +105,7 @@ LINKS = (
     ('publication', '/category/publication.html'),
     ('media', '/category/news.html'),
     ('podcast', '/category/podcast.html'),
+    ('all posts', '/blog.html'),
     ('LinkedIn', 'https://linkedin.com/in/kelly-cairns-68425060'),
     ('Instagram', 'https://www.instagram.com/cairns_kelly/'),
 )

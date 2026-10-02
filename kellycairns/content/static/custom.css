@@ -1,0 +1,9 @@
+/* Home page: Flex sizes every page title as a large h1, which fills the
+   first screen of the landing page. Keep its headline smaller, and
+   balance its lines so it doesn't leave a short last line. */
+main h1#home {
+  font-size: 1.75em;
+  line-height: 1.25;
+  margin-bottom: 0.6em;
+  text-wrap: balance;
+}
