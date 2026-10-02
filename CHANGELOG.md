@@ -1,3 +1,7 @@
+# 1.0.258 (2026-10-02)
+
+* kellycairns: new Consulting page (areas of work with examples, speaking summary, how engagements work); the sidebar lists pages in a fixed order: bio, experience & credentials, consulting, speaking
+
 # 1.0.257 (2026-10-01)
 
 * 2ad: new history post, Hannibal's Last Battle (2007), with a relief map of northern Tunisia and the plain where Zama was probably fought; the GMT sources are in maps/zama (not built by the site)
