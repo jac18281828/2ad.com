@@ -88,6 +88,10 @@ TIMEZONE = 'America/Chicago'
 
 DEFAULT_LANG = u'en'
 
+# Drafts are not written to the output; Pelican would serve them under /drafts/.
+DRAFT_SAVE_AS = ''
+DRAFT_LANG_SAVE_AS = ''
+
 # Feed generation is usually not desired when developing
 FEED_ALL_ATOM = None
 CATEGORY_FEED_ATOM = None

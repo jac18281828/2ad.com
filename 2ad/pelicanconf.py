@@ -97,6 +97,10 @@ DEFAULT_LANG = u'en'
 
 WITH_FUTURE_DATES = False
 
+# Drafts are not written to the output; Pelican would serve them under /drafts/.
+DRAFT_SAVE_AS = ''
+DRAFT_LANG_SAVE_AS = ''
+
 # Feed generation is usually not desired when developing
 FEED_ALL_ATOM = 'feeds/all.atom.xml'
 SLUG_FEED_ATOM = 'feeds/%s.atom.xml'
