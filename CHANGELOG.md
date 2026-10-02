@@ -1,3 +1,8 @@
+# 1.0.259 (2026-10-01)
+
+* 2ad: new article, What Is Ray Tracing? (the first of three on how gman renders: rays, shadows, mirrors and glass, and the equation behind them)
+* 2ad, kellycairns: drafts are no longer written to the site output, so unpublished posts stop answering under /drafts/
+
 # 1.0.258 (2026-10-02)
 
 * kellycairns: new Consulting page (areas of work with examples, speaking summary, how engagements work); the sidebar lists pages in a fixed order: bio, experience & credentials, consulting, speaking
