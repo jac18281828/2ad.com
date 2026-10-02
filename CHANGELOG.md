@@ -1,3 +1,8 @@
+# 1.0.260 (2026-10-02)
+
+* kellycairns: a landing page replaces the post list as home (headline, Work with Dr. Cairns call to action, at a glance, consulting/speaking/experience doors, keynote video); the post list moves to /blog.html and gets an "all posts" sidebar link; /index4.html stays as a pointer to it
+* kellycairns: the Experience & Credentials education section is now "Education, Clinical Training & Board Certification"
+
 # 1.0.259 (2026-10-01)
 
 * 2ad: new article, What Is Ray Tracing? (the first of three on how gman renders: rays, shadows, mirrors and glass, and the equation behind them)
