@@ -15,6 +15,7 @@ SITETITLE = u'%s' % AUTHOR
 SITESUBTITLE = u'Veterinary Medical Leader | Educator | Strategist | Speaker'
 HOME_HIDE_TAGS = False
 MAIN_MENU = True
+PAGES_SORT_ATTRIBUTE = 'menu_order'
 FEED_USE_SUMMARY = True
 BROWSER_COLOR = '#333'
 SITEDESCRIPTION = u'%s\' is a board-certified veterinary internal medicine specialist, executive leader, and nationally recognized educator and speaker on clinical excellence, veterinary education and wellbeing.' % AUTHOR

@@ -1,5 +1,6 @@
 title: Speaking
 slug: speaking
+menu_order: 4
 date: 2026-10-01
 
 Dr. Kelly Cairns is a board-certified veterinary internal medicine specialist and nationally recognized speaker on veterinary education, leadership, professional wellbeing and clinical medicine. She speaks at conferences, colleges of veterinary medicine, veterinary hospitals and industry events. Her audiences include veterinarians, technicians, students and leaders across the profession. Every talk is built around the audience in the room.

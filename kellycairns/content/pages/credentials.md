@@ -1,5 +1,6 @@
 title: Experience & Credentials
 slug: credentials
+menu_order: 2
 category: bio
 date: 2020-04-19
 modified: 2026-09-29

@@ -1,5 +1,6 @@
 title: Bio
 slug: about_kelly_cairns
+menu_order: 1
 category: bio
 date: 2018-12-15
 modified: 2026-09-29
