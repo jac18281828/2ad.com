@@ -1,3 +1,8 @@
+# 1.0.257 (2026-10-01)
+
+* 2ad: new history post, Hannibal's Last Battle (2007), with a relief map of northern Tunisia and the plain where Zama was probably fought; the GMT sources are in maps/zama (not built by the site)
+* 2ad: the Cartography page dates the Hannibal card 2007 and links the post; the about page's structured data lists the Pen & Sword first edition, with the Westholme US edition as sameAs
+
 # 1.0.256 (2026-10-01)
 
 * 2ad: the 2018 LibriVox post moves out of the retired update folder and its modified key is corrected; no URL or page changes
