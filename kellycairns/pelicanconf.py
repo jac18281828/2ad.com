@@ -114,5 +114,8 @@ LINKS = (
 
 DEFAULT_PAGINATION = 8
 
+# The home page is content/pages/home.md; the post list lives at blog.html
+INDEX_SAVE_AS = 'blog.html'
+
 # Uncomment following line if you want document-relative URLs when developing
 #RELATIVE_URLS = True
