@@ -1,3 +1,10 @@
+# 1.0.255 (2026-10-01)
+
+* 2ad: new history post, Warfare in the Medieval World (Volume 2), with a globe of Manzikert, 1071; both Warfare posts are proof-read and marked by volume, and the Cartography & Books page links each
+* 2ad: the book page is now Military History; the sidebar's books link becomes publications; the books category folds into history, so /category/books.html is gone
+* 2ad: llms.txt describes Military History and links the History Dictionary; the about page links the renamed page
+* the GMT sources for the volume 2 map are in maps/wwc-v2 (not built by the site)
+
 # 1.0.254 (2026-10-01)
 
 * 2ad: new post, Warfare in the Ancient World (2005), with a globe of the Hellenistic world in 217 BCE; the GMT sources for the map are in maps/wwc-v1 (not built by the site)
