@@ -1,3 +1,7 @@
+# 1.0.261 (2026-10-02)
+
+* kellycairns: sidebar tidy: bio becomes about, publications and podcasts get menu links, the Instagram icon is removed (LinkedIn stays), and the tagline is now Veterinary Medical Leader / Educator | Strategist | Advisor
+
 # 1.0.260 (2026-10-02)
 
 * kellycairns: a landing page replaces the post list as home (headline, Work with Dr. Cairns call to action, at a glance, consulting/speaking/experience doors, keynote video); the post list moves to /blog.html and gets an "all posts" sidebar link; /index4.html stays as a pointer to it
