@@ -62,7 +62,7 @@ Previously a member of the Board of Directors
 #### Feline Veterinary Medical Association {: style="margin-bottom:0.3em"}
 **Appointed Member, Feline Welfare Committee** · 2027–2029
 
-## Board Certification & Degrees
+## Education, Clinical Training & Board Certification
 
 **Diplomate, Small Animal Internal Medicine**  
 *American College of Veterinary Internal Medicine* · 2008
