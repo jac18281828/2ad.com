@@ -26,9 +26,9 @@ I'm the **regional-map illustrator** for a series of military-history books writ
 <p style="font-style:italic;opacity:.85;font-size:.88em;border-left:3px solid rgba(128,128,128,.4);padding-left:.7em;margin:.9em 0 0;">"The sort of military history veteran readers will add to their collection and undergrads will use as a reference for years to come."<br><span style="opacity:.7;">— Daniel Fratini, De Re Militari</span></p>
 </div>
 <div style="flex:1 1 280px;max-width:340px;border:1px solid rgba(128,128,128,.3);border-radius:8px;padding:1.1em;box-sizing:border-box;">
-<a href="https://www.amazon.com/Hannibals-Last-Battle-Zama-Carthage/dp/1594160759"><img src="{static}/images/books/hannibals-last-battle.jpg" alt="Hannibal's Last Battle — cover" style="display:block;margin:0 auto .8em;width:150px;height:auto;border-radius:3px;"></a>
-<h3 style="margin:.2em 0;text-align:center;font-size:1.05em;"><a href="https://www.amazon.com/Hannibals-Last-Battle-Zama-Carthage/dp/1594160759">Hannibal's Last Battle</a></h3>
-<p style="text-align:center;opacity:.7;font-size:.85em;margin:.2em 0 .8em;">2008 · Zama &amp; the Fall of Carthage · 29 maps</p>
+<a href="https://www.pen-and-sword.co.uk/Hannibals-Last-Battle-Hardback/p/1496"><img src="{static}/images/books/hannibals-last-battle.jpg" alt="Hannibal's Last Battle — cover" style="display:block;margin:0 auto .8em;width:150px;height:auto;border-radius:3px;"></a>
+<h3 style="margin:.2em 0;text-align:center;font-size:1.05em;"><a href="{filename}/posts/2007/01.hannibals.last.battle.md">Hannibal's Last Battle</a></h3>
+<p style="text-align:center;opacity:.7;font-size:.85em;margin:.2em 0 .8em;">2007 · Zama &amp; the Fall of Carthage · 29 maps</p>
 <p style="font-size:.92em;margin:0;">The campaigns of the Second Punic War and the decisive clash at Zama in 202 BC, weighing the contrasting genius of Hannibal and Scipio Africanus across strategy and the battlefield.</p>
 </div>
 <div style="flex:1 1 280px;max-width:340px;border:1px solid rgba(128,128,128,.3);border-radius:8px;padding:1.1em;box-sizing:border-box;">

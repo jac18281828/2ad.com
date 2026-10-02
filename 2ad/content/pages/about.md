@@ -197,16 +197,17 @@ My [PGP key](https://keys.openpgp.org/search?q=FD311EE84C8321C3E93C1E639028C4309
     },
     {
       "@type": "Book",
-      "@id": "https://www.amazon.com/Hannibals-Last-Battle-Zama-Carthage/dp/1594160759",
+      "@id": "https://www.pen-and-sword.co.uk/Hannibals-Last-Battle-Hardback/p/1496",
       "name": "Hannibal's Last Battle: Zama and the Fall of Carthage",
       "genre": "Military history",
-      "isbn": "1594160759",
+      "isbn": "9781844156351",
       "author": { "@id": "https://2ad.com/#brian-todd-carey" },
       "contributor": [
         { "@id": "https://2ad.com/#person" },
         { "@type": "Person", "name": "Joshua B. Allfree" }
       ],
-      "publisher": { "@type": "Organization", "name": "Westholme Publishing" }
+      "publisher": { "@type": "Organization", "name": "Pen & Sword Books" },
+      "sameAs": "https://www.amazon.com/Hannibals-Last-Battle-Zama-Carthage/dp/1594160759"
     },
     {
       "@type": "Book",
