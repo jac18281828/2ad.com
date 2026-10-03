@@ -14,7 +14,7 @@ Dr. Kelly Cairns is a board-certified veterinary internal medicine specialist wh
 * Built the Medical Excellence and Education function for a network of about 400 veterinary hospitals
 * 2025–2026 Non-Resident Teacher of the Year, Lincoln Memorial University College of Veterinary Medicine
 * President, Chicago Veterinary Medical Association
-* Speaker at ACVIM, AAVMC, FelineVMA, Fetch dvm360, VCA Canada and state veterinary associations
+* Speaker at ACVIM, AAVMC, FelineVMA, Fetch dvm360, VCA Canada, Veterinary Growth Partners and state veterinary associations
 * Featured by NBC Nightly News, Newsweek, HuffPost and Forbes
 
 ### Consulting {: style="margin-bottom:0.3em; font-weight:600"}
