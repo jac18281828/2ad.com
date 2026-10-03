@@ -68,3 +68,5 @@ These are starting points, not a fixed menu. Dr. Cairns adapts existing talks an
 * [From a flicker to a flame]({filename}/posts/2021/09.dvm360keynotefromflickertoflame.md): dvm360 article on purpose in veterinary medicine
 * [Celebrating the joy found in veterinary medicine]({filename}/posts/2025/01.findingthejoy.md): interview video, Fetch dvm360 Charlotte
 * [Meet Kelly Cairns]({filename}/posts/2021/12.instagramlive.md): Fetch dvm360 faculty introduction
+
+**To invite Dr. Cairns to speak, [get in touch →]({filename}contact.md)**

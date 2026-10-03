@@ -6,7 +6,7 @@ url:
 
 Dr. Kelly Cairns is a board-certified veterinary internal medicine specialist who helps colleges of veterinary medicine, veterinary hospitals and industry partners build better education, stronger clinical quality and the leaders who deliver care.
 
-**Work with Dr. Cairns:** [Consulting →]({filename}consulting.md) · [Speaking →]({filename}speaking.md)
+**Work with Dr. Cairns:** [Consulting →]({filename}consulting.md) · [Speaking →]({filename}speaking.md) · [Get in touch →]({filename}contact.md)
 
 ## At a glance
 

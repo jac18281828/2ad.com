@@ -19,6 +19,10 @@ SITESUBTITLE = (u'<span class="kc-subtitle">Veterinary Medical Leader<br>'
                 u'<span class="kc-role">Advisor</span></span>')
 HOME_HIDE_TAGS = False
 MAIN_MENU = True
+# Top bar: Home, then Contact, so every page is one click from getting in touch
+MENUITEMS = (
+    ('Contact', '/pages/contact.html'),
+)
 PAGES_SORT_ATTRIBUTE = 'menu_order'
 FEED_USE_SUMMARY = True
 BROWSER_COLOR = '#333'

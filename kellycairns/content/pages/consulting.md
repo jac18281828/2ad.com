@@ -58,3 +58,5 @@ Engagements are shaped around each organization's goals, from a single advisory 
 * Strategy and planning workshops
 * Project-based work, such as program design or a full curriculum build
 * Educational content developed to your specifications
+
+**Interested in working together? [Get in touch →]({filename}contact.md)**
