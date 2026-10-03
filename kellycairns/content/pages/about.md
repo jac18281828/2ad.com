@@ -7,7 +7,7 @@ modified: 2026-09-29
 
 Dr. Kelly Cairns, DVM, MS, DACVIM (SAIM), is a board-certified small animal internist, veterinary educator and medical strategist. Across two decades of clinical practice, multi-hospital leadership and academia, her work has centered on one question: how to build the programs, systems and learning environments that help veterinarians deliver excellent care throughout their careers.
 
-![Dr. Kelly Cairns | Veterinary Medical Leader | Educator | Strategist | Speaker](/static/KellyCairns.jpg){: height=300 style="float:right; padding:16px"}
+![Dr. Kelly Cairns | Veterinary Medical Leader | Educator | Strategist | Advisor](/static/KellyCairns.jpg){: height=300 style="float:right; padding:16px"}
 
 Today Dr. Cairns is Assistant Professor of Internal Medicine at [Lincoln Memorial University College of Veterinary Medicine](https://www.lmunet.edu/college-of-veterinary-medicine), where she teaches clinical medicine and helps design the preclinical curriculum, and Education Specialist and Curriculum Consultant to the [University of Maryland Eastern Shore School of Veterinary Medicine](https://www.umes.edu/svm/) as it builds a new three-year veterinary program. She is Chief Programs Officer and a board member of the [Canine Stroke Foundation](https://caninestroke.org/). Through Dr. Kelly Cairns Consulting, she advises veterinary schools, practice organizations and industry partners on curriculum, competency-based education, clinical quality and leadership development.
 
