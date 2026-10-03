@@ -20,10 +20,10 @@ Building the people, systems and culture behind high-quality veterinary care, in
 * Getting Buy-In, in the Exam Room and Beyond
 
 ### Purpose and professional wellbeing {: style="margin-bottom:0.3em; font-weight:600"}
-Sustaining passion, purpose and resilience in a demanding profession, for individuals and teams.
+Sustaining passion, purpose and resilience in a demanding profession, for individuals and teams. Rekindling the Spark is her signature keynote, delivered at Fetch dvm360, VCA Canada and Veterinary Growth Partners.
 
 * Rekindling the Spark: Sustaining Passion and Purpose from the Heart
-* Lessons From My Tech Teachers
+* Lessons From My Tech Teachers: Our Call to Action
 
 ### Small animal internal medicine {: style="margin-bottom:0.3em; font-weight:600"}
 Practical, case-based continuing education, from single lectures to full-day programs.
@@ -38,6 +38,7 @@ Practical, case-based continuing education, from single lectures to full-day pro
 ## Formats
 
 * Keynotes and 1-hour CE lectures, in person or virtual
+* Keynotes paired with interactive workshops
 * Multi-hour CE programs, from 2 hours to a full educational day
 * Dinner programs and lunch-and-learns
 * Association, academic and industry-sponsored continuing education
@@ -53,10 +54,12 @@ These are starting points, not a fixed menu. Dr. Cairns adapts existing talks an
 * **2026** · AAVMC Catalyze: “Reimagining Veterinary Education: An Integrated Model: Connected Systems, Shared Stewardship”
 * **2026** · FelineVMA Spring into Feline Medicine: “Demystifying Feline Liver Disease”
 * **2025** · Illinois State Veterinary Medical Association: internal medicine program on canine chronic hepatitis, chronic kidney disease, Cushing's disease, the icteric cat and polyarthritis
+* **2024** · Veterinary Growth Partners Restore & Reset, Boston: two-hour keynote and interactive workshop, “Rekindling the Spark”
 * **2023** · VCA Canada Annual Regional Conferences: sole keynote speaker, “Rekindling the Spark”
 * **2023** · ACVIM Forum: “Reimagining Veterinary Education: An Integrated Model”
-* **2022** · Viticus Group Annual Veterinary Technician Symposium: keynote, “Lessons From My Tech Teachers”
+* **2022** · Viticus Group Annual Veterinary Technician Symposium: keynote, “Lessons From My Tech Teachers: Our Call to Action”
 * **2022** · ACVIM Forum Leadership Luncheon: “Getting Buy-In”
+* **2022** · Penn Foster Veterinary Academy Webinar Series: “Lessons From My Tech Teachers: Our Call to Action”
 * **2021–present** · Fetch dvm360 conferences: internal medicine and leadership
 * **2021** · Fetch dvm360 San Diego: keynote, “Rekindling the Spark”
 * **2019** · ACVIM Forum: “Lunch with the Expert: Cardiac Conundrum”
