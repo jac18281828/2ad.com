@@ -1,3 +1,7 @@
+# 1.0.262 (2026-10-03)
+
+* kellycairns: new Contact page (kelly@kellycairns.com, what to include in an inquiry, a note that she does not give medical advice about individual pets); Get in touch links on the home, consulting and speaking pages; CONTACT in the top bar of every page
+
 # 1.0.261 (2026-10-02)
 
 * kellycairns: sidebar tidy: bio becomes about, publications and podcasts get menu links, the Instagram icon is removed (LinkedIn stays), and the tagline is now Veterinary Medical Leader / Educator | Strategist | Advisor
