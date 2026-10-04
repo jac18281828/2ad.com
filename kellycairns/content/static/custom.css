@@ -26,3 +26,80 @@ main h1#home {
     font-size: 0.8em;
   }
 }
+
+/* Contact form: labels above full-width fields in the page's own type and
+   colors, so it reads right in both the light and dark themes. */
+.kc-contact-form {
+  max-width: 36em;
+  margin: 1.2em 0 1.5em;
+}
+
+.kc-contact-form label {
+  display: block;
+  margin: 0.9em 0 0.3em;
+  font-weight: 600;
+}
+
+.kc-contact-form .kc-optional {
+  font-weight: normal;
+  opacity: 0.7;
+}
+
+.kc-contact-form input,
+.kc-contact-form select,
+.kc-contact-form textarea {
+  box-sizing: border-box;
+  width: 100%;
+  padding: 0.5em 0.6em;
+  border: 1px solid rgba(128, 128, 128, 0.6);
+  border-radius: 4px;
+  background: transparent;
+  color: inherit;
+  font: inherit;
+}
+
+/* The dropdown's list is drawn by the system on a light background, so
+   don't let it inherit the dark theme's light text. */
+.kc-contact-form option {
+  background: #fff;
+  color: #222;
+}
+
+.kc-contact-form .cf-turnstile {
+  margin: 1.2em 0 1em;
+}
+
+.kc-contact-form button {
+  padding: 0.6em 1.4em;
+  border: 0;
+  border-radius: 4px;
+  background: #d9411e;
+  color: #fff;
+  font: inherit;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.kc-contact-form button[disabled] {
+  opacity: 0.6;
+  cursor: default;
+}
+
+.kc-contact-form .kc-privacy {
+  margin: 0.6em 0 0;
+  font-size: 0.9em;
+  opacity: 0.75;
+}
+
+.kc-contact-status.kc-error {
+  color: #d9411e;
+}
+
+/* Spam trap: off screen for people, but bots that fill in every field find it. */
+.kc-contact-form .kc-trap {
+  position: absolute;
+  left: -10000px;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+}
