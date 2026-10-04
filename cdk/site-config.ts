@@ -56,7 +56,7 @@ export const SITE_DEFINITIONS: SiteDefinition[] = [
       {
         recordName: '2ad.com',
         values: [
-          'google-site-verification=ZPTI24LMLAsPrKOwLCv2ElL2O_lVyCZsmp2Z5MRc6vw v=spf1 +a +mx +ip4:69.89.31.242 ?all',
+          'google-site-verification=ZPTI24LMLAsPrKOwLCv2ElL2O_lVyCZsmp2Z5MRc6vw',
           'apple-domain=qvnVAu8kdNMIafNQ',
           'v=spf1 include:icloud.com ~all',
         ],
@@ -100,7 +100,7 @@ export const SITE_DEFINITIONS: SiteDefinition[] = [
         values: [
           'v=spf1 include:icloud.com ~all',
           'apple-domain=aqmIRYgnCsmV97Dt',
-          'google-site-verification=7xP5FaDJJ6Fjk4_nmmdHWxj9eANEpKxyP2Ca4bCOjNw v=spf1 +a +mx +ip4:69.89.31.242 ?all',
+          'google-site-verification=7xP5FaDJJ6Fjk4_nmmdHWxj9eANEpKxyP2Ca4bCOjNw',
         ],
       },
       {
