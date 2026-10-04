@@ -102,12 +102,14 @@ describe('SiteStack contact form', () => {
     template.hasResourceProperties('AWS::Lambda::Function', {
       Handler: 'handler.handler',
       Runtime: 'python3.12',
+      ReservedConcurrentExecutions: 2,
       Environment: {
         Variables: {
           RECIPIENT: 'kelly@kellycairns.com',
           SENDER: 'contact-form@kellycairns.com',
           SITE_HOSTNAMES: 'kellycairns.com,www.kellycairns.com',
           TURNSTILE_SECRET_PARAMETER: '/kellycairns/contact-form/turnstile-secret',
+          ORIGIN_SECRET: Match.anyValue(),
         },
       },
     });
@@ -128,6 +130,23 @@ describe('SiteStack contact form', () => {
         ]),
       },
     });
+  });
+
+  it('shares a generated origin secret between CloudFront and the handler', () => {
+    template.resourceCountIs('AWS::SecretsManager::Secret', 1);
+    template.hasResourceProperties('AWS::SecretsManager::Secret', {
+      GenerateSecretString: { PasswordLength: 32, ExcludePunctuation: true },
+    });
+
+    const secretId = Object.keys(template.findResources('AWS::SecretsManager::Secret'))[0];
+    const distribution = Object.values(template.findResources('AWS::CloudFront::Distribution'))[0];
+    const functions = Object.values(template.findResources('AWS::Lambda::Function'));
+    const contactFunction = functions.find((fn) => fn.Properties.Handler === 'handler.handler');
+    const origins = JSON.stringify(distribution.Properties.DistributionConfig.Origins);
+
+    expect(origins).toContain('"HeaderName":"x-origin-secret"');
+    expect(origins).toContain(secretId);
+    expect(JSON.stringify(contactFunction?.Properties.Environment.Variables.ORIGIN_SECRET)).toContain(secretId);
   });
 
   it('verifies the domain in SES and limits sending to it', () => {
@@ -161,6 +180,7 @@ describe.each(sitesWithoutContactForm)('SiteStack without a contact form for $do
 
     template.resourceCountIs('AWS::Lambda::Url', 0);
     template.resourceCountIs('AWS::SES::EmailIdentity', 0);
+    template.resourceCountIs('AWS::SecretsManager::Secret', 0);
     template.hasResourceProperties('AWS::CloudFront::Distribution', {
       DistributionConfig: {
         CacheBehaviors: Match.absent(),

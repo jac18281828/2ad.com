@@ -6,14 +6,17 @@ validates the fields and emails the inquiry to the site owner through
 SES, with the visitor as Reply-To so a plain reply reaches them.
 
 Configuration comes from the environment (set in cdk/site-stack.ts):
-RECIPIENT, SENDER, SITE_HOSTNAMES (comma separated) and
-TURNSTILE_SECRET_PARAMETER (an SSM SecureString parameter name).
+RECIPIENT, SENDER, SITE_HOSTNAMES (comma separated),
+TURNSTILE_SECRET_PARAMETER (an SSM SecureString parameter name) and
+ORIGIN_SECRET, which CloudFront sends as the x-origin-secret header so
+the function URL is no use without going through the site.
 
 The distribution maps origin 403 and 404 to the site's 404 page for every
 path, so the handler never answers with those; refusals are 400.
 """
 
 import base64
+import hmac
 import json
 import os
 import re
@@ -29,11 +32,14 @@ _turnstile_secret = None
 
 
 def handler(event, context):
+    headers = {key.lower(): value for key, value in (event.get('headers') or {}).items()}
+    if not from_cloudfront(headers):
+        return response(400, 'Invalid request.')
+
     if event.get('requestContext', {}).get('http', {}).get('method') != 'POST':
         return response(405, 'Method not allowed.')
 
     hostnames = site_hostnames()
-    headers = {key.lower(): value for key, value in (event.get('headers') or {}).items()}
     if headers.get('origin') not in {f'https://{hostname}' for hostname in hostnames}:
         return response(400, 'Invalid request.')
 
@@ -62,6 +68,12 @@ def handler(event, context):
 
     print('contact form: inquiry sent')
     return response(200, 'Thank you.')
+
+
+def from_cloudfront(headers):
+    # Compare as bytes: compare_digest rejects str with non-ASCII characters.
+    sent = headers.get('x-origin-secret', '').encode('utf-8')
+    return hmac.compare_digest(sent, os.environ['ORIGIN_SECRET'].encode('utf-8'))
 
 
 def site_hostnames():

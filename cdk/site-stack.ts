@@ -9,6 +9,7 @@ import * as lambda from 'aws-cdk-lib/aws-lambda';
 import { aws_route53 as r53 } from 'aws-cdk-lib';
 import * as r53t from 'aws-cdk-lib/aws-route53-targets';
 import * as s3 from 'aws-cdk-lib/aws-s3';
+import * as secretsmanager from 'aws-cdk-lib/aws-secretsmanager';
 import * as ses from 'aws-cdk-lib/aws-ses';
 import * as ssm from 'aws-cdk-lib/aws-ssm';
 import { Construct } from 'constructs';
@@ -17,6 +18,12 @@ import { bucketNameForDomain, ContactFormConfig, SiteDefinition } from './site-c
 
 export interface SiteStackProps extends cdk.StackProps {
   readonly site: SiteDefinition;
+}
+
+interface ContactFormOrigin {
+  readonly url: lambda.FunctionUrl;
+  // CloudFront sends this as x-origin-secret; the handler refuses requests without it
+  readonly originSecret: string;
 }
 
 const sanitizeLogicalIdValue = (value: string): string => value.replace(/[^a-zA-Z0-9]/g, '');
@@ -53,8 +60,12 @@ export class SiteStack extends cdk.Stack {
     // The form posts to the site's own origin, so the page needs no API URL and no CORS.
     const additionalBehaviors: Record<string, cloudfront.BehaviorOptions> = {};
     if (site.contactForm) {
+      const contactForm = this.createContactForm(zone, site.domainName, site.contactForm);
       additionalBehaviors['/api/contact'] = {
-        origin: new origins.FunctionUrlOrigin(this.createContactForm(zone, site.domainName, site.contactForm)),
+        // CloudFront sets this header on its own request to the origin, replacing any a viewer sends.
+        origin: new origins.FunctionUrlOrigin(contactForm.url, {
+          customHeaders: { 'x-origin-secret': contactForm.originSecret },
+        }),
         viewerProtocolPolicy: cloudfront.ViewerProtocolPolicy.HTTPS_ONLY,
         allowedMethods: cloudfront.AllowedMethods.ALLOW_ALL,
         cachePolicy: cloudfront.CachePolicy.CACHING_DISABLED,
@@ -124,7 +135,7 @@ export class SiteStack extends cdk.Stack {
     });
   }
 
-  private createContactForm(zone: r53.IPublicHostedZone, domainName: string, form: ContactFormConfig): lambda.FunctionUrl {
+  private createContactForm(zone: r53.IPublicHostedZone, domainName: string, form: ContactFormConfig): ContactFormOrigin {
     // SES sends as the site's domain; Easy DKIM records go in the zone so the mail passes DMARC.
     new ses.EmailIdentity(this, 'ContactFormEmailIdentity', {
       identity: ses.Identity.publicHostedZone(zone),
@@ -135,17 +146,27 @@ export class SiteStack extends cdk.Stack {
       parameterName: form.turnstileSecretParameterName,
     });
 
+    // Shared secret between CloudFront and the handler, so the public function URL is no use on its own.
+    // Generated once; later deploys keep the same value.
+    const originSecret = new secretsmanager.Secret(this, 'ContactFormOriginSecret', {
+      generateSecretString: { passwordLength: 32, excludePunctuation: true },
+    });
+    const originSecretValue = originSecret.secretValue.unsafeUnwrap();
+
     const handler = new lambda.Function(this, 'ContactFormFunction', {
       runtime: lambda.Runtime.PYTHON_3_12,
       handler: 'handler.handler',
       code: lambda.Code.fromAsset(path.join(__dirname, 'lambda', 'contact_form')),
       timeout: cdk.Duration.seconds(10),
       memorySize: 128,
+      // Bounds the worst-case bill; calls over the cap get a 429 and the page's LinkedIn fallback.
+      reservedConcurrentExecutions: 2,
       environment: {
         RECIPIENT: recipient,
         SENDER: `contact-form@${domainName}`,
         SITE_HOSTNAMES: `${domainName},www.${domainName}`,
         TURNSTILE_SECRET_PARAMETER: form.turnstileSecretParameterName,
+        ORIGIN_SECRET: originSecretValue,
       },
     });
 
@@ -160,8 +181,8 @@ export class SiteStack extends cdk.Stack {
       }),
     );
 
-    // Public URL; CloudFront fronts it at /api/contact and the handler checks Origin and Turnstile.
-    return handler.addFunctionUrl({ authType: lambda.FunctionUrlAuthType.NONE });
+    // Public URL; CloudFront fronts it at /api/contact and the handler checks the origin secret, Origin and Turnstile.
+    return { url: handler.addFunctionUrl({ authType: lambda.FunctionUrlAuthType.NONE }), originSecret: originSecretValue };
   }
 
   private createExtraDnsRecords(zone: r53.IHostedZone, site: SiteDefinition): void {

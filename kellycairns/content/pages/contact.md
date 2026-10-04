@@ -78,9 +78,22 @@ To help her respond quickly, please include:
       headers: { 'Content-Type': 'application/json' },
       body: JSON.stringify(payload)
     })
-      .then(function (reply) { return reply.json(); })
-      .then(function (result) {
-        if (!result.ok) { fail(result.message); return; }
+      .then(function (reply) {
+        return reply.json().then(
+          function (result) { return { status: reply.status, result: result }; },
+          function () { return { status: reply.status, result: null }; }
+        );
+      })
+      .then(function (answer) {
+        var result = answer.result;
+        if (answer.status !== 200 || !result || result.ok !== true) {
+          /* Only the handler's own refusals (400, with its JSON) carry a
+             message worth showing. Anything else, such as a 429 when the
+             Lambda is at its concurrency cap, gets the LinkedIn fallback. */
+          var ownRefusal = answer.status === 400 && result && typeof result.message === 'string';
+          fail(ownRefusal ? result.message : null);
+          return;
+        }
         var thanks = document.createElement('p');
         thanks.className = 'kc-contact-status';
         thanks.textContent = 'Thank you. Your message has been sent, and Dr. Cairns will reply by email.';
