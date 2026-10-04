@@ -20,6 +20,13 @@ export interface MxRecordConfig {
   readonly values: MxValueConfig[];
 }
 
+export interface ContactFormConfig {
+  // Mailbox at the site's own domain that receives form submissions
+  readonly recipientLocalPart: string;
+  // SSM SecureString parameter holding the Cloudflare Turnstile secret key (created by hand, not by CDK)
+  readonly turnstileSecretParameterName: string;
+}
+
 export interface SiteDefinition {
   readonly siteKey: string;
   readonly stackName: string;
@@ -29,6 +36,8 @@ export interface SiteDefinition {
   readonly extraCnameRecords?: CnameRecordConfig[];
   readonly extraTxtRecords?: TxtRecordConfig[];
   readonly extraMxRecords?: MxRecordConfig[];
+  // Serves POST /api/contact from a Lambda that emails submissions through SES
+  readonly contactForm?: ContactFormConfig;
 }
 
 const normalizeForBucket = (value: string): string => value.replace(/[^a-z0-9.-]/g, '-').toLowerCase();
@@ -88,6 +97,10 @@ export const SITE_DEFINITIONS: SiteDefinition[] = [
     domainName: 'kellycairns.com',
     hostedZoneId: 'Z10085952J607YL0C085Z',
     outputDirectory: 'kellycairns/output',
+    contactForm: {
+      recipientLocalPart: 'kelly',
+      turnstileSecretParameterName: '/kellycairns/contact-form/turnstile-secret',
+    },
     extraCnameRecords: [
       {
         recordName: 'sig1._domainkey',

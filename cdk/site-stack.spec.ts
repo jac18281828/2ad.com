@@ -80,3 +80,91 @@ describe.each(SITE_DEFINITIONS)('SiteStack error pages for $domainName', (site) 
     });
   });
 });
+
+describe('SiteStack contact form', () => {
+  const site = SITE_DEFINITIONS.find((entry) => entry.domainName === 'kellycairns.com');
+
+  if (!site?.contactForm) {
+    throw new Error('kellycairns.com contact form definition is required for tests');
+  }
+
+  const stack = new SiteStack(new cdk.App(), 'ContactFormStack', {
+    env: {
+      account: '504242000181',
+      region: 'us-east-1',
+    },
+    site: site,
+  });
+
+  const template = Template.fromStack(stack);
+
+  it('creates a Python handler with a public function URL', () => {
+    template.hasResourceProperties('AWS::Lambda::Function', {
+      Handler: 'handler.handler',
+      Runtime: 'python3.12',
+      Environment: {
+        Variables: {
+          RECIPIENT: 'kelly@kellycairns.com',
+          SENDER: 'contact-form@kellycairns.com',
+          SITE_HOSTNAMES: 'kellycairns.com,www.kellycairns.com',
+          TURNSTILE_SECRET_PARAMETER: '/kellycairns/contact-form/turnstile-secret',
+        },
+      },
+    });
+    template.resourceCountIs('AWS::Lambda::Url', 1);
+    template.hasResourceProperties('AWS::Lambda::Url', { AuthType: 'NONE' });
+  });
+
+  it('routes /api/contact to the handler without caching', () => {
+    template.hasResourceProperties('AWS::CloudFront::Distribution', {
+      DistributionConfig: {
+        CacheBehaviors: Match.arrayWith([
+          Match.objectLike({
+            PathPattern: '/api/contact',
+            ViewerProtocolPolicy: 'https-only',
+            AllowedMethods: Match.arrayWith(['POST']),
+            CachePolicyId: '4135ea2d-6df8-44a3-9df3-4b5a84be39ad',
+          }),
+        ]),
+      },
+    });
+  });
+
+  it('verifies the domain in SES and limits sending to it', () => {
+    template.resourceCountIs('AWS::SES::EmailIdentity', 1);
+    template.hasResourceProperties('AWS::SES::EmailIdentity', { EmailIdentity: 'kellycairns.com' });
+
+    const policies = Object.values(template.findResources('AWS::IAM::Policy'));
+    const statements = policies.flatMap((policy) => policy.Properties.PolicyDocument.Statement);
+    const send = statements.find((statement) => statement.Action === 'ses:SendEmail');
+    const resources = JSON.stringify(send?.Resource);
+
+    expect(resources).toContain('identity/kellycairns.com');
+    expect(resources).toContain('identity/kelly@kellycairns.com');
+    expect(resources).not.toContain('*');
+  });
+});
+
+const sitesWithoutContactForm = SITE_DEFINITIONS.filter((site) => !site.contactForm);
+
+describe.each(sitesWithoutContactForm)('SiteStack without a contact form for $domainName', (site) => {
+  it('creates no handler, SES identity or extra behaviors', () => {
+    const stack = new SiteStack(new cdk.App(), 'NoContactFormStack', {
+      env: {
+        account: '504242000181',
+        region: 'us-east-1',
+      },
+      site: site,
+    });
+
+    const template = Template.fromStack(stack);
+
+    template.resourceCountIs('AWS::Lambda::Url', 0);
+    template.resourceCountIs('AWS::SES::EmailIdentity', 0);
+    template.hasResourceProperties('AWS::CloudFront::Distribution', {
+      DistributionConfig: {
+        CacheBehaviors: Match.absent(),
+      },
+    });
+  });
+});

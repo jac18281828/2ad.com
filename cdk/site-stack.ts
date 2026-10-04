@@ -1,13 +1,19 @@
+import * as path from 'path';
+
 import * as cdk from 'aws-cdk-lib';
 import * as acm from 'aws-cdk-lib/aws-certificatemanager';
 import * as cloudfront from 'aws-cdk-lib/aws-cloudfront';
 import * as origins from 'aws-cdk-lib/aws-cloudfront-origins';
+import * as iam from 'aws-cdk-lib/aws-iam';
+import * as lambda from 'aws-cdk-lib/aws-lambda';
 import { aws_route53 as r53 } from 'aws-cdk-lib';
 import * as r53t from 'aws-cdk-lib/aws-route53-targets';
 import * as s3 from 'aws-cdk-lib/aws-s3';
+import * as ses from 'aws-cdk-lib/aws-ses';
+import * as ssm from 'aws-cdk-lib/aws-ssm';
 import { Construct } from 'constructs';
 
-import { bucketNameForDomain, SiteDefinition } from './site-config';
+import { bucketNameForDomain, ContactFormConfig, SiteDefinition } from './site-config';
 
 export interface SiteStackProps extends cdk.StackProps {
   readonly site: SiteDefinition;
@@ -24,7 +30,7 @@ export class SiteStack extends cdk.Stack {
 
     const { site } = props;
 
-    const zone = r53.HostedZone.fromHostedZoneAttributes(this, 'Zone', {
+    const zone = r53.PublicHostedZone.fromPublicHostedZoneAttributes(this, 'Zone', {
       hostedZoneId: site.hostedZoneId,
       zoneName: site.domainName,
     });
@@ -44,6 +50,18 @@ export class SiteStack extends cdk.Stack {
       removalPolicy: cdk.RemovalPolicy.DESTROY,
     });
 
+    // The form posts to the site's own origin, so the page needs no API URL and no CORS.
+    const additionalBehaviors: Record<string, cloudfront.BehaviorOptions> = {};
+    if (site.contactForm) {
+      additionalBehaviors['/api/contact'] = {
+        origin: new origins.FunctionUrlOrigin(this.createContactForm(zone, site.domainName, site.contactForm)),
+        viewerProtocolPolicy: cloudfront.ViewerProtocolPolicy.HTTPS_ONLY,
+        allowedMethods: cloudfront.AllowedMethods.ALLOW_ALL,
+        cachePolicy: cloudfront.CachePolicy.CACHING_DISABLED,
+        originRequestPolicy: cloudfront.OriginRequestPolicy.ALL_VIEWER_EXCEPT_HOST_HEADER,
+      };
+    }
+
     this.distribution = new cloudfront.Distribution(this, 'SiteDistribution', {
       defaultRootObject: 'index.html',
       certificate: certificate,
@@ -60,6 +78,7 @@ export class SiteStack extends cdk.Stack {
         compress: true,
         responseHeadersPolicy: cloudfront.ResponseHeadersPolicy.SECURITY_HEADERS,
       },
+      additionalBehaviors: additionalBehaviors,
       // The OAC origin answers a missing key with 403; 404 covers a list grant.
       errorResponses: [403, 404].map((httpStatus) => ({
         httpStatus,
@@ -103,6 +122,46 @@ export class SiteStack extends cdk.Stack {
     new cdk.CfnOutput(this, 'DistributionDomainName', {
       value: this.distribution.distributionDomainName,
     });
+  }
+
+  private createContactForm(zone: r53.IPublicHostedZone, domainName: string, form: ContactFormConfig): lambda.FunctionUrl {
+    // SES sends as the site's domain; Easy DKIM records go in the zone so the mail passes DMARC.
+    new ses.EmailIdentity(this, 'ContactFormEmailIdentity', {
+      identity: ses.Identity.publicHostedZone(zone),
+    });
+
+    const recipient = `${form.recipientLocalPart}@${domainName}`;
+    const turnstileSecret = ssm.StringParameter.fromSecureStringParameterAttributes(this, 'TurnstileSecret', {
+      parameterName: form.turnstileSecretParameterName,
+    });
+
+    const handler = new lambda.Function(this, 'ContactFormFunction', {
+      runtime: lambda.Runtime.PYTHON_3_12,
+      handler: 'handler.handler',
+      code: lambda.Code.fromAsset(path.join(__dirname, 'lambda', 'contact_form')),
+      timeout: cdk.Duration.seconds(10),
+      memorySize: 128,
+      environment: {
+        RECIPIENT: recipient,
+        SENDER: `contact-form@${domainName}`,
+        SITE_HOSTNAMES: `${domainName},www.${domainName}`,
+        TURNSTILE_SECRET_PARAMETER: form.turnstileSecretParameterName,
+      },
+    });
+
+    turnstileSecret.grantRead(handler);
+    // SES authorizes sending against the domain identity and, while the account is in the
+    // SES sandbox, against the recipient too.
+    const identityArn = (id: string): string => this.formatArn({ service: 'ses', resource: 'identity', resourceName: id });
+    handler.addToRolePolicy(
+      new iam.PolicyStatement({
+        actions: ['ses:SendEmail'],
+        resources: [identityArn(domainName), identityArn(recipient)],
+      }),
+    );
+
+    // Public URL; CloudFront fronts it at /api/contact and the handler checks Origin and Turnstile.
+    return handler.addFunctionUrl({ authType: lambda.FunctionUrlAuthType.NONE });
   }
 
   private createExtraDnsRecords(zone: r53.IHostedZone, site: SiteDefinition): void {
