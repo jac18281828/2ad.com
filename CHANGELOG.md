@@ -1,3 +1,9 @@
+# 1.0.263 (2026-10-03)
+
+* kellycairns: Speaking adds the 2024 Veterinary Growth Partners Restore & Reset keynote and workshop and the 2022 Penn Foster webinar, names Rekindling the Spark her signature keynote and lists keynotes paired with workshops as a format; home and about add Veterinary Growth Partners to her speaker lists
+* kellycairns: the Contact page builds its email link in the browser, so the address is no longer in the page source; the 1.0.262 entry no longer spells it out
+* kellycairns: the About photo's description matches the Educator | Strategist | Advisor tagline
+
 # 1.0.262 (2026-10-03)
 
 * kellycairns: new Contact page (her email address, what to include in an inquiry, a note that she does not give medical advice about individual pets); Get in touch links on the home, consulting and speaking pages; CONTACT in the top bar of every page
