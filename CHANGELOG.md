@@ -1,3 +1,7 @@
+# 1.0.264 (2026-10-04)
+
+* dns: the apex TXT record on 2ad.com and kellycairns.com keeps only the Google site verification token; the leftover Bluehost SPF policy that shared its string is gone, and the iCloud SPF, MX, DKIM and DMARC records are unchanged
+
 # 1.0.263 (2026-10-03)
 
 * kellycairns: Speaking adds the 2024 Veterinary Growth Partners Restore & Reset keynote and workshop and the 2022 Penn Foster webinar, names Rekindling the Spark her signature keynote and lists keynotes paired with workshops as a format; home and about add Veterinary Growth Partners to her speaker lists
