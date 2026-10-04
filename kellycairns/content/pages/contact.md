@@ -29,7 +29,7 @@ To help her respond quickly, please include:
 <label for="kc-message">Message</label>
 <textarea id="kc-message" name="message" rows="7" maxlength="5000" required></textarea>
 <div class="kc-trap" aria-hidden="true"><label for="kc-website">Leave this field empty</label><input id="kc-website" name="website" type="text" tabindex="-1" autocomplete="off"></div>
-<div class="cf-turnstile" data-sitekey="1x00000000000000000000AA"></div>
+<div class="cf-turnstile" data-sitekey="0x4AAAAAAFN0QjyTEq1kVs18"></div>
 <button type="submit">Send message</button>
 <p class="kc-privacy">Your details are used only to reply to your inquiry.</p>
 <p id="kc-contact-status" class="kc-contact-status" role="status" aria-live="polite"></p>
