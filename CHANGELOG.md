@@ -1,3 +1,8 @@
+# 1.0.265 (2026-10-04)
+
+* kellycairns: the Contact page replaces the email address with a form (name, email, optional organization, inquiry type, message) behind a Cloudflare Turnstile check; the medical advice note moves above the form and a privacy line sits under the button
+* cdk: kellycairns.com serves POST /api/contact from a Python Lambda (reserved concurrency 2, CloudFront origin secret) that emails inquiries through a new SES domain identity with Easy DKIM records in the zone
+
 # 1.0.264 (2026-10-04)
 
 * dns: the apex TXT record on 2ad.com and kellycairns.com keeps only the Google site verification token; the leftover Bluehost SPF policy that shared its string is gone, and the iCloud SPF, MX, DKIM and DMARC records are unchanged
