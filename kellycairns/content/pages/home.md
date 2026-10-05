@@ -34,3 +34,5 @@ Two decades across clinical practice, enterprise leadership and veterinary educa
 *Keynote, Fetch dvm360 San Diego*
 
 <iframe width="100%" height="360" src="https://www.youtube.com/embed/NUyaduc1w_E" title="Rekindling the Spark: Sustaining Passion and Purpose from the Heart, keynote by Dr. Kelly Cairns" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
+**[Watch more keynotes on the Speaking page →]({filename}speaking.md#watch)**
