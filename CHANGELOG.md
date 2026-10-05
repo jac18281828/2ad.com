@@ -1,3 +1,8 @@
+# 1.0.266 (2026-10-04)
+
+* kellycairns: once the contact form is sent, the page shows only the confirmation ("Thank you. Your message has been sent." and "Dr. Cairns will reply by email.") in place of the intro, tips and form
+* 2ad: the z-buffer vase render on the ray tracing post and the gman page is re-rendered without the jagged wall spikes
+
 # 1.0.265 (2026-10-04)
 
 * kellycairns: the Contact page replaces the email address with a form (name, email, optional organization, inquiry type, message) behind a Cloudflare Turnstile check; the medical advice note moves above the form and a privacy line sits under the button
