@@ -14,7 +14,7 @@ for (let match = scriptPattern.exec(page); match; match = scriptPattern.exec(pag
 }
 
 const FAILURE = 'Sorry, your message could not be sent. Please try again, or reach her on LinkedIn.';
-const THANKS = 'Thank you. Your message has been sent, and Dr. Cairns will reply by email.';
+const THANKS = ['Thank you. Your message has been sent.', 'Dr. Cairns will reply by email.'];
 
 type Listener = (event: { preventDefault: () => void }) => void;
 
@@ -22,7 +22,7 @@ class FakeElement {
   textContent = '';
   className = '';
   disabled = false;
-  replacement: FakeElement | null = null;
+  scrolledIntoView = false;
   readonly classes = new Set<string>();
   readonly classList = {
     toggle: (name: string, on: boolean): void => {
@@ -34,13 +34,23 @@ class FakeElement {
     },
   };
 
-  replaceWith(element: FakeElement): void {
-    this.replacement = element;
+  scrollIntoView(): void {
+    this.scrolledIntoView = true;
+  }
+}
+
+// The page body the form sits in; on success the script swaps out everything in it.
+class FakeContent {
+  children: FakeElement[] = [];
+
+  replaceChildren(...elements: FakeElement[]): void {
+    this.children = elements;
   }
 }
 
 class FakeForm extends FakeElement {
   readonly button = new FakeElement();
+  readonly parentNode = new FakeContent();
   submit: Listener | null = null;
 
   querySelector(): FakeElement {
@@ -121,7 +131,7 @@ describe('Contact page form script', () => {
     expect(outcome.status.textContent).toBe(FAILURE);
     expect(outcome.status.classes.has('kc-error')).toBe(true);
     expect(outcome.form.button.disabled).toBe(false);
-    expect(outcome.form.replacement).toBeNull();
+    expect(outcome.form.parentNode.children).toHaveLength(0);
     expect(outcome.resets).toBe(1);
   });
 
@@ -139,10 +149,14 @@ describe('Contact page form script', () => {
     expect(outcome.form.button.disabled).toBe(false);
   });
 
-  it('replaces the form with a thank-you note on success', async () => {
+  it('replaces the whole page body with the confirmation on success', async () => {
     const outcome = await submitWith({ status: 200, body: '{"ok":true,"message":"Thank you."}' });
 
-    expect(outcome.form.replacement?.textContent).toBe(THANKS);
+    const shown = outcome.form.parentNode.children;
+
+    expect(shown.map((element) => element.textContent)).toEqual(THANKS);
+    expect(shown[0].className).toBe('kc-contact-thanks');
+    expect(shown[0].scrolledIntoView).toBe(true);
     expect(outcome.status.classes.has('kc-error')).toBe(false);
   });
 });

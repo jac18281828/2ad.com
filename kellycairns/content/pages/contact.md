@@ -94,10 +94,15 @@ To help her respond quickly, please include:
           fail(ownRefusal ? result.message : null);
           return;
         }
+        /* Swap the whole page body, intro and all, for the confirmation,
+           so it doesn't still ask for a message that has been sent. */
         var thanks = document.createElement('p');
-        thanks.className = 'kc-contact-status';
-        thanks.textContent = 'Thank you. Your message has been sent, and Dr. Cairns will reply by email.';
-        form.replaceWith(thanks);
+        thanks.className = 'kc-contact-thanks';
+        thanks.textContent = 'Thank you. Your message has been sent.';
+        var reply = document.createElement('p');
+        reply.textContent = 'Dr. Cairns will reply by email.';
+        form.parentNode.replaceChildren(thanks, reply);
+        thanks.scrollIntoView({ block: 'center' });
       })
       .catch(function () { fail(); });
   });

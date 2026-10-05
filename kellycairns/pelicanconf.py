@@ -7,7 +7,7 @@ SITENAME = u'Kelly Cairns DVM MS DACVIM'
 SITEURL = u'https://kellycairns.com'
 
 THEME = 'themes/Flex'
-CUSTOM_CSS = 'static/custom.css?v=6'
+CUSTOM_CSS = 'static/custom.css?v=7'
 
 # flex
 FAVICON = '/favicon.ico'

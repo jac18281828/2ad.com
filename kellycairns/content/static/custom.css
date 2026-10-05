@@ -91,6 +91,13 @@ main h1#home {
   opacity: 0.75;
 }
 
+/* Shown in place of the page body once a message is sent. */
+.kc-contact-thanks {
+  margin: 1.5em 0 0.3em;
+  font-size: 1.25em;
+  font-weight: 600;
+}
+
 .kc-contact-status.kc-error {
   color: #d9411e;
 }
