@@ -26,7 +26,10 @@ MENUITEMS = (
 PAGES_SORT_ATTRIBUTE = 'menu_order'
 FEED_USE_SUMMARY = True
 BROWSER_COLOR = '#333'
-SITEDESCRIPTION = u'%s\' is a board-certified veterinary internal medicine specialist, executive leader, and nationally recognized educator and speaker on clinical excellence, veterinary education and wellbeing.' % AUTHOR
+# Used for link previews (LinkedIn, texts), Google's search snippet and the
+# structured data; keep it under about 160 characters so it isn't cut off.
+SITEDESCRIPTION = (u'%s helps veterinary schools, hospitals and industry partners build better '
+                   u'education, stronger clinical quality and the leaders who deliver care.' % AUTHOR)
 
 THEME_COLOR = 'light'
 THEME_COLOR_AUTO_DETECT_BROWSER_PREFERENCE = True
