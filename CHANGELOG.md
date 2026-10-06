@@ -1,3 +1,10 @@
+# 1.0.268 (2026-10-06)
+
+* kellycairns: the link preview photo now has its full address in the settings the live site actually uses, so LinkedIn and other sites can show it
+* kellycairns: buttons for Consulting, Speaking and Get in touch; the home page sections become side-by-side cards with an "As featured in" strip (NBC Nightly News, Newsweek, Forbes, HuffPost); a footer note says the site is professional education, not medical advice for individual pets
+* kellycairns: the ACVECC Foundations in Veterinary Emergency and Critical Care Module 4, Client Communication in the ER, is listed as a publication and as an example on the Consulting page
+* kellycairns: the Healthy Tails "Talking Diabetes" interview plays from YouTube in place of the VoiceAmerica player, which no longer works
+
 # 1.0.267 (2026-10-05)
 
 * kellycairns: link previews and the search snippet use a corrected 158-character description, and the preview photo has its full address so LinkedIn shows it; the cat photo on ten posts no longer carries GPS location data
