@@ -2,12 +2,21 @@
 # -*- coding: utf-8 -*- #
 from __future__ import unicode_literals
 
+import datetime
+import os
+
 AUTHOR = u'Dr. Kelly Cairns'
 SITENAME = u'Kelly Cairns DVM MS DACVIM'
 SITEURL = u'https://kellycairns.com'
 
 THEME = 'themes/Flex'
-CUSTOM_CSS = 'static/custom.css?v=7'
+CUSTOM_CSS = 'static/custom.css?v=8'
+
+# Site templates that replace the theme's: partial/footer.html adds a note above the license line.
+THEME_TEMPLATES_OVERRIDES = [os.path.join(os.path.dirname(os.path.abspath(__file__)), 'templates')]
+# Fills the footer's copyright line, which otherwise reads just "©  -".
+COPYRIGHT_NAME = AUTHOR
+COPYRIGHT_YEAR = datetime.date.today().year
 
 # flex
 FAVICON = '/favicon.ico'

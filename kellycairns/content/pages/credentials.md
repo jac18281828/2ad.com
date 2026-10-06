@@ -51,6 +51,10 @@ Strategic advisory services for veterinary academic institutions, practice organ
 #### Wedgewood Pharmacy {: style="margin-bottom:0.3em"}
 **Strategic Advisory Board Member** · 2023–2026
 
+#### American College of Veterinary Emergency and Critical Care (ACVECC) {: style="margin-bottom:0.3em"}
+**Subject Matter Expert, Foundations in Veterinary Emergency and Critical Care** · 2024  
+Co-developed Module 4, Client Communication in the ER (RACE-approved), for the ACVECC and VECCS online program
+
 ## Professional Leadership & Service
 
 #### Chicago Veterinary Medical Association {: style="margin-bottom:0.3em"}

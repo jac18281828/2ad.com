@@ -6,7 +6,7 @@ url:
 
 Dr. Kelly Cairns is a board-certified veterinary internal medicine specialist who helps colleges of veterinary medicine, veterinary hospitals and industry partners build better education, stronger clinical quality and the leaders who deliver care.
 
-**Work with Dr. Cairns:** [Consulting →]({filename}consulting.md) · [Speaking →]({filename}speaking.md) · [Get in touch →]({filename}contact.md)
+[Consulting]({filename}consulting.md){: .kc-btn } [Speaking]({filename}speaking.md){: .kc-btn } [Get in touch]({filename}contact.md){: .kc-btn .kc-btn-primary }
 
 ## At a glance
 
@@ -15,19 +15,14 @@ Dr. Kelly Cairns is a board-certified veterinary internal medicine specialist wh
 * 2025–2026 Non-Resident Teacher of the Year, Lincoln Memorial University College of Veterinary Medicine
 * President, Chicago Veterinary Medical Association
 * Speaker at ACVIM, AAVMC, FelineVMA, Fetch dvm360, VCA Canada, Veterinary Growth Partners and state veterinary associations
-* Featured by NBC Nightly News, Newsweek, HuffPost and Forbes
 
-### Consulting {: style="margin-bottom:0.3em; font-weight:600"}
-Curriculum design, clinical quality systems and leadership development for veterinary organizations.  
-**[Explore consulting →]({filename}consulting.md)**
+<div class="kc-cards">
+<a class="kc-card" href="{filename}consulting.md"><h3>Consulting</h3><p>Curriculum design, clinical quality systems and leadership development for veterinary organizations.</p><span class="kc-card-link">Explore consulting →</span></a>
+<a class="kc-card" href="{filename}speaking.md"><h3>Speaking</h3><p>Keynotes and continuing education on veterinary education, leadership, professional wellbeing and clinical medicine.</p><span class="kc-card-link">See speaking topics →</span></a>
+<a class="kc-card" href="{filename}credentials.md"><h3>Experience &amp; Credentials</h3><p>Two decades across clinical practice, enterprise leadership and veterinary education.</p><span class="kc-card-link">View experience →</span></a>
+</div>
 
-### Speaking {: style="margin-bottom:0.3em; font-weight:600"}
-Keynotes and continuing education on veterinary education, leadership, professional wellbeing and clinical medicine.  
-**[See speaking topics →]({filename}speaking.md)**
-
-### Experience & Credentials {: style="margin-bottom:0.3em; font-weight:600"}
-Two decades across clinical practice, enterprise leadership and veterinary education.  
-**[View experience →]({filename}credentials.md)**
+<p class="kc-featured"><span class="kc-featured-label">As featured in</span> <span>NBC Nightly News</span> <span>Newsweek</span> <span>Forbes</span> <span>HuffPost</span></p>
 
 ## Watch: Rekindling the Spark
 

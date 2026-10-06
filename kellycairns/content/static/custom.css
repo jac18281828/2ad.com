@@ -110,3 +110,110 @@ main h1#home {
   height: 1px;
   overflow: hidden;
 }
+
+/* Buttons: add {: .kc-btn } to a Markdown link for an outlined button in
+   the theme's orange, plus .kc-btn-primary for the solid one used for
+   "Get in touch". */
+a.kc-btn {
+  display: inline-block;
+  margin: 0.25em 0.5em 0.25em 0;
+  padding: 0.5em 1.2em;
+  border: 2px solid #d9411e;
+  border-radius: 4px;
+  color: #d9411e;
+  font-weight: 600;
+  line-height: 1.3;
+  text-decoration: none;
+}
+
+a.kc-btn:hover,
+a.kc-btn:focus {
+  background: #d9411e;
+  color: #fff;
+}
+
+a.kc-btn.kc-btn-primary {
+  background: #d9411e;
+  color: #fff;
+}
+
+a.kc-btn.kc-btn-primary:hover,
+a.kc-btn.kc-btn-primary:focus {
+  background: #b8351a;
+  border-color: #b8351a;
+}
+
+/* Home page cards: three side by side, stacking on narrow screens. Each
+   card is one link. Transparent fill and a soft border suit both the
+   light and dark themes. */
+.kc-cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(13em, 1fr));
+  gap: 1em;
+  margin: 1.5em 0;
+}
+
+a.kc-card {
+  display: flex;
+  flex-direction: column;
+  padding: 1.1em 1.2em;
+  border: 1px solid rgba(128, 128, 128, 0.35);
+  border-top: 3px solid #d9411e;
+  border-radius: 4px;
+  color: inherit;
+  text-decoration: none;
+}
+
+a.kc-card:hover,
+a.kc-card:focus {
+  border-color: #d9411e;
+}
+
+a.kc-card h3 {
+  margin: 0 0 0.4em;
+  font-size: 1.15em;
+  font-weight: 600;
+}
+
+a.kc-card p {
+  flex: 1;
+  margin: 0 0 0.8em;
+}
+
+a.kc-card .kc-card-link {
+  color: #d9411e;
+  font-weight: 600;
+}
+
+/* "As featured in" row of outlet names, separated by dots. */
+.kc-featured {
+  margin: 1.5em 0;
+  text-align: center;
+  opacity: 0.85;
+}
+
+.kc-featured span + span::before {
+  content: "\00b7";
+  margin: 0 0.6em;
+}
+
+.kc-featured .kc-featured-label {
+  display: block;
+  margin-bottom: 0.3em;
+  font-size: 0.8em;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+
+.kc-featured .kc-featured-label + span::before {
+  content: none;
+}
+
+.kc-featured span:not(.kc-featured-label) {
+  font-weight: 600;
+}
+
+/* Footer note above the license line. */
+.kc-footer-note {
+  font-size: 0.9em;
+}
