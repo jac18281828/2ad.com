@@ -1,0 +1,9 @@
+{# Overrides the Flex theme's footer to add a one-line note above its license line. #}
+<footer>
+  <p class="kc-footer-note">Content on this site is professional education, not medical advice for individual pets.</p>
+  {% if CC_LICENSE %}
+    {% include "partial/cc_license.html" %}
+  {% else %}
+    {% include "partial/copyright.html" %}
+  {% endif %}
+</footer>

@@ -16,7 +16,7 @@ Designing how veterinary professionals learn, from the first day of school throu
 * Transition-to-practice programs
 * Faculty development
 
-**In practice:** curriculum implementation partner for a new three-year veterinary program at the University of Maryland Eastern Shore School of Veterinary Medicine, and curriculum and course design for the preclinical team-based learning program at Lincoln Memorial University Orange Park.
+**In practice:** curriculum implementation partner for a new three-year veterinary program at the University of Maryland Eastern Shore School of Veterinary Medicine, curriculum and course design for the preclinical team-based learning program at Lincoln Memorial University Orange Park, and co-developer of Module 4, Client Communication in the ER, for the American College of Veterinary Emergency and Critical Care's Foundations in Veterinary Emergency and Critical Care program.
 
 ### Medical excellence and clinical quality {: style="margin-bottom:0.3em; font-weight:600"}
 Building the systems behind consistent, high-quality patient care.
@@ -59,4 +59,6 @@ Engagements are shaped around each organization's goals, from a single advisory 
 * Project-based work, such as program design or a full curriculum build
 * Educational content developed to your specifications
 
-**Interested in working together? [Get in touch →]({filename}contact.md)**
+Interested in working together?
+
+[Get in touch]({filename}contact.md){: .kc-btn .kc-btn-primary }
