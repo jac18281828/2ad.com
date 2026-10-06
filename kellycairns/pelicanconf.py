@@ -11,7 +11,8 @@ CUSTOM_CSS = 'static/custom.css?v=7'
 
 # flex
 FAVICON = '/favicon.ico'
-SITELOGO = '/static/KellyHeadshot.jpg'
+# Full address: LinkedIn and other link previews ignore a relative /static/ path.
+SITELOGO = SITEURL + '/static/KellyHeadshot.jpg'
 SITETITLE = u'%s' % AUTHOR
 SITESUBTITLE = (u'<span class="kc-subtitle">Veterinary Medical Leader<br>'
                 u'<span class="kc-role">Educator |</span> '

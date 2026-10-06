@@ -14,9 +14,6 @@ from pelicanconf import *
 SITEURL = 'https://kellycairns.com'
 RELATIVE_URLS = False
 
-# LinkedIn and other link previews need the photo's full address, not /static/...
-SITELOGO = SITEURL + '/static/KellyHeadshot.jpg'
-
 FEED_ALL_ATOM = 'feeds/all.atom.xml'
 CATEGORY_FEED_ATOM = 'feeds/{slug}.atom.xml'
 
