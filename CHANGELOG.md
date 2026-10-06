@@ -1,3 +1,8 @@
+# 1.0.267 (2026-10-05)
+
+* kellycairns: link previews and the search snippet use a corrected 158-character description, and the preview photo has its full address so LinkedIn shows it; the cat photo on ten posts no longer carries GPS location data
+* kellycairns: the Viticus keynote video joins Watch and read on the Speaking page, the 2022 Viticus and 2021 Fetch dvm360 San Diego engagements link to their keynote videos, and the home page links to more keynotes
+
 # 1.0.266 (2026-10-04)
 
 * kellycairns: once the contact form is sent, the page shows only the confirmation ("Thank you. Your message has been sent." and "Dr. Cairns will reply by email.") in place of the intro, tips and form
