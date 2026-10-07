@@ -57,7 +57,7 @@ These are starting points, not a fixed menu. Dr. Cairns adapts existing talks an
 * **2024** · Veterinary Growth Partners Restore & Reset, Boston: two-hour keynote and interactive workshop, “Rekindling the Spark”
 * **2023** · VCA Canada Annual Regional Conferences: sole keynote speaker, “Rekindling the Spark”
 * **2023** · ACVIM Forum: “Reimagining Veterinary Education: An Integrated Model”
-* **2022** · Viticus Group Annual Veterinary Technician Symposium: keynote, “[Lessons From My Tech Teachers: Our Call to Action](https://youtu.be/wGxL962oQak)”
+* **2022** · Viticus Group Annual Veterinary Technician Symposium: keynote, “[Lessons From My Tech Teachers: Our Call to Action]({filename}/posts/2022/19.viticuskeynote22.md)”
 * **2022** · ACVIM Forum Leadership Luncheon: “Getting Buy-In”
 * **2022** · Penn Foster Veterinary Academy Webinar Series: “Lessons From My Tech Teachers: Our Call to Action”
 * **2021–present** · Fetch dvm360 conferences: internal medicine and leadership
@@ -67,7 +67,7 @@ These are starting points, not a fixed menu. Dr. Cairns adapts existing talks an
 ## Watch and read {: #watch }
 
 * [ReKindling the Spark: Sustaining Passion and Purpose from the Heart]({filename}/posts/2022/13.fetchkeynote22.md): keynote video, Fetch dvm360 San Diego
-* [Lessons From My Tech Teachers: Our Call to Action](https://youtu.be/wGxL962oQak): keynote video, Viticus Group Annual Veterinary Technician Symposium
+* [Lessons From My Tech Teachers: Our Call to Action]({filename}/posts/2022/19.viticuskeynote22.md): keynote video, Viticus Group Annual Veterinary Technician Symposium
 * [10 steps to unlocking your secret superpower]({filename}/posts/2021/08.dvm360keynoteasenseofpurpose.md): dvm360's coverage of the Fetch keynote
 * [From a flicker to a flame]({filename}/posts/2021/09.dvm360keynotefromflickertoflame.md): dvm360 article on purpose in veterinary medicine
 * [Celebrating the joy found in veterinary medicine]({filename}/posts/2025/01.findingthejoy.md): interview video, Fetch dvm360 Charlotte
