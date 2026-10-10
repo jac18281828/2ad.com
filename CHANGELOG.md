@@ -1,3 +1,7 @@
+# 1.0.269 (2026-10-10)
+
+* kellycairns: the Viticus keynote, "Lessons From My Tech Teachers: Our Call to Action" (October 17, 2022), has its own page with the video and a Get in touch button, and the Speaking page links to it instead of YouTube
+
 # 1.0.268 (2026-10-06)
 
 * kellycairns: the link preview photo now has its full address in the settings the live site actually uses, so LinkedIn and other sites can show it
