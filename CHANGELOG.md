@@ -1,3 +1,8 @@
+# 1.0.270 (2026-10-15)
+
+* kellycairns: the ACVECC Module 4 post is dated July 22, 2024, the day ACVECC says the module was first published, in place of a placeholder date
+* kellycairns: the Viticus keynote page describes the talk (what veterinary technicians taught Dr. Cairns, and a call to action for technicians) and gives the October 17, 2022 date alongside the Penn Foster one
+
 # 1.0.269 (2026-10-10)
 
 * kellycairns: the Viticus keynote, "Lessons From My Tech Teachers: Our Call to Action" (October 17, 2022), has its own page with the video and a Get in touch button, and the Speaking page links to it instead of YouTube
