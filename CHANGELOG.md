@@ -1,3 +1,10 @@
+# 1.0.271 (2026-10-18)
+
+* 2ad: new post "What Is Radiosity?" explains bounce light with a Cornell box under a shaded pendant lamp, rendered by gman with direct light alone and with its radiosity pass
+* 2ad: new post "What Is Path Tracing?", dated October 27, covers Monte Carlo averaging and Russian roulette, with path-traced renders of the vase, the materials sample and the radiosity box
+* 2ad: new post "Infinite Maze", dated November 10, introduces the torchlit tomb game at maze.2ad.com, with its save codes, its SHA3-built world and the case that its corridors form one tree
+* 2ad: the ray tracing post now opens by saying what ray tracing is, and its shadow-ray explanation is corrected; the PlayMMIX post teaches the current controls and shows a larger prime-sieve animation recorded from the post's own program
+
 # 1.0.270 (2026-10-15)
 
 * kellycairns: the ACVECC Module 4 post is dated July 22, 2024, the day ACVECC says the module was first published, in place of a placeholder date
