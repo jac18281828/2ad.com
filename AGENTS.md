@@ -102,7 +102,7 @@ git branch -D <branch>
 ```
 
 Whoever lands a branch deletes it. At the start of a session, fetch with
-`--prune` and delete any of your own branches that are already on `main`. A
+`--prune` and delete any branch that is already on `main`, whoever made it. A
 `+` line in `git cherry` output is unlanded work — leave that branch alone and
 mention it.
 
