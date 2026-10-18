@@ -82,6 +82,29 @@ Linear history only — rebase and merge, no merge commits.
 8. A human reviews the PR. To land it: ask once in chat — "ready to land
    `<branch>` to `main`?" On yes, fetch, rebase if needed, fast-forward
    merge, `git push origin main` — right then, yourself.
+9. Once the branch is on `main`, delete it local and remote — see Cleanup.
+
+---
+
+## Cleanup
+
+A branch whose commits are all on `main` is finished; delete it from origin
+and locally. Rebasing gives a branch new SHAs, so a branch landed after a
+rebase never reads as merged to `git branch -d`. Test by patch instead:
+`git cherry main <branch>` prints a `-` line for each commit already on
+`main`. All `-` means landed.
+
+```
+git fetch origin --prune
+git cherry main origin/<branch>        # every line starts with "-"
+git push origin --delete <branch>
+git branch -D <branch>
+```
+
+Whoever lands a branch deletes it. At the start of a session, fetch with
+`--prune` and delete any of your own branches that are already on `main`. A
+`+` line in `git cherry` output is unlanded work — leave that branch alone and
+mention it.
 
 ---
 

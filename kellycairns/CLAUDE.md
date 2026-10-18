@@ -9,6 +9,9 @@
 5. `git commit -m "post(kellycairns): <description>"`
 6. `git push origin kelly/<short-description>`
 7. `gh pr create --draft --title "..." --body "..."`
+8. Once the change is on `main`, delete the `kelly/` branch local and remote,
+   as the Cleanup section of [`AGENTS.md`](../AGENTS.md) describes. At the
+   start of a session, delete any `kelly/` branch that has already landed.
 
 ## Categories and tags
 
