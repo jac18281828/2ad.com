@@ -1,3 +1,7 @@
+# 1.0.272 (2026-10-24)
+
+* kellycairns: on the About page, "Dr. Kelly Cairns Consulting" links to the Consulting page, like the other organizations in that paragraph
+
 # 1.0.271 (2026-10-18)
 
 * 2ad: new post "What Is Radiosity?" explains bounce light with a Cornell box under a shaded pendant lamp, rendered by gman with direct light alone and with its radiosity pass
