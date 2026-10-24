@@ -12,7 +12,8 @@ SITEURL = u'https://kellycairns.com'
 THEME = 'themes/Flex'
 CUSTOM_CSS = 'static/custom.css?v=8'
 
-# Site templates that replace the theme's: partial/footer.html adds a note above the license line.
+# Site templates that replace the theme's: partial/footer.html adds a note above the copyright line,
+# and partial/copyright.html adds "All rights reserved." (no CC_LICENSE, so the footer uses it).
 THEME_TEMPLATES_OVERRIDES = [os.path.join(os.path.dirname(os.path.abspath(__file__)), 'templates')]
 # Fills the footer's copyright line, which otherwise reads just "©  -".
 COPYRIGHT_NAME = AUTHOR
@@ -70,12 +71,6 @@ SITEMAP = {
         'indexes': 'daily',
         'pages': 'monthly'
     }
-}
-
-CC_LICENSE = {
-    "name": "Creative Commons Attribution-ShareAlike",
-    "version": "4.0",
-    "slug": "by-sa",
 }
 
 STATIC_PATHS = ('static',

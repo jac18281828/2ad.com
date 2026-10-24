@@ -1,0 +1,6 @@
+{# Overrides the Flex theme's copyright line to reserve all rights. #}
+<p>&copy; {{ COPYRIGHT_YEAR }} {{ COPYRIGHT_NAME }}. All rights reserved.</p>
+{% include "partial/flex.html" %}
+{% if STATUSCAKE %}
+  {% include "partial/statuscake.html" %}
+{% endif %}
