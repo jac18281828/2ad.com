@@ -40,6 +40,7 @@ Practical, case-based continuing education, from single lectures to full-day pro
 * Keynotes and 1-hour CE lectures, in person or virtual
 * Keynotes paired with interactive workshops
 * Multi-hour CE programs, from 2 hours to a full educational day
+* Live online CE series, such as three 2-hour sessions over consecutive weeks
 * Dinner programs and lunch-and-learns
 * Association, academic and industry-sponsored continuing education
 
@@ -49,6 +50,7 @@ These are starting points, not a fixed menu. Dr. Cairns adapts existing talks an
 
 ## Selected engagements
 
+* **2026** · Chicago Veterinary Medical Association (CVMA U): “Internal Medicine in Real Life: Practical Strategies for Your Toughest Cases”, a three-part live online CE series on liver disease, Cushing's disease and chronic kidney disease (six RACE-approved hours)
 * **2026** · Michigan Veterinary Medical Association: six-hour gastroenterology CE program
 * **2026** · ACVIM Forum: “Effective Mentorship: Core Principles for All Practice Settings” (co-presenter)
 * **2026** · AAVMC Catalyze: “Reimagining Veterinary Education: An Integrated Model: Connected Systems, Shared Stewardship”
