@@ -1,3 +1,8 @@
+# 1.0.273 (2026-10-29)
+
+* kellycairns: the footer reads "All rights reserved." after the copyright line, in place of the Creative Commons license
+* kellycairns: the Speaking page lists the 2026 CVMA U live online CE series "Internal Medicine in Real Life: Practical Strategies for Your Toughest Cases" first under Selected engagements, and Formats adds live online CE series
+
 # 1.0.272 (2026-10-24)
 
 * kellycairns: on the About page, "Dr. Kelly Cairns Consulting" links to the Consulting page, like the other organizations in that paragraph
