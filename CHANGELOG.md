@@ -1,3 +1,7 @@
+# 1.0.274 (2026-11-02)
+
+* kellycairns: search engines may index the home page again; since 1.0.260 it carried a "noindex, nofollow" tag because the theme adds one to hidden pages
+
 # 1.0.273 (2026-10-29)
 
 * kellycairns: the footer reads "All rights reserved." after the copyright line, in place of the Creative Commons license
