@@ -1,3 +1,8 @@
+# 1.0.275 (2026-11-09)
+
+* kellycairns: the home page fix from 1.0.274 goes live; the 1.0.274 deploy stopped before publishing anything
+* bun.lockb is regenerated to match the dependency updates in package.json, which the release deploy requires
+
 # 1.0.274 (2026-11-02)
 
 * kellycairns: search engines may index the home page again; since 1.0.260 it carried a "noindex, nofollow" tag because the theme adds one to hidden pages
