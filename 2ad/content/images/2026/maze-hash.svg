@@ -1,0 +1,55 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 430" role="img" aria-label="Diagram of how a seed code builds the maze. The seed code hashes into a 256-bit world key, and every value in the maze is one hash of that key, a tag and coordinates. Two neighbouring boards read the same hash for the position of the door in their shared wall, so the door lines up without either board seeing the other.">
+  <defs>
+    <marker id="arrow" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+      <path d="M0,0 L10,5 L0,10 z" fill="#475569"/>
+    </marker>
+  </defs>
+  <rect width="900" height="430" rx="10" fill="#f8fafc"/>
+  <g font-family="Georgia, 'Times New Roman', serif" fill="#1e293b" text-anchor="middle">
+
+    <!-- pipeline -->
+    <g stroke="#475569" stroke-width="2.5" fill="none">
+      <path d="M170,75 L228,75" marker-end="url(#arrow)"/>
+      <path d="M400,75 L458,75" marker-end="url(#arrow)"/>
+      <path d="M690,75 L748,75" marker-end="url(#arrow)"/>
+    </g>
+    <g stroke="#475569" stroke-width="2" fill="#e2e8f0">
+      <rect x="20" y="30" width="150" height="90" rx="8"/>
+      <rect x="230" y="30" width="170" height="90" rx="8"/>
+      <rect x="460" y="30" width="230" height="90" rx="8"/>
+      <rect x="750" y="30" width="130" height="90" rx="8"/>
+    </g>
+    <g stroke="none">
+      <text x="95" y="68" font-size="20" font-weight="bold">seed code</text>
+      <text x="95" y="96" font-size="16" font-family="Menlo, Consolas, monospace">K7Q2-M9XA</text>
+      <text x="315" y="68" font-size="20" font-weight="bold">WORLD</text>
+      <text x="315" y="96" font-size="14" font-family="Menlo, Consolas, monospace">SHA3(v1 ‖ code)</text>
+      <text x="575" y="68" font-size="20" font-weight="bold">H(tag, x, y)</text>
+      <text x="575" y="96" font-size="14" font-family="Menlo, Consolas, monospace">SHA3(WORLD ‖ tag ‖ x ‖ y)</text>
+      <text x="815" y="68" font-size="20" font-weight="bold">any value</text>
+      <text x="815" y="96" font-size="15">exit, door, layout</text>
+    </g>
+
+    <!-- seam -->
+    <text x="450" y="178" font-size="18" font-style="italic">two neighbouring boards, one shared wall</text>
+    <g stroke="#475569" stroke-width="2" fill="#e2e8f0">
+      <rect x="260" y="195" width="170" height="130"/>
+      <rect x="430" y="195" width="170" height="130"/>
+    </g>
+    <rect x="426" y="240" width="8" height="40" fill="#e2e8f0"/>
+    <rect x="422" y="240" width="16" height="40" rx="3" fill="#f59e0b" stroke="#b45309" stroke-width="2"/>
+    <g stroke="none">
+      <text x="345" y="268" font-size="20" font-weight="bold">board A</text>
+      <text x="515" y="268" font-size="20" font-weight="bold">board B</text>
+      <text x="450" y="228" font-size="15" fill="#b45309" font-weight="bold">door</text>
+    </g>
+
+    <!-- shared hash -->
+    <g stroke="#475569" stroke-width="2.5" fill="none">
+      <path d="M400,368 C360,360 345,345 345,330" marker-end="url(#arrow)"/>
+      <path d="M500,368 C540,360 555,345 555,330" marker-end="url(#arrow)"/>
+    </g>
+    <rect x="330" y="370" width="240" height="44" rx="8" fill="#e2e8f0" stroke="#475569" stroke-width="2"/>
+    <text x="450" y="398" font-size="15" font-family="Menlo, Consolas, monospace">H("door", wall)</text>
+  </g>
+</svg>
