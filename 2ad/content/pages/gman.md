@@ -29,7 +29,7 @@ From the unpacked folder:
 gman -r gmanraytracer samples/vase.rib
 ```
 
-That writes `vase.png`, a ray-traced render of the scene above, in a few seconds.
+That writes `vase.png`, a quick ray-traced preview of the picture at the top of this page, in seconds.
 
 ### Path trace it
 
@@ -43,7 +43,7 @@ Option "pathtracer" "integer samples" [64]
 gman -r gmanpathtracer samples/vase.rib
 ```
 
-That writes the picture at the top of this page. Sixty-four paths through each of the four subpixels follow the light as it bounces off the walls, floor and table. The render takes about three minutes on one core of an Apple M3 Max, where the ray tracer takes seconds. The path tracer computes the bounce light the scene's `ambientlight` stood in for, so it skips that light and says so:
+That writes the picture at the top of this page. Sixty-four paths through each of the four subpixels follow the light as it bounces off the walls, floor and table. From gman 1.2.0, the render takes about two minutes on an Apple M3 Max; the path tracer renders rows on every core, where the ray tracer takes seconds. The path tracer computes the bounce light the scene's `ambientlight` stood in for, so it skips that light and says so:
 
 ```
 gmanpathtracer: ambientlight lights nothing under the path tracer; skipped 1 light(s).
