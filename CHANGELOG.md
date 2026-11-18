@@ -1,3 +1,8 @@
+# 1.0.276 (2026-11-17)
+
+* 2ad: new post "Infinite Maze", dated October 18, asks whether a maze built on SHA3 can be infinite, shows with a diagram how one hash fixes every room, and sets out why its corridors form one tree
+* 2ad: the gman page presents the ray-traced run as a quick preview of the path-traced picture, and times that render at about two minutes from gman 1.2.0
+
 # 1.0.275 (2026-11-09)
 
 * kellycairns: the home page fix from 1.0.274 goes live; the 1.0.274 deploy stopped before publishing anything
