@@ -1,3 +1,7 @@
+# 1.0.277 (2026-11-17)
+
+* 2ad: the Infinite Maze post, dated November 10, now tops the index, and says how tombs connect when exits only climb: every door opens both ways, and the way between two tombs follows one exit walk up and the other down
+
 # 1.0.276 (2026-11-17)
 
 * 2ad: new post "Infinite Maze", dated October 18, asks whether a maze built on SHA3 can be infinite, shows with a diagram how one hash fixes every room, and sets out why its corridors form one tree
